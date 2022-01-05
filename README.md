@@ -19,7 +19,7 @@
 
 2  https://toss.im/team
 
-3  https://support.toss.im/faq
+3  https://support.toss.im/
 
 4  https://toss.im/cert
 
@@ -33,7 +33,7 @@
 
 9  https://toss.im/career/jobs
 
-10  https://toss.im/career/faq?category=31
+10  https://toss.im/career/faq
 
 11  https://toss.im/career/joining-guide
 
