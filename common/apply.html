@@ -7,71 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>토스 공동인증서 관리</title>
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/cert.css">
     <link rel="shortcut icon" href="https://static.toss.im/tds/favicon/favicon.ico">
 </head>
 </head>
 
 <body>
-    <!-- header -->
-    <header>
-        <nav class="toss_nav">
-            <div class="navicon">
-                <a href="#" class="logo"><img src="../images/logo.svg" alt="toss"></a>
-                <div class="trigger">
-                    <span class="icon"></span>
-                    <span class="icon2"></span>
+    <div class="container">
+        <!-- header -->
+        <header>
+            <nav class="toss_nav">
+                <div class="navicon">
+                    <a href="#" class="logo"><img src="../images/logo.svg" alt="toss"></a>
+                    <div class="trigger">
+                        <span class="icon"></span>
+                        <span class="icon2"></span>
+                    </div>
                 </div>
-            </div>
-
-            <ul>
-                <li><a href="#">회사 소개</a></li>
-                <li><a href="#">자주 묻는 질문</a></li>
-                <li><a href="#">공동인증서 관리</a></li>
-                <li><a href="#">채용</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <div class="scrollbox">
-        <!-- section -->
+                <ul>
+                    <li><a href="#">회사 소개</a></li>
+                    <li><a href="#">고객 센터</a></li>
+                    <li><a href="#">자주 묻는 질문</a></li>
+                    <li><a href="#">공동인증서 관리</a></li>
+                    <li><a href="#">채용</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--섹션 1-->
         <section>
-            <div class="cretbox">
-                <h1>공동인증서 <br> 주고받기</h1>
-                <p>토스에 등록한 휴대폰 번호와 생년월일을 입력하세요.</p>
 
-                <form>
-                    <div class="telbox">
-                        <label for="tel"><span>휴대폰 번호</span><input type="tel" placeholder="010 - 1234 - 5678"></label>
-                    </div>
-                    <div class="bdbox">
-                        <label for="text"><span>생년월일</span><input type="text" placeholder="980216"></label>
-                    </div>
-                    <button type="button" class="blueBtn">확인</button>
-                </form>
-            </div>
-
-            <!-- 올바르게 적고 확인을 누르면 나오는 문구 -->
-            <div class="aftertext">
-                <h1>저장된 공동인증서를<br>어디로 보낼까요?</h1>
-                <div class="pcappBtn">
-                    <button type="button" class="blueBtn" id="pc_app">PC에서 토스앱으로 보냅니다</button>
-                    <button type="button" id="app_pc">토스앱에서 PC로 보냅니다</button>
-                </div>
-
-            </div>
         </section>
-
-        <!-- 팝업창 -->
-        <div class="popbox">
-            <div class="bg"></div>
-            <div class="pop">
-                <p class="poptext">휴대폰번호와 생년월일을 확인해주세요.</p>
-                <button type="button">확인</button>
-            </div>
-        </div>
-        <!-- 테스트 -->
         <!-- footer -->
         <footer>
             <div class="footerbox">
@@ -178,40 +142,7 @@
                 $(".toss_nav ul").slideUp(300, "swing");
             }
         });
-
-        /* section */
-        $(".blueBtn").on("click", function () {
-            let telinput = $("input[type=\"tel\"]").val();
-            let textinput = $("input[type=\"text\"]").val();
-
-            if (telinput == "" || textinput == "" || telinput.length < 11 || textinput.length < 6) {
-                $(".bg").css("display", "block").css("opacity", "1");
-                $(".pop").css("opacity", "1").css("animation", "pop_start 0.4s cubic-bezier(0, 0, 0.49, 1.18)");
-            } else if (telinput.length == 11 || textinput.length == 6) {
-                $(".cretbox").css("display", "none");
-                $(".aftertext").css("display", "block").css("zindex", "888").css("opacity", "1");
-                $(".aftertext").css("animation", "aftertext_start 0.4s cubic-bezier(0, 0.53, 1, 1)")
-            }
-        });
-
-        /* 팝업창 */
-        $(".pop button").on("click", function () {
-            $(".pop").css("animation", "pop_end 0.34s cubic-bezier(0, 0, 0.49, 1.18)")
-
-            setTimeout(function () {
-                $(".pop").animate({
-                    opacity: "0",
-                }, 100)
-            }, 100);
-
-            setTimeout(function () {
-                $(".bg").animate({
-                    opacity: "0",
-                }, 100)
-            }, 100);
-
-            $(".bg").css("display", "none");
-        });
+    /* nav */
     </script>
 </body>
 
