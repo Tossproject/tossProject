@@ -1,0 +1,632 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+html, body {
+    width: 100%;
+}
+
+body {
+    font-family: "TDSiOSsubset", "SF Pro KR", "SF Pro Display", "SF Pro Icons", -apple-system, BlinkMacSystemFont, "Basier Square", "Apple SD Gothic Neo", Roboto, "Noto Sans KR", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 400;
+    cursor: default;
+}
+
+button {
+    font-family: "TDSiOSsubset", "SF Pro KR", "SF Pro Display", "SF Pro Icons", -apple-system, BlinkMacSystemFont, "Basier Square", "Apple SD Gothic Neo", Roboto, "Noto Sans KR", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+li a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* header */
+header {
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.toss_nav {
+    margin: 0 auto;
+    width: 100%;
+    padding: 9px 0;
+}
+
+.toss_nav ul {
+    display: none;
+}
+
+.navicon {
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trigger {
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: linear-gradient(#3b3b46 2px, transparent 2px);
+    background-size: 100% 8px;
+}
+
+.icon2 {
+    width: 20px;
+    height: 20px;
+    background-image: linear-gradient(#3b3b46 2px, transparent 2px);
+    background-size: 100% 8px;
+    display: inline-block;
+    top: -32px;
+    left: 707px;
+
+    display: none;
+}
+
+.toss_nav .logo {
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.toss_nav .logo img {
+    height: 20px;
+}
+
+.toss_nav ul li a {
+    font-size: 15px;
+    color: #3b3b46;
+    line-height: 23px;
+    padding: 13px 29px;
+    display: block;
+}
+
+.toss_nav ul li:first-child a {
+    margin-top: 4px;
+}
+
+.toss_nav ul li a:hover, .toss_nav ul li a:active {
+    color: #0056b3;
+    background-color: #f2f4f6;
+}
+
+@media only screen and (min-width: 768px) {
+    .toss_nav .logo img {
+        width: 78px;
+        height: 20px;
+    }
+
+    .toss_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 20px;
+        max-width: 1064px;
+    }
+
+    .navicon {
+        display: block;
+        padding: 0;
+    }
+
+    .toss_nav ul {
+        display: block;
+    }
+
+    .toss_nav ul li {
+        display: inline-block;
+    }
+
+    .trigger {
+        display: none;
+    }
+
+    .toss_nav ul li a {
+        font-size: 15px;
+        padding: 10px 14px;
+    }
+
+    .toss_nav ul li a:hover, .toss_nav ul li a:active  {
+        color: #0056b3;
+        background-color: transparent;
+    }
+
+}
+
+/* scrollbox */
+.scrollbox {
+    position: absolute;
+    top: 58px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* section */
+section {
+    margin: 31px auto 190px;
+    width: 100%;
+    height: 339px;
+    max-width: 624px;
+    min-width: 682px;
+    padding-left: 5px;
+}
+
+h1 {
+    color: #454f5d;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1.3em;
+}
+
+section p {
+    color: #3a4961;
+    font-size: 23.5px;
+    line-height: 1.42em;
+    margin-top: 40px;
+    letter-spacing: -0.44px;
+}
+
+.cretbox form {
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.cretbox form label {
+    color: #333d4b;
+    font-size: 13px;
+    line-height: 1.3em;
+}
+
+.cretbox form label span {
+    display: inline-block;
+    margin-bottom: 6px;
+    margin-left: 4px;
+}
+
+.cretbox input {
+    width: 100%;
+    height: 60px;
+    background-color: #f9fafb;
+    border: 1px solid #F3F4F5;
+    border-radius: 14px;
+    caret-color: #1b64da;
+    color: #333d4b;
+    font-family: "TDSiOSsubset", "SF Pro KR", "SF Pro Display", "SF Pro Icons", -apple-system, BlinkMacSystemFont, "Basier Square", "Apple SD Gothic Neo", Roboto, "Noto Sans KR", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 500;
+    padding-left: 16px;
+}
+
+.cretbox input::placeholder {
+    color: #8B95A1;
+}
+
+.cretbox input:focus {
+    background-color: #F3F6FA;
+    outline: none;
+    border-color: #EEF1F5;
+}
+
+.telbox:focus-within label {
+    color: #1b64da;
+}
+
+.bdbox:focus-within label {
+    color: #1b64da;
+}
+
+
+.telbox {
+    width: 238px;
+    margin-right: 20px;
+}
+
+.bdbox {
+    width: 148px;
+    margin-right: 20px;
+}
+
+.blueBtn {
+    background-color: #3182f6;
+    border: none;
+    border-radius: 16px;
+    color: #fff;
+    width: 120px;
+    height: 60px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.blueBtn:hover, .blueBtn:active {
+    background-color: #2460B6;
+    color: #C0BFBD;
+}
+
+/* 올바르게 적고 확인을 누르면 나오는 문구 */
+.aftertext {
+    position: absolute;
+    top: 0;
+    margin-top: 31px;
+
+    opacity: 0;
+    display: none;
+}
+
+.aftertext h1 {
+    margin-bottom: 80px;
+}
+
+.pcappBtn {
+    display: flex;
+    flex-direction: column;
+}
+
+#pc_app {
+    height: 63px;
+    width: 236px;
+    margin-bottom: 16px;
+}
+
+#app_pc {
+    height: 63px;
+    width: 221px;
+    background-color: #e8f3ff;
+    border: none;
+    border-radius: 16px;
+    color: #3182f6;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#app_pc:hover, #app_pc:active {
+    background-color: #CADFFD;
+
+}
+
+@keyframes aftertext_start {
+    0% {
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* 팝업창 */
+.popbox {
+    position: relative;
+}
+
+.bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    left: 0;
+    top: 0;
+    z-index: 997;
+    display: none;
+}
+
+.pop {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 22px 16px 16px 22px;
+    max-width: 480px;
+    width: 100%;
+    z-index: 998;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translate(-50%, -88px); 
+    
+    opacity: 0;
+}
+
+@keyframes pop_start {
+    0% {
+        transform: translate(-50%, 321px);
+    }
+    80% {
+        transform: translate(-50%, -100px);        
+    }
+    100% {
+        transform: translate(-50%, -88px);            
+    }
+}
+
+@keyframes pop_end {
+    0% {
+        transform: translate(-50%, -88px);
+    }
+    100% {
+        transform: translate(-50%, 321px);            
+    }
+}
+
+
+@media only screen and (max-width: 639px) {
+    .pop {
+        margin-left: 3%;
+    }
+}
+
+@media only screen and (max-width: 547px) {
+    .pop {
+        margin-left: 11%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .pop {
+        margin-left: 30%;
+    }
+
+    .pop button {
+        margin-left: 324px !important;
+    }
+}
+
+.poptext {
+    color: #333d4b;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.pop button {
+    border: none;
+    border-radius: 12px;
+    background-color: transparent;
+    color: #3182f6;
+    margin-top: 14px;
+    padding: 4px 10px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 390px;
+    cursor: pointer;
+}
+
+.pop button:active {
+    background-color: rgba(2,32,71,.05);
+}
+
+/* footer */
+footer {
+    background-color: #f9fafb;
+    width: 100%;
+    padding: 50px 0 100px;
+    line-height: 20px;
+}
+
+.footerbox {
+    max-width: 1064px;
+    margin: auto;
+    padding: 0 67px;
+}
+
+.footerbox a:active, .footerbox a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* footer_top */
+.footer_top {
+    padding-bottom: 50px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_top ul:first-child {
+    margin: 0;
+}
+
+.footer_top a {
+    color: #6b7684;
+    padding: 3.5px 0;
+    display: block;
+}
+
+.footer_top .title {
+    color: #333d4b;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer_top ul {
+        margin-left: 72px;
+    }
+
+    .footer_top {
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer_top ul {
+        margin-left: 30px;
+    }
+
+    .footer_top {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .footer {
+        width: 100%;
+    }
+
+    .footer_top {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .footer_top ul {
+        padding-bottom: 40px;
+        margin: 0;
+    }
+}
+
+/* footer_bottom */
+/* footer_bottom_infobox */
+.infobox {
+    margin-bottom: 16px;
+}
+.infobox strong {
+    padding-bottom: 16px;
+    font-size: 15px;
+    color: #333d4b;
+    display: block;
+}
+
+.infobox p {
+    font-size: 13px;
+    color: #8b95a1;
+}
+
+.infobox p a {
+    font-size: 13px;
+    color: #8b95a1;
+    text-decoration: none;
+}
+
+/* footer_bottom_smaillListbox */
+.smallListbox {
+    font-size: 13px;
+    padding: 24px 0 30px 0;
+}
+
+.smallList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.smallListbox li {
+    padding-right: 15px;
+}
+
+.smallListbox li:last-child {
+    padding: 0;
+}
+
+.smallListbox li a {
+    color: #6b7684;
+    display: block;
+}
+
+.smallListbox li a strong {
+    color: #333d4b;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 639px) {
+    .smallList {
+        flex-direction: column;
+    }
+
+    .smallListbox li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .smallListbox li a {
+        padding: 5px 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+/* footer_bottom_snsbox */
+.snsbox {
+    margin-bottom: 16px;
+}
+
+.snsbox ul {
+    display: flex;
+}
+
+.snsbox li {
+    margin-right: 8px;
+}
+
+.snsbox li a {
+    cursor: pointer;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    opacity: 0.7;
+}
+
+.snsbox li a:active, .snsbox li a:hover {
+    opacity: 1;
+}
+
+/* font */
+@font-face {
+    font-family: "TDSiOSsubset";
+    src: url("https://static.toss.im/fonts/tds-ios-subset/TDSiOSsubset-Regular.woff2") format("woff2"), url("https://static.toss.im/fonts/tds-ios-subset/TDSiOSsubset-Regular.woff") format("woff"), url("https://static.toss.im/fonts/tds-ios-subset/TDSiOSsubset-Regular.ttf") format("truetype");
+    unicode-range: U+002A, U+003C, U+003E, U+2731;
+  }
+
+@font-face {
+    font-family: "Basier Square";
+    src: url("https://static.toss.im/fonts/basier/basiersquare-regular-webfont.eot");
+    src: url("https://static.toss.im/fonts/basier/basiersquare-regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://static.toss.im/fonts/basier/basiersquare-regular-webfont.woff2") format("woff2"), url("https://static.toss.im/fonts/basier/basiersquare-regular-webfont.woff") format("woff"), url("https://static.toss.im/fonts/basier/basiersquare-regular-webfont.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    unicode-range: U+0020-007F, U+00A0-00FF;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: "Basier Square";
+    src: url("https://static.toss.im/fonts/basier/basiersquare-medium-webfont.eot");
+    src: url("https://static.toss.im/fonts/basier/basiersquare-medium-webfont.eot?#iefix") format("embedded-opentype"), url("https://static.toss.im/fonts/basier/basiersquare-medium-webfont.woff2") format("woff2"), url("https://static.toss.im/fonts/basier/basiersquare-medium-webfont.woff") format("woff"), url("https://static.toss.im/fonts/basier/basiersquare-medium-webfont.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    unicode-range: U+0020-007F, U+00A0-00FF;
+    font-display: fallback;
+  }
+  @font-face {
+    font-family: "Basier Square";
+    src: url("https://static.toss.im/fonts/basier/basiersquare-semibold-webfont.eot");
+    src: url("https://static.toss.im/fonts/basier/basiersquare-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("https://static.toss.im/fonts/basier/basiersquare-semibold-webfont.woff2") format("woff2"), url("https://static.toss.im/fonts/basier/basiersquare-semibold-webfont.woff") format("woff"), url("https://static.toss.im/fonts/basier/basiersquare-semibold-webfont.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    unicode-range: U+0020-007F, U+00A0-00FF;
+    font-display: fallback;
+  }
+  @font-face {
+    font-family: "Basier Square";
+    src: url("https://static.toss.im/fonts/basier/basiersquare-bold-webfont.eot");
+    src: url("https://static.toss.im/fonts/basier/basiersquare-bold-webfont.eot?#iefix") format("embedded-opentype"), url("https://static.toss.im/fonts/basier/basiersquare-bold-webfont.woff2") format("woff2"), url("https://static.toss.im/fonts/basier/basiersquare-bold-webfont.woff") format("woff"), url("https://static.toss.im/fonts/basier/basiersquare-bold-webfont.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    unicode-range: U+0020-007F, U+00A0-00FF;
+    font-display: fallback;
+  }
