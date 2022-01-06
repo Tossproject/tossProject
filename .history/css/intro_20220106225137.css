@@ -1,0 +1,8 @@
+header {
+  display: none;
+}
+
+.first-section {
+  background: url("../images/intro1.jpg") no-repeat center;
+  background-size: cover;
+}
