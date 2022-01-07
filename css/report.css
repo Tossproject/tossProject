@@ -343,7 +343,7 @@ input[type = number]::-webkit-inner-spin-button {
 }
 
 .report_hidden_content{
-    display: none;
+    display: block;
 }
 
 .lbdn2, .lbdn3{
@@ -356,7 +356,17 @@ input[type = number]::-webkit-inner-spin-button {
     color: #EF5350;
     font-size: 14px;
     font-weight: 600;
+    padding-top: 5px;
+    padding-left: 10px;
     display: none;
+}
+.money_count{
+    opacity: 0.8;
+    padding-top: 5px;
+    font-size: 14px;
+    display: none;
+    font-weight: 600;
+    padding-left: 10px;
 }
 /* section1 */
 
