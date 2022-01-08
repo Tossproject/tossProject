@@ -121,7 +121,7 @@
                             </div>
                         </div>
                         <div>
-                            <button class="info_next_btn btn_sty">다음</button>
+                            <button type="button" class="info_next_btn btn_sty">다음</button>
                         </div>
                     </div>
                     <div class="line_bar_dp_none lbdn3"></div>
@@ -154,7 +154,7 @@
                                 <div>
                                     <label class="lb_sty" for="">피해 금액 (원)</label>
                                     <input oninput="maxLengthCheck(this)" maxlength="20" class="ip_sty rep_ip_chk"
-                                        placeholder="피해 금액을 입력하세요" type="num" name="" id="">
+                                        placeholder="피해 금액을 입력하세요" type="number" name="" id="">
                                     <span class="err_message">피해 금액을 다시 확인해주세요.</span>
                                     <span class="money_count"> </span>
                                     <span></span>
@@ -207,14 +207,14 @@
                                 <span class="err_message">피해 내용을 다시 확인해주세요.</span>
                             </div>
                             <div class="chk_box">
-                                <div class="top_chk_wrapper">
+                                <div class="top_chk_wrapper" id="focusMe">
                                     <div>
                                         <span class="check_on1"><i class="fas fa-check-square"></i></span>
                                         <span class="check_off1"><i class="far fa-check-square"></i></span>
-                                        <span class="check_text"><a href="#">개인정보 수집 이용</a>에 동의합니다.</span>
+                                        <span class="check_text"><a href="#">개인정보 수집 이용</a>에
+                                            동의합니다.</span>
                                         <span class="err_message">개인정보 수집 이용에 동의해주세요.</span>
                                     </div>
-                                    <input type="checkbox" name="check1" class="chk_ip1" style="display: none;">
                                 </div>
                                 <div>
                                     <div>
@@ -223,7 +223,6 @@
                                         <span class="check_text"><a href="#">개인정보 제3자 제공</a>에 동의합니다.</span>
                                         <span class="err_message">개인정보 제3자 제공에 동의해주세요.</span>
                                     </div>
-                                    <input type="checkbox" name="check2" class="chk_ip2" style="display: none;">
                                 </div>
                             </div>
                             <div class="exp_box">
@@ -250,7 +249,7 @@
                                 </ul>
                             </div>
                             <div>
-                                <button class="btn_sty" type="submit">제출</button>
+                                <button class="btn_sty last_button" type="button">제출</button>
                             </div>
                         </div>
                     </div>
@@ -274,8 +273,7 @@
                     <div class="ad_btn_box"><button type="button">더 알아보기</button></div>
                 </div>
                 <div class="ad_img_wrapper">
-                    <img src="https://core-cdn-fe.toss.im/image/optimize/?src=https://static.toss.im/3d/appcards-shield-two.png?&w=1080&q=75"
-                        alt="">
+                    <img src="" alt="">
                     <!--임시 방편 데이터-->
                 </div>
             </div>

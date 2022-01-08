@@ -36,6 +36,8 @@ header{
     margin: 185px auto 150px;
 }
 
+
+
 .thd_text_wrapper{
     margin-bottom: 42px;
 }
@@ -280,7 +282,9 @@ input[type = number]::-webkit-inner-spin-button {
     padding: 4px 0;
     border-radius: 8px;
 }
-
+.check_on1 i, .check_on2 i{
+    color: #3182F7;
+}
 .check_text a:hover{
     background-color:#E8F3FF;
 }
@@ -292,6 +296,7 @@ input[type = number]::-webkit-inner-spin-button {
 }
 
 .check_off1, .check_off2{
+    display: block;
     color: #B0B8C1;
     font-size: 23px;
     margin-right: 10px;
@@ -334,16 +339,36 @@ input[type = number]::-webkit-inner-spin-button {
     font-weight: 600;
     color: #4e5968;
 }
+
+/* animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+/* animation */
+
 .display_content{
     display: block;
 }
 
 .info_hidden_content{
     display: none;
+    animation-name:fadeInUp;
+    animation-iteration-count :1;
+    animation-duration:  .5s;
 }
 
 .report_hidden_content{
-    display: block;
+    display: none;
+    animation-name:fadeInUp;
+    animation-iteration-count :1;
+    animation-duration:  .5s;
 }
 
 .lbdn2, .lbdn3{
@@ -368,6 +393,9 @@ input[type = number]::-webkit-inner-spin-button {
     font-weight: 600;
     padding-left: 10px;
 }
+
+
+
 /* section1 */
 
 /* section2 */
@@ -435,4 +463,12 @@ input[type = number]::-webkit-inner-spin-button {
 /* section2 */
 
 
+@media screen and (max-width: 690px){
+    .content_wrapper{
+        padding: 0 10px;
+    }
 
+    .flex_div_box{
+        display: block;
+    }
+}
