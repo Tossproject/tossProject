@@ -55,4 +55,4 @@
 = apply.html(지원서 작성 페이지)
 
 14 https://support.toss.im/safety
-= 미생성( 안심보장제 페이지 )
+= safety.html( 안심보장제 페이지 )
