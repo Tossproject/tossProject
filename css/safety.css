@@ -1,0 +1,152 @@
+/* header */
+
+header{
+    background-color: #EFF4F8;
+}
+
+.logo{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+
+.logoText{
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    left: 84px;
+    font-weight: 800;
+    font-size: 18px;
+}
+/* header */
+
+/* section1 */
+.content_box{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #EFF4F8;
+    height: 807px;
+}
+
+.content_top_wrapper{
+    margin: 185px auto 150px;
+    width: 100%;
+    max-width: 1140px;
+}
+.ct_all_wrapper{
+    display: flex;
+    position: relative;
+}
+.ct_text_wrapper{
+    width: 100%;
+    z-index: 2;
+    padding-left: 65px;
+}
+.ct_text_wrapper div span{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 145%;
+    color: #6b7684;
+}
+
+.ct_mb{
+    margin-bottom: 35px;
+}
+
+.ct_text_wrapper h2{
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 90px;
+    color: #333d4b;
+}
+.ct_img_wrapper{
+    position: absolute;
+    z-index: 1;
+    top: -111px;
+    left: 423px;
+}
+.ct_img_wrapper img{
+    width: 850px;
+}
+
+.content_wrapper{
+    max-width: 690px;
+    width: 100%;
+    margin: 185px auto 150px;
+}
+/* section1 */
+
+
+/* section2 */
+.ad_box{
+    background-color: #ffffff;
+}
+.ad_wrapper{
+    max-width: 690px;
+    width: 100%;
+    margin: 20px auto 0;
+    padding: 50px 0;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+
+}
+.ad_sm_img_wrapper img{
+    width: 200px;
+    padding: 0;
+    border: none;
+    margin: auto;
+    display: block;
+}
+
+.ad_sm_img_wrapper{
+    display: none;
+}
+
+.ad_img_wrapper{
+    margin-right: 20px;
+}
+.ad_img_wrapper img{
+    width: 300px;
+    padding: 0;
+    border: none;
+    margin: auto;
+    display: block;
+}
+.h2_box{
+    position: relative;
+    width: 100%;
+
+}
+.h2_box h2{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 130%;
+    width: 100%;
+    white-space: nowrap;
+    color: #333d4b;
+}
+
+.ad_text_wrapper{
+    padding-right: 20px;
+}
+
+.span_box{
+    margin:20px 0;
+}
+
+.span_box span{
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    white-space: nowrap;
+    color: #4e5968;
+}
+
+
+/* section2 */
