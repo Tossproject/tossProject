@@ -59,6 +59,34 @@
   letter-spacing: -1px;
 }
 
+@media screen and (min-width: 768px) {
+  .first-section .txt {
+    font-size: 72px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-left: 20%;
+    margin-bottom: 200px;
+  }
+  .first-section .txt p {
+    margin-bottom: 100px;
+  }
+  .first-section .txt i {
+    font-size: 36px;
+  }
+
+  .second-section h4 {
+    text-align: left;
+    margin-left: 5%;
+    font-size: 36px;
+  }
+  .second-section ul {
+    display: flex;
+  }
+}
+
 .third-section {
   width: 100vw;
   height: 100vh;
@@ -290,150 +318,4 @@ li .contents h4 {
   font-weight: bold;
   color: #4e5968;
   cursor: pointer;
-}
-
-@media screen and (min-width: 768px) {
-  .first-section .txt {
-    font-size: 72px;
-    font-weight: bold;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-left: 20%;
-    margin-bottom: 200px;
-  }
-  .first-section .txt p {
-    margin-bottom: 100px;
-  }
-  .first-section .txt i {
-    font-size: 36px;
-  }
-
-  .second-section h4,
-  .second-section ul {
-    max-width: 1200px;
-  }
-  .second-section h4 {
-    text-align: left;
-    margin-left: 15%;
-    font-size: 36px;
-  }
-  .second-section ul {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 15%;
-  }
-  .second-section li {
-    margin-right: 100px;
-  }
-  .second-section p {
-    font-size: 20px;
-  }
-  .second-section h3 {
-    font-size: 66px;
-  }
-  .second-section li.mr {
-    margin-right: 400px;
-  }
-  .second-section li.pl {
-    padding-left: 220px;
-  }
-
-  .third-section .modal {
-    width: 800px;
-    padding: 4% 7.5%;
-    font-size: 28px;
-    margin: 0 auto;
-  }
-
-  .fourth-section h3 {
-    text-align: center;
-    font-size: 40px;
-  }
-  .fourth-section .annual-wrapper {
-    display: flex;
-    margin-left: 20%;
-  }
-  ul.year-tab {
-    display: block;
-    border: none;
-    margin-right: 50px;
-  }
-  ul.year-tab li.year-active {
-    border-bottom: none;
-  }
-  ul.year-tab li {
-    margin-bottom: 40px;
-    font-size: 22px;
-    font-weight: bold;
-  }
-  .fourth-section .annual-contents {
-    padding-top: 0;
-  }
-
-  .fifth-section {
-    padding: 150px 20px;
-  }
-  .fifth-section .finance {
-    margin-bottom: 50px;
-  }
-  .fifth-section .finance h3 {
-    font-size: 48px;
-    margin-top: 20px;
-  }
-  .fifth-section .finance p {
-    font-size: 24px;
-  }
-  .fifth-section li .contents {
-    background-size: cover;
-    margin-left: 15px;
-    width: 460px;
-    height: 500px;
-    border-radius: 10px;
-    padding: 40px;
-    margin-bottom: 10px;
-  }
-  .fifth-section li .contents h4 {
-    font-size: 32px;
-    margin-bottom: 24px;
-  }
-  .fifth-section ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .sixth-section {
-    padding: 100px 40px;
-  }
-  .sixth-section h3 {
-    font-size: 45px;
-    padding: 30px 0;
-  }
-  .sixth-section .investor {
-    margin: 0 auto;
-    width: 800px;
-    margin-bottom: 30px;
-  }
-
-  .seventh-section {
-    margin-left: 60px;
-  }
-  .seventh-section h3 {
-    font-size: 44px;
-    margin-right: 40px;
-  }
-  .seventh-section .seventh-nav {
-    display: flex;
-  }
-  .seventh-section .seventh-nav ul {
-    margin-top: 30px;
-  }
-  .seventh-section .seventh-nav ul li {
-    padding: 10px 20px;
-  }
-  .seventh-section button {
-    margin: 80px 0;
-  }
 }

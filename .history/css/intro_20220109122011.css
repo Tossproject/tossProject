@@ -418,7 +418,7 @@ li .contents h4 {
   }
 
   .seventh-section {
-    margin-left: 60px;
+    margin-left: 50px;
   }
   .seventh-section h3 {
     font-size: 44px;
@@ -434,6 +434,5 @@ li .contents h4 {
     padding: 10px 20px;
   }
   .seventh-section button {
-    margin: 80px 0;
   }
 }

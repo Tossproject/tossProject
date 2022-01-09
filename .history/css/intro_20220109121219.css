@@ -250,48 +250,6 @@ li .contents h4 {
   color: black;
 }
 
-.news-contents {
-  margin-top: 70px;
-}
-
-.news-contents span {
-  color: rgb(49, 130, 246);
-  margin-right: 10px;
-  font-weight: bold;
-  letter-spacing: -1px;
-}
-
-.news-contents p {
-  font-size: 14px;
-  color: rgb(176, 184, 193);
-  font-weight: 500;
-}
-
-.news-contents h4 {
-  color: rgb(51, 61, 75);
-  padding: 7px 0;
-  margin-bottom: 40px;
-  font-size: 20px;
-}
-
-.news-contents li {
-  border-bottom: 1px solid rgba(69, 79, 93, 0.07);
-  margin-bottom: 30px;
-}
-
-.seventh-section button {
-  display: block;
-  padding: 15px;
-  margin: 0 auto;
-  border-radius: 8px;
-  border: none;
-  margin-top: 70px;
-  font-size: 15px;
-  font-weight: bold;
-  color: #4e5968;
-  cursor: pointer;
-}
-
 @media screen and (min-width: 768px) {
   .first-section .txt {
     font-size: 72px;
@@ -417,23 +375,54 @@ li .contents h4 {
     margin-bottom: 30px;
   }
 
-  .seventh-section {
-    margin-left: 60px;
-  }
   .seventh-section h3 {
     font-size: 44px;
-    margin-right: 40px;
+    margin-right: 30px;
   }
   .seventh-section .seventh-nav {
     display: flex;
+    line-height: 50px;
   }
-  .seventh-section .seventh-nav ul {
-    margin-top: 30px;
-  }
-  .seventh-section .seventh-nav ul li {
-    padding: 10px 20px;
-  }
-  .seventh-section button {
-    margin: 80px 0;
-  }
+}
+
+.news-contents {
+  margin-top: 70px;
+}
+
+.news-contents span {
+  color: rgb(49, 130, 246);
+  margin-right: 10px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.news-contents p {
+  font-size: 14px;
+  color: rgb(176, 184, 193);
+  font-weight: 500;
+}
+
+.news-contents h4 {
+  color: rgb(51, 61, 75);
+  padding: 7px 0;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.news-contents li {
+  border-bottom: 1px solid rgba(69, 79, 93, 0.07);
+  margin-bottom: 30px;
+}
+
+.seventh-section button {
+  display: block;
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: none;
+  margin-top: 70px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #4e5968;
+  cursor: pointer;
 }
