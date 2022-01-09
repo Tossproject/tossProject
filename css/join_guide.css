@@ -549,6 +549,7 @@ nav {
     align-items: center;
     text-align: center;
     text-decoration: none;
+    border-radius: 6px;
     background-color: rgba(69, 147, 252, .12);
     border: 0;
     margin: 1px 0 0;
@@ -559,11 +560,19 @@ nav {
     position: relative;
 }
 
+.welcome-container a:hover {
+    background-color: #c9e2ff;
+}
+
+
 /* nav */
 .sidebar {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 280px;
+    min-height: 100px;
+    position: static;
 }
 
 .sidebar-container {

@@ -317,6 +317,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
+
         /* nav */
         $(".trigger").on("click", function () {
 
@@ -332,6 +333,22 @@
             }
         });
     /* nav */
+
+    $(".sidebar a").on("click", function() {
+        let $a = $(this);
+
+        let targetID = $a.attr("href");
+
+        let $target = $(targetID);
+
+        let targetOffset = $target.offset();
+
+        targetOffset = targetOffset.top;
+
+        $("html").animate({scrollTop: targetOffset}, 1000);
+
+        return false;
+    });
     </script>
 </body>
 
