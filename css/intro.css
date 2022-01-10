@@ -1,34 +1,26 @@
 /* header */
 header {
   background: transparent;
-}
-
-.navicon img {
-  filter: brightness(0.9);
+  border: none;
 }
 
 .toss_nav .logo {
-  padding: 10px 0;
-  display: inline-block;
+  filter: brightness(0) invert(1);
 }
 
-.toss_nav .logo svg {
-  height: 20px;
-}
-
-.toss_nav .logo svg path {
-  fill: #fff;
+.icon, .icon2 {
+  background-image: linear-gradient(#fff 2px, transparent 2px);
 }
 
 .toss_nav ul li a {
   color: #fff;
   font-weight: 600;
+  border-radius: 8px;
 }
 
 .toss_nav ul li a:hover, .toss_nav ul li a:active {
   color: #fff;
   background-color: rgba(217,217,255, 0.11);
-  border-radius: 8px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -44,6 +36,10 @@ header {
 }
 
 /* section */
+.block_bg {
+  background-color: #121417;
+}
+
 .first-section {
   background: url("../images/intro1.jpg") no-repeat center;
   background-size: cover;
@@ -79,7 +75,6 @@ header {
 }
 
 .second-section {
-  background: #131418;
   color: white;
   height: 100vh;
   position: relative;
@@ -207,8 +202,8 @@ ul.year-tab li.year-active {
 }
 
 .fifth-section img {
-  width: 24px;
-  height: 24px;
+  width: 22.4px;
+  height: 22.4px;
 }
 
 .fifth-section li {
@@ -238,6 +233,12 @@ ul.year-tab li.year-active {
   margin-bottom: 10px;
 }
 
+.finance_ul li p {
+  font-size: 15px;
+  color: #4e5968;
+  letter-spacing: -0.03em;
+}
+
 .fifth-section li .core {
   background: url("../images/intro3.jpg") no-repeat center;
   background-size: cover;
@@ -246,8 +247,8 @@ ul.year-tab li.year-active {
 li .contents h4 {
   color: #333d4b;
   font-size: 28px;
-  letter-spacing: -1px;
-  margin-top: 15px;
+  letter-spacing: -0.07em;
+  margin-top: 8px;
   margin-bottom: 15px;
 }
 
@@ -293,6 +294,8 @@ li .contents h4 {
 .sixth-section h3 {
   font-size: 32px;
   text-align: center;
+  letter-spacing: -0.03em;
+  margin-bottom: 41px;
 }
 
 .seventh-section {
@@ -317,12 +320,17 @@ li .contents h4 {
 .seventh-section nav ul li {
   margin-right: 10px;
   padding: 10px 15px;
+  cursor: pointer;
 }
 
 .seventh-section nav ul li.news-active {
   background-color: #f2f4f6;
   border-radius: 20px;
   color: black;
+}
+
+.newbox {
+  position: relative;
 }
 
 .news-contents {
@@ -354,6 +362,19 @@ li .contents h4 {
   margin-bottom: 30px;
 }
 
+.news-contents li:hover, .news-contents li:active {
+  transform: scale(1.02);
+  transition: all 0.35s ease 0s;
+}
+
+.news-contents li:hover img, .news-contents li:active img {
+  opacity: 0.7;
+}
+
+.news-contents img {
+  display: none;
+}
+
 .seventh-section button {
   display: block;
   padding: 15px;
@@ -365,6 +386,10 @@ li .contents h4 {
   font-weight: bold;
   color: #4e5968;
   cursor: pointer;
+}
+
+.seventh-section button:active, .seventh-section button:hover {
+  background: #D1D6DB;
 }
 
 @media screen and (max-width: 360px) {
@@ -426,9 +451,9 @@ li .contents h4 {
   .second-section li.mr {
     margin-right: 400px;
   }
-  /* .second-section li.pl {
-    padding-left: 220px;
-  } */
+  .second-section li.pl {
+    padding-left: 16px;
+  }
 
   .third-section .modal {
     width: 800px;
@@ -481,7 +506,7 @@ li .contents h4 {
     width: 460px;
     height: 500px;
     border-radius: 10px;
-    padding: 40px;
+    padding: 32px;
     margin-bottom: 10px;
   }
   .fifth-section li .contents h4 {
@@ -499,7 +524,7 @@ li .contents h4 {
   }
   .sixth-section h3 {
     font-size: 45px;
-    padding: 30px 0;
+    margin-bottom: 68px;
   }
   .sixth-section .investor {
     margin: 0 auto;
@@ -508,7 +533,8 @@ li .contents h4 {
   }
 
   .seventh-section {
-    margin-left: 60px;
+    margin: 60px auto;
+    padding: 100px 154px;
   }
   .seventh-section h3 {
     font-size: 44px;
@@ -526,6 +552,19 @@ li .contents h4 {
   .seventh-section button {
     margin: 80px 0;
   }
+  .news-contents li {
+    position: relative;
+  }
+  .news-contents img {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 21px;
+    width: 26px;
+    height: 22px;
+    opacity: 0.1;
+  }
+
 }
 
 @media screen and (max-width: 360px) {
