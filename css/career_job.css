@@ -1,0 +1,17 @@
+.banner{
+    width: 100%;
+    background-color:  rgb(252, 240, 196);;
+
+}
+
+.banner-center{
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+.banner img{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+}
