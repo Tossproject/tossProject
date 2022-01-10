@@ -163,7 +163,7 @@ nav {
 
 .toss_nav.active .navicon g {fill: rgb(0, 100, 255);}
 
-.toss_nav.active .toss_nav ul li a {color: #4e5968;}
+.toss_nav.active .toss_nav ul li>a {color: #4e5968;}
 
 @media screen and (max-width: 640px) {
     .mobile-nav button {
