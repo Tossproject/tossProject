@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>토스 고객센터</title>
-    <link rel="stylesheet" href="../common/customer.css">
+    <link rel="stylesheet" href="../css/customer.css">
+
 </head>
 <body>
     
     <header>
         <div class="toss-center">
-            <div class="logo"><a href="#"><img src="images/logo.png">고객센터</a></div>
+            <div class="logo"><a href="#"><img src="../images/logo.png">고객센터</a></div>
             <div class="list">
                 <ul>
                     <li><a href="#">자주 묻는 질문</a></li>
                     <li><a href="#">피해 사건 신고</a></li>
                     <li><a href="#">토스의 보안</a></li>
-                    <li><a href="#"><img src="images/glass.png"></a></li>
+                    <li><a href="#"><img src="../images/glass.png"></a></li>
                 </ul>
             </div>
         </div>
@@ -36,7 +37,7 @@
                     <span class="call">1661-4905</span>    
                 </div>
                 <div>
-                    <img src="images/icons8-vertical-line-50.png">
+                    <img src="../images/icons8-vertical-line-50.png">
                 </div>
                 <div class="general">
                     <span class="fraud">일반 상담</span>
@@ -51,7 +52,7 @@
                 <span class="usually">보통</span>
 
             </div>
-            <div class="woman"><img src="images/customer-service.png" ></div>
+            <div class="woman"><img src="../images/customer-service.png" ></div>
         </div>
     </section>
 
@@ -69,7 +70,7 @@
                 
             <div class="call-box">
                 <div class="lock">
-                    <img src="images/icons8-lock-48.png" width="30px" height="30px">
+                    <img src="../images/icons8-lock-48.png" width="30px" height="30px">
                     <p> 토스 계정을 잠시 잠그고 싶어요</p>
                 </div>
 
@@ -95,7 +96,7 @@
                 너무 걱정하지 마세요. 토스 안심보장제가 있어요.</p>
                 <a href="#">더 알아보기</a>
             </div>
-                <img src="images/safety-care.png">
+                <img src="../images/safety-care.png">
         </div>
     </section>
 
@@ -113,9 +114,47 @@
                     <li><a href="#"><span>Q</span>거래 내역이나 계좌 잔액이 물음표로 나오면 어떻게 하나요?</a></li>
                 </ul>
             </div>
+            <a href="#" class="all">자주묻는 질문 전체 보기＞</a>
         </div>
     </section>
 
+    <section>
+        <div class="background">
+            <div class="back-center">
+                <div class="number">
+                    <h1>문제가 아직 해결되지 않았다면<br>
+                        언제든 연락해주세요</h1>
+                        <p>24시간 토스 고객 센터 1599-4905</p>
+                </div>
+               
+
+                <img src="../images/phone.png" width="200px" height="200px">
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+         <script>
+            let $header = $("header").offset().top;
+            $(window).scroll(function(){
+                let window = $(this).scrollTop();
+    
+                if($header<= window){
+                    $("header").css("border-bottom", "1px solid #ccc");
+                    $("header").css("background-color", "#fff");
+       
+                } else {
+                    $("header").css("border-bottom", "none");
+                }
+            });
+    
+        </script>
+  
 
 </body>
 </html>
