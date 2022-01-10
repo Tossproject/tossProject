@@ -56,3 +56,6 @@
 
 14 https://support.toss.im/safety
 = safety.html( 안심보장제 페이지 )
+
+15 https://support.toss.im/suspend
+= suspend.html( toss잠금 안내 페이지 )
