@@ -19,6 +19,12 @@ header{
     font-weight: 800;
     font-size: 18px;
 }
+
+.hover_bg:hover{
+    background-color: #F2F4F6;
+    border-radius: 10px;
+}
+
 /* header */
 
 /* section1 */

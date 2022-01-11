@@ -17,6 +17,11 @@ header{
     background-color: #FFFFFF;
 }
 
+.hover_bg:hover{
+    background-color: #F2F4F6;
+    border-radius: 10px;
+}
+
 .content_box{
     position: relative;
     width: 100%;
