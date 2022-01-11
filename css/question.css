@@ -7,6 +7,17 @@ body {
     font-family: Toss Product Sans,-apple-system,BlinkMacSystemFont,Bazier Square,Noto Sans KR,Segoe UI,Apple SD Gothic Neo,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
+/* 성우석 작업 */
+header{
+    position: fixed;
+    top: 0;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+    z-index: 88;
+    margin-top: -10px;
+}
+/* 성우석 작업 */
+
 .header-nav {
     width: 100%;
     height: 59px
@@ -47,8 +58,15 @@ body {
     display: flex;
     align-items: center;
     margin-right: 20px;
-    
 }
+
+/* 성우석 작업 */
+.header li:hover {
+    background-color: #F2F4F6;
+    border-radius: 10px;
+}
+/* 성우석 작업 */
+
 .header a {
     font-size: 15px;
     line-height: 20px;
@@ -104,7 +122,12 @@ body {
     height: 100%;
     margin: 0 auto;
 }
-
+/* 성우석 작업 */
+section{
+    width: 100%;
+    padding-top: 40px;
+}
+/* 성우석 작업 */
 h1 {
     font-size: 32px;
     font-weight: 700;
