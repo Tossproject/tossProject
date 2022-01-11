@@ -22,6 +22,45 @@ body {
     justify-content: space-between;
 }
 
+@media (max-width: 639px) {
+    .header-nav .logo {
+        padding-left: 26px;
+    }
+}
+
+@media (max-width: 639px) {
+    .clicknav {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 75;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.16);
+    }
+
+    .clickitem {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-left: -22px;
+    }
+
+    .clickwrapper {
+        width: 100%;
+        padding-top: 20px;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+    }
+
+}
+
 .logo-icon span {
     display: flex;
     margin-right: 24px;
@@ -110,6 +149,11 @@ body {
     background-color: #f2f4f6;
 }
 
+.mobile-nav .hide svg {
+    display: none;
+}
+
+
 @media screen and (max-width: 640px) {
     .mobile-nav button {
         display: block;
@@ -117,6 +161,10 @@ body {
 
     .logo-container {
         display: none;
+    }
+
+    .mobile-nav .hide svg {
+        display: block;
     }
 }
 
@@ -129,6 +177,13 @@ body {
     margin: auto;
     padding: 76px 0;
 }
+
+@media (max-width: 639px) {
+    .container {
+        padding: 38px 0;
+    }
+}
+
 
 .main {
     width: 92%;
@@ -143,6 +198,14 @@ h1 {
     color: #333d4b;
     margin-bottom: 65px;
 }
+
+@media (max-width: 639px) {
+    h1 {
+        display: none;
+    }
+}
+
+
 form {
     position: relative;
     width: 100%;
@@ -160,6 +223,27 @@ form {
     border-bottom: 1px solid #b0b8c1;
     color: #4e5968;
 }
+
+.clickinput {
+    background-color: #d6d6d6;
+}
+
+
+@media (max-width: 639px)  {
+    .searchbox input {
+        padding-bottom: 12px;
+        padding-left: 26px;
+        font-size: 18px;
+        min-height: 38px;
+
+    }
+
+    .searchbox .icon svg {
+        width: 19px;
+        height: 28px;
+    }
+}
+
 .searchbox span {
     position: absolute;
 }
@@ -174,6 +258,53 @@ form {
     display: flex;
 }
 
+.columns button {
+    display: none;
+}
+
+
+@media (max-width: 639px) {
+    .columns {
+        flex-direction: column;
+    }
+    .columns button {
+        display: block;
+        text-align: left;
+    }
+
+    .columns button svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.mobilebtn {
+    background: none;
+    border: 0px;
+    padding: 0px;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: rgb(51, 61, 75);
+    margin-bottom: 40px;
+}
+
+.mobilebtn span {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    min-width: 24px;
+}
+
 aside {
     width: 100%;
     max-width: 200px;
@@ -181,16 +312,40 @@ aside {
     margin-right: 60px;
 }
 
+@media (max-width: 639px) {
+    aside {
+        max-width: 635px;
+    }
+}
+
 .column1 .subnav {
     list-style: none;
 }
+@media (max-width: 639px) {
+    .column1 {
+        display: none;
+    }
+}
+
+
+
+.column1 .subnav .pointer {
+    color: #3182f6;
+}
+
+@media (max-width: 639px) {
+    .column2 li a:hover {
+        color: #0056b3;
+    }
+}
+
 
 .subnav li > a {
     display: flex;
     margin-bottom: 10px;
     text-decoration: none;
     cursor: pointer;
-    padding: 12px 16px;
+    padding: 14px 11px;
     font-size: 20px;
     font-weight: 600;
     color: #8b98a1;
@@ -203,6 +358,7 @@ aside {
 .subnav li > a:hover {
     cursor: pointer;
     background-color: #f2f4f6;
+    color: #0056b3;
 }
 
 .column2 {
@@ -232,6 +388,7 @@ aside {
     border-radius: 8px;
     border: 0;
 }
+
 
 .column2 ul li a {
     display: flex;
@@ -283,8 +440,12 @@ aside {
     padding: 0 6px;
     cursor: pointer;
 }
-.pagination .pagination-list button:hover {
-    background-color: #f2f4f6;
+.pagination .pagination-list .num {
+    background-color: rgba(0, 27, 55, 0.1);
+    border-radius: 18px;
+    min-width: 36px;
+    height: 36px;
+    padding: 0 6px;
 }
 
 .pagination .pagination-list button:active {
@@ -485,6 +646,21 @@ footer {
     justify-content: space-between;
 }
 
+.footer_top ul {
+    list-style: none;
+}
+
+.footer_top ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 30px;
+    color: #6b7684;
+}
+
+.footer_top ul li a:hover {
+    color: #6b769f;
+}
+
 .footer_top ul:first-child {
     margin: 0;
 }
@@ -573,6 +749,8 @@ footer {
 
 .smallListbox li {
     padding-right: 15px;
+    list-style: none;
+
 }
 
 .smallListbox li:last-child {
@@ -582,11 +760,18 @@ footer {
 .smallListbox li a {
     color: #6b7684;
     display: block;
+    text-decoration: none;
+    font-weight: 600;
 }
+
+.smallListbox li a:hover {
+    color: #6b72aa;
+}
+
 
 .smallListbox li a strong {
     color: #333d4b;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 @media only screen and (max-width: 639px) {
@@ -616,8 +801,14 @@ footer {
     display: flex;
 }
 
+.snsbox ul li img{
+    width: 36px;
+    height: 36px;
+}
+
 .snsbox li {
     margin-right: 8px;
+    list-style: none;
 }
 
 .snsbox li a {
