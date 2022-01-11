@@ -15,6 +15,7 @@ header{
     background-color: #ffffff;
     z-index: 88;
     margin-top: -10px;
+    width: 100%;
 }
 /* 성우석 작업 */
 
@@ -162,6 +163,17 @@ form {
     border-bottom: 1px solid #3182f6;
 }
 
+/* 성우석 작업 */
+
+.searchbox input::placeholder{
+    color: #B0B8C1;
+}
+.first_focus{
+    color: #3182f6 !important;
+}
+
+/* 성우석 작업 */
+
 .columns {
     display: flex;
 }
@@ -196,6 +208,7 @@ aside {
     cursor: pointer;
     background-color: #f2f4f6;
 }
+
 
 .column2 {
     display: flex;
@@ -382,14 +395,16 @@ aside {
 }
 .image {
     margin-left: 630px;
-    margin-top: -9px;
+    margin-top: 30px;
     position: absolute;
 }
 
 
 img {
-    width: 340px;
-    height: 340px;
+    /* width: 340px;
+    height: 340px; 3
+    이미지 교체로 인한 너비 조정*/
+    width: 230px;
 }
 
 .mobile {
@@ -668,3 +683,19 @@ footer {
     unicode-range: U+0020-007F, U+00A0-00FF;
     font-display: fallback;
   }
+
+
+  /* 성우석 작업 */
+
+.searchbox input::placeholder{
+    color: #B0B8C1;
+}
+.first_focus{
+    color: #3182f6;
+}
+.first_select_pgn{
+    border-radius: 18px;
+    background-color: #e5e8eb !important;
+    color: #333d4b;
+}
+/* 성우석 작업 */
