@@ -1,0 +1,93 @@
+section {
+  background-color: rgb(29, 29, 33);
+  color: white;
+}
+
+.first-sec {
+  background-color: rgb(14, 16, 16);
+  padding-top: 120px;
+  text-align: center;
+}
+.first-sec .txt-wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+.txt-wrapper h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.txt-wrapper p {
+  font-size: 15px;
+  color: rgb(229, 232, 235);
+}
+.first-sec .img-wrapper {
+  width: 500px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.first-sec img {
+  width: 100%;
+}
+.first-sec img:last-child {
+  width: 50px;
+  opacity: 0.2;
+}
+
+.second-sec {
+  padding: 80px 0 50px 20px;
+}
+.second-sec h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.second-sec p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+.second-sec .img-container img {
+  width: 100%;
+}
+
+.third-sec {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.third-sec h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.third-sec p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.third-sec .iphone {
+  width: 100%;
+  margin: 0 auto;
+  background: #0e0e10;
+}
+.third-sec .iphone img {
+  width: 450px;
+}
+.third-sec .first-content {
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.third-sec .first-content ul {
+  width: 100%;
+  margin-left: 100px;
+}
+.third-sec .first-content li {
+  text-align: left;
+}
+.third-sec .first-content img {
+  margin: 20px 0;
+}
+.third-sec .first-content h4 {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+.third-sec .first-content p {
+  font-size: 15px;
+  color: rgb(209, 214, 219);
+}

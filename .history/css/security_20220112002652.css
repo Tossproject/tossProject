@@ -1,0 +1,29 @@
+.first-sec {
+  background-color: rgb(14, 16, 16);
+  color: white;
+  padding-top: 120px;
+  text-align: center;
+}
+.first-sec .txt-wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+.txt-wrapper h1 {
+  font-size: 36px;
+}
+.txt-wrapper p {
+  font-size: 15px;
+  color: rgb(229, 232, 235);
+}
+.first-sec .img-wrapper {
+  width: 500px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.first-sec img {
+  width: 100%;
+}
+.first-sec img:last-child {
+  width: 50px;
+  opacity: 0.2;
+}
