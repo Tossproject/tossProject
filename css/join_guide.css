@@ -163,7 +163,7 @@ nav {
 
 .toss_nav.active .navicon g {fill: rgb(0, 100, 255);}
 
-.toss_nav.active .toss_nav ul li>a {color: #4e5968;}
+.toss_nav.active ul li a {color: #4e5968;}
 
 @media screen and (max-width: 640px) {
     .mobile-nav button {
@@ -585,26 +585,26 @@ nav {
 /* nav */
 .sidebar {
     display: flex;
-    flex-direction: column;
+    flex: 1 0 360px;
     height: 100%;
     width: 280px;
+    margin: auto;
+    margin-right: 322px;
     min-height: 100px;
-    position: static;
 }
 
 .sidebar-container {
     width: 280px;
     min-height: 100px;
+    top: 640px;
+    right: 253px;
     position: fixed;
-    top: 69%;
-    right: 18%;
 }
 
 .fix {
-    width: 280px;
-    min-height: 100px;
-    position: fixed;
-    top: 133px;
+    position: static;
+    top: 166px;
+    right: 253px;
 }
 
 

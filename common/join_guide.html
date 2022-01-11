@@ -351,22 +351,30 @@
         return false;
     });
 
-    let $logo = $(".navicon g");
-
     $(window).on('scroll',function(e){
+
+        var height = $(document).scrollTop();
+
+
         if($(window).scrollTop()){
             $('.toss_nav').addClass('active');
-            $('.sidebar').removeClass('fix');
 
         } else {
             $('.toss_nav').removeClass('active');
-            $('.sidebar').addClass('fix');
         }
+
+        if(height >=0 || height <= 437) {
+            $(".sidebar").addClass("fix");
+        };
+
+        var divEl = $(".sidebar");
+                            
+        var divX = divEl.offset().left;
+        var divY = divEl.offset().top;
+
+        console.log(divX);
+        console.log(divY);
     });
-
-    $(window)
-
-
 
 
 
