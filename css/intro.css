@@ -23,6 +23,15 @@ header {
   background-color: rgba(217,217,255, 0.11);
 }
 
+.white_nav {
+  color: #4e5968 !important;
+}
+
+.white_nav:hover, .white_nav:active {
+  color: #0056b3 !important;
+  background-color: #F3F2F1 !important;
+}
+
 @media only screen and (min-width: 768px) {
   .toss_nav ul li a {
     padding: 9px 11px;
@@ -85,6 +94,11 @@ header {
   background-color: #121417;
 }
 
+.first-section, .second, .fourth, .fifth, .sixth, .seventh, .footer {
+  z-index: 4;
+}
+
+/* section1 */
 .first-section {
   background: url("../images/intro1.jpg") no-repeat center;
   background-size: cover;
@@ -120,8 +134,14 @@ header {
   text-align: center;
   animation: arrowicon ease 2s;
   animation-iteration-count: infinite;
+  cursor: pointer;
 }
 
+.fas {
+  cursor: pointer;
+}
+
+/* section2 */
 .second-section {
   color: white;
   height: 100vh;
@@ -177,13 +197,14 @@ header {
 }
 
 .second_bg_line {
+  z-index: 3;
+}
+
+.second_bg {
   z-index: 2;
 }
 
-second_bg {
-  z-index: 1;
-}
-
+/* section3 */
 .third-section {
   position: relative;
   width: 100%;
@@ -199,6 +220,8 @@ second_bg {
   left: 0;
   top: 0;
   opacity: 0;
+
+  z-index: 1;
 }
 
 .third-section .modal {
@@ -216,6 +239,8 @@ second_bg {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: -0.04em;
+
+  z-index: 3;
 }
 
 .third-section .modalbox {
@@ -228,6 +253,7 @@ second_bg {
   margin-bottom: 20px;
 }
 
+/* section4 */
 .fourth-section {
   background: #121417;
   color: white;
@@ -242,7 +268,7 @@ second_bg {
 
 ul.year-tab {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border-bottom: 1px solid rgb(78, 89, 104);
   margin-bottom: 20px;
 }
@@ -250,8 +276,9 @@ ul.year-tab {
 ul.year-tab li {
   font-size: 20px;
   color: rgb(78, 89, 104);
+  padding: 0 9px;
+  cursor: pointer;
 }
-
 ul.year-tab li.year-active {
   color: white;
   border-bottom: 2px solid white;
@@ -277,6 +304,7 @@ ul.year-tab li.year-active {
   overflow-x: auto;
 }
 
+/* section5 */
 .fifth-section {
   width: 100vw;
   height: auto;
@@ -322,6 +350,10 @@ ul.year-tab li.year-active {
   letter-spacing: -0.03em;
 }
 
+.finance_ul li div{
+  cursor: pointer;
+}
+
 .fifth-section li .core {
   background: url("../images/intro3.jpg") no-repeat center;
   background-size: cover;
@@ -355,6 +387,7 @@ li .contents h4 {
   background: url("../images/intro8.jpg") no-repeat left center;
 }
 
+/* section6 */
 .sixth-section {
   width: 100vw;
   background-color: #f9fafb;
@@ -381,6 +414,7 @@ li .contents h4 {
   margin-bottom: 41px;
 }
 
+/* section7 */
 .seventh-section {
   padding: 100px 50px;
 }
@@ -484,6 +518,12 @@ li .contents h4 {
 }
 
 @media screen and (max-width: 768px) {
+  .third {
+    overflow-x: scroll;
+  }
+  .sixth-section {
+    overflow-x: scroll;
+  }
   .first-section .txtbox {
     top: 315px;
   }
