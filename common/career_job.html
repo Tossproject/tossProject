@@ -61,15 +61,15 @@
                     </div>
                     <div class="list">
                         <ul>
-                            <li><a href="#">전체</a></li>
-                            <li><a href="#">토스</a></li>
-                            <li><a href="#">토스뱅크</a></li>
-                            <li><a href="#">토스페이먼츠</a></li>
-                            <li><a href="#">토스증권</a></li>
-                            <li><a href="#">토스인슈어런스</a></li>
-                            <li><a href="#">토스씨엑스</a></li>
-                            <li><a href="#">토스신용데이터(가칭)</a></li>
-                            <li><a href="#">Toss Vietnam</a></li>
+                            <li class="div2"><a href="#">전체</a></li>
+                            <li class="div2"><a href="#">토스</a></li>
+                            <li class="div2"><a href="#">토스뱅크</a></li>
+                            <li class="div2"><a href="#">토스페이먼츠</a></li>
+                            <li class="div2"><a href="#">토스증권</a></li>
+                            <li class="div2"><a href="#">토스인슈어런스</a></li>
+                            <li class="div2"><a href="#">토스씨엑스</a></li>
+                            <li class="div2"><a href="#">토스신용데이터(가칭)</a></li>
+                            <li class="div2"><a href="#">Toss Vietnam</a></li>
                         </ul>
     
                     </div>
@@ -86,6 +86,7 @@
             <div class="input-center">
                 <form class="all-box">
                     <input type="text" name="search" class="select" id="slect" placeholder="직무 검색하기">
+                    
                     <select name="select" id="select" >
                         <option value="전체직군(310)">전체직군(310)</option>
                         <option value="Communication">Communication(21)</option>
@@ -237,6 +238,45 @@
             }
         });
     /* nav */
+
+    /* select */
+
+        // 클래스 이름이 div2를 호출하였고 이 호출한 값을 div2에 저장하였음
+        var div2 = document.getElementsByClassName("div2");
+        
+
+        // handleClick(이름은 사용자가 지정) 이라는 함수에
+        // event라는 매게변수가 들어가있음  
+        function handleClick(event){
+
+        
+            console.log(event.target);
+            
+            console.log(event.target.classList);
+
+            if(event.target.classList[1] === "clicked"){
+                event.target.classList.remove("clicked");
+            } else {
+                for(var i = 0; i < div2.length; i++){
+                    div2[i].classList.remove("clicked");
+                }
+                event.target.classList.add("clicked");
+            }
+
+        }
+
+        // init이라는 함수를 동작을 할건데
+        function init(){
+            // 반복문 for을 이용하여 div2의 클래스의 갯수를 정해주었고
+            for (var i = 0; i < div2.length; i++){
+                // div2[0]번째의 이벤트를 등록을 할건데
+                // 클릭을했을때 위에있는 handleClick 이벤트가 발생을 할것임
+                div2[i].addEventListener("click",
+                handleClick);
+            }
+        }
+        init();
+
     </script>
 </body>
 
