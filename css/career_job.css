@@ -129,7 +129,7 @@ option{
 .input-center a:hover{
     background-color: #f2f2f2;
 }
-<<<<<<< HEAD
+
 .text-box{
     display: flex;
     flex-direction: column;
@@ -197,9 +197,4 @@ option{
 }
 .gif-center a:hover{
     background-color: rgba(14, 118, 255, 0.12);
-=======
-
-.clicked{
-    background-color: #f2f2f2;
->>>>>>> 0143982a09d0b88208018dd40c91b4acfd77db19
 }
