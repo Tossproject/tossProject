@@ -79,7 +79,7 @@
 
         </section>
 
-        <!-- section 3-->
+        <!-- 섹션 3-->
 
         <section>
            <div class="input-box">
@@ -87,23 +87,20 @@
                 <form class="all-box">
                     <input type="text" name="search" class="select" id="slect" placeholder="직무 검색하기">
                     <select name="select" id="select" >
-                        <option value="전체직군(310)">전체직군(310)</option>
-                        <option value="Communication">Communication(21)</option>
-                        <option value="Core System">Core System(30)</option>
-                        <option value="Business">Business(5)</option>
-                        <option value="Data">Data(14)</option>
-                        <option value="Design">Design(21)</option>
-                        <option value="Finance">Finance(19)</option>
-                        <option value="Infra">Infra(11)</option>
-                        <option value="Risk">Risk(7)</option>
-                        <option value="People">People(31)</option>
-                        <option value="Product">Product(11)</option>
+                        <option value="Allselect">전체직군 (8)</option>
+                        <option value="Communication" >Communication (3)</option>
+                        <option value="CoreSystem">Core System (2)</option>
+                        <option value="Business">Business (1)</option>
+                        <option value="Data">Data (1)</option>
+                        <option value="Design">Design (1)</option>
+                    
+                      
 
                     </select>
 
-                    <select name="select" id="select">
+                    <select name="select" id="select" class="time-box">
                         <option value="고용형태">고용형태</option>
-                        <option value="단기계약직">단기계약직</option>
+                        <option value="short">단기계약직</option>
                         <option value="정규직">정규직</option>
                         <option value="계약직">계약직</option>
                         <option value="위촉직">위촉직</option>
@@ -119,14 +116,131 @@
                     
                 </form>
                 <a href="#">어떤 포지션을 골라야 할지 모르겠다면?＞</a>
+
+                <div class="text-box">
+                    <a href="#" class="servise">
+                        <div class="hero">
+                            <h3>Customer Hero 8기</h3>
+                        </div>
+
+                        <div class="customer">
+                            <p>고객서비스·상담·서비스·멀티상담</p>
+                        </div>
+
+                        <div class="cx">
+                            <p>토스 씨엑스</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="servise">
+                        <div class="hero">
+                            <h3>Insurance Advisor (위촉직 대면 FC)</h3>
+                        </div>
+                        <div class="customer">
+                            <p>비즈니스·보험영업·보험설계·상담</p>
+                        </div>
+                        <div class="cx">
+                            <p>토스인슈어런스</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="servise">
+                        <div class="hero">
+                            <h3>Open Position</h3>
+                        </div>
+                        <div class="customer">
+                            <p>신용평가·CB·신용데이터</p>
+                        </div>
+                        <div class="cx">
+                            <p>토스신용데이터</p>
+                        </div>
+                    </a>
+
+
+                  
+                        <a href="#" class="core">
+                            <div class="hero">
+                                <h3>Account Manager (간편결제)</h3>
+                            </div>
+                            <div class="customer">
+                                <p>비즈니스·영업관리·상담</p>
+                            </div>
+                            <div class="cx">
+                                <p>토스</p>
+                            </div>
+                        </a>
+                   
+                  
+
+                        <a href="#" class="core">
+                            <div class="hero">
+                                <h3>Advocacy Manager</h3>
+                            </div>
+                            <div class="customer">
+                                <p>개발·Android·Kotlin</p>
+                            </div>
+                            <div class="cx">
+                                <p>토스</p>
+                            </div>
+                        </a>
+                   
+
+                    
+                        <a href="#" class="business">
+                            <div class="hero">
+                                <h3>Asset Manager</h3>
+                            </div>
+                            <div class="customer">
+                                <p>경영지원·서비스·음료제조</p>
+                            </div>
+                            <div class="cx">
+                                <p>토스</p>
+                            </div>
+                        </a>
+                    
+                    
+
+                    <a href="#" class="special">
+                        <div class="hero">
+                            <h3>Bank CH Team Leader</h3>
+                        </div>
+                        <div class="customer">
+                            <p>경영지원·서비스·음료제조</p>
+                        </div>
+                        <div class="cx">
+                            <p>토스씨엑스</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="design">
+                        <div class="hero">
+                            <h3>Bank Operations Specialist</h3>
+                        </div>
+                        <div class="customer">
+                            <p>디자인·브랜딩</p>
+                        </div>
+                        <div class="cx">
+                            <p>토스</p>
+                        </div>
+                    </a>
+                    
+                   
+                       
+
+                </div>
+
+                <div class="gif-center">
+                    <img src="../images/icons8-square-spinner.gif">
+                    <p>검색한 결과가 없습니다</p>
+                    <a href="#">전체 채용 공고로 돌아가기</a>
+                </div>
+               
+
             </div>
            </div> 
 
 
         </section>
-
-
-
 
 
 
@@ -237,6 +351,60 @@
             }
         });
     /* nav */
+
+        $("#select").on("change",function(){
+            // 사용자가 옵션을 바꿧는지 테스트
+            // console.log("옵션이 바뀌었습니다.");
+            if( $("#select").val() == "Communication" ){
+                $(".servise").show();
+                $(".data").hide();
+                $(".design").hide();
+                $(".special").hide();
+                $(".core").hide();
+                $(".business").hide();
+               
+            } else if( $("#select").val() == "CoreSystem"){
+                $(".servise").hide();
+                $(".data").hide();
+                $(".design").hide();
+                $(".special").hide();
+                $(".core").show();
+                $(".business").hide();
+            } else if( $("#select").val() == "Business"){
+                $(".servise").hide();
+                $(".data").hide();
+                $(".design").hide();
+                $(".special").hide();
+                $(".core").hide();
+                $(".business").show();
+            } else if( $("#select").val() == "Data"){
+                $(".servise").hide();
+                $(".data").hide();
+                $(".design").hide();
+                $(".special").show();
+                $(".core").hide();
+                $(".business").hide();
+            } else if( $("#select").val() == "Design"){
+                $(".servise").hide();
+                $(".data").hide();
+                $(".design").show();
+                $(".special").hide();
+                $(".core").hide();
+                $(".business").hide();
+            } else if( $("#select").val() == "Allselect"){
+                $(".servise").show();
+                $(".data").show();
+                $(".design").show();
+                $(".special").show();
+                $(".core").show();
+                $(".business").show(); 
+            }
+        });
+
+       
+
+
+
     </script>
 </body>
 

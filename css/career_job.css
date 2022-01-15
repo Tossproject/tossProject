@@ -119,3 +119,71 @@
 .input-center a:hover{
     background-color: #f2f2f2;
 }
+.text-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.text-box a{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    text-decoration: none;
+    border-bottom: none;
+
+}
+.hero{
+    color: rgb(25, 31, 40);
+    font-size: 15px;
+    width: 300px;
+    margin-right: 150px;
+}
+
+.customer {
+    color:  rgb(139, 149, 161);
+    line-height: 25px;
+    width: 250px;
+    margin-right: 50px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.cx{
+    color:  rgb(139, 149, 161);
+    line-height: 25px;
+    font-weight: bold;
+    font-size: 13px;
+    
+}
+.gif-center{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    display: none;
+  
+}
+.gif-center img{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+.gif-center p{
+    font-size: 15px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #24282e;
+}
+
+.gif-center a{
+    width: 200px;
+    margin: auto;
+    padding: 20px;
+    border-bottom: none;
+    background-color: rgba(69,147,252,.12);
+    color: rgb(56, 56, 241);
+    font-weight: bold;
+}
+.gif-center a:hover{
+    background-color: rgba(14, 118, 255, 0.12);
+}
