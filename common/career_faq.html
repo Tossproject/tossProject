@@ -231,7 +231,8 @@
                 $("input").toggleClass("clickinput");
 
             } else if($("body").removeClass("clicknav")) {
-                $(".subnav").css("display", "none");
+                $(".column1").css("display", "none");
+                $("body").css("background", "white");
             };
        
         });
@@ -244,6 +245,7 @@
             $(".column1 .subnav .etc").css("color", "#8b98a1");
             $(".column2-top").css("display", "flex");
             $(".column2").css("display", "none");
+
         });
 
         $(".pointer").on("click", function() {
