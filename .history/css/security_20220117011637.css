@@ -1,6 +1,5 @@
 header {
   background-color: transparent;
-  backdrop-filter: blur(50px);
 }
 header nav .navicon a {
   color: white;

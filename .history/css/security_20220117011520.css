@@ -1,6 +1,5 @@
 header {
   background-color: transparent;
-  backdrop-filter: blur(50px);
 }
 header nav .navicon a {
   color: white;
@@ -11,9 +10,7 @@ header nav.toss_nav ul li a {
   color: white;
 }
 header nav.toss_nav ul li a:hover {
-  background-color: #232429;
-  color: white;
-  border-radius: 5px;
+  background-color: rgb(176, 184, 193);
 }
 
 section {
