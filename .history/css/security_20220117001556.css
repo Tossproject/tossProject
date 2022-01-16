@@ -219,7 +219,7 @@ section {
     margin: 0;
   }
   .third-sec .content ul li {
-    width: 310px;
+    width: 300px;
   }
   .third-sec .content ul li img {
     width: 30px;
@@ -228,45 +228,6 @@ section {
     font-size: 24px;
   }
   .third-sec .content ul li p {
-    font-size: 15px;
-  }
-  .fourth-sec .invest h1 {
-    font-size: 48px;
-  }
-  .fourth-sec .invest p {
-    font-size: 16px;
-  }
-  .fourth-sec .invest-img img {
-    width: 500px;
-  }
-  .fourth-sec .rewards ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .fourth-sec .rewards ul li {
-    width: 300px;
-    margin-bottom: 80px;
-  }
-  .fourth-sec .security-first {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    width: 800px;
-    margin: 0 auto;
-  }
-  .fourth-sec .security-first .left-box {
-    width: 370px;
-  }
-  .fourth-sec .security-first .left-box h2 {
-    font-size: 40px;
-  }
-  .fourth-sec .security-first .left-box button {
-    padding: 15px 20px;
-    border-radius: 8px;
-    font-size: 15px;
-  }
-  .fourth-sec .security-first .heartimg img {
-    width: 300px;
+    font-size: 14px;
   }
 }

@@ -167,8 +167,8 @@ section {
   }
   .txt-wrapper {
     position: absolute;
-    top: 350px;
-    left: 150px;
+    top: 200px;
+    left: 300px;
   }
   .txt-wrapper h1 {
     font-size: 64px;
@@ -176,97 +176,8 @@ section {
   .txt-wrapper p {
     font-size: 24px;
   }
+
   .img-wrapper img.lock {
     width: 800px;
-  }
-  .second-sec {
-    max-width: 1000px;
-    margin: 0 auto;
-    position: relative;
-  }
-  .second-sec h2 {
-    font-size: 42px;
-  }
-  .second-sec p {
-    font-size: 18px;
-  }
-  .second-sec .position-box {
-    position: absolute;
-    width: 50%;
-    padding: 70px;
-  }
-  .second-sec .img-container img {
-    border-radius: 30px;
-  }
-  .third-sec .content-container h2 {
-    font-size: 48px;
-  }
-  .third-sec .content-container p {
-    font-size: 18px;
-  }
-  .third-sec .content-container .iphone img {
-    width: 600px;
-  }
-  .third-sec .content {
-    width: 700px;
-    overflow: hidden;
-  }
-  .third-sec .content ul {
-    width: 700px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0;
-  }
-  .third-sec .content ul li {
-    width: 310px;
-  }
-  .third-sec .content ul li img {
-    width: 30px;
-  }
-  .third-sec .content ul li h4 {
-    font-size: 24px;
-  }
-  .third-sec .content ul li p {
-    font-size: 15px;
-  }
-  .fourth-sec .invest h1 {
-    font-size: 48px;
-  }
-  .fourth-sec .invest p {
-    font-size: 16px;
-  }
-  .fourth-sec .invest-img img {
-    width: 500px;
-  }
-  .fourth-sec .rewards ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .fourth-sec .rewards ul li {
-    width: 300px;
-    margin-bottom: 80px;
-  }
-  .fourth-sec .security-first {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    width: 800px;
-    margin: 0 auto;
-  }
-  .fourth-sec .security-first .left-box {
-    width: 370px;
-  }
-  .fourth-sec .security-first .left-box h2 {
-    font-size: 40px;
-  }
-  .fourth-sec .security-first .left-box button {
-    padding: 15px 20px;
-    border-radius: 8px;
-    font-size: 15px;
-  }
-  .fourth-sec .security-first .heartimg img {
-    width: 300px;
   }
 }

@@ -261,12 +261,9 @@ section {
   .fourth-sec .security-first .left-box h2 {
     font-size: 40px;
   }
-  .fourth-sec .security-first .left-box button {
-    padding: 15px 20px;
-    border-radius: 8px;
-    font-size: 15px;
+  .fourth-sec .security-first .left-box p {
   }
   .fourth-sec .security-first .heartimg img {
-    width: 300px;
+    width: 270px;
   }
 }
