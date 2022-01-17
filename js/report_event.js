@@ -371,7 +371,7 @@ hd_text_wrapper[1].onclick = () => {
 let go_safety = document.querySelector('.go_safety');
 
 go_safety.onclick = () => {
-    window.location.href = './safety.h'
+    window.location.href = './safety.html';
 }
 
 //제목누르면 해당 박스 나오기
