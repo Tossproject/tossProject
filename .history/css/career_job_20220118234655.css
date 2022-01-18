@@ -1,5 +1,5 @@
-header {
-  border-bottom: 1px solid rgba(0, 27, 55, 0.1);
+header nav.toss_nav {
+  border-bottom: rgba(0, 27, 55, 0.5);
 }
 header nav.toss_nav .navicon a {
   color: rgb(0, 100, 255);
@@ -38,7 +38,6 @@ header nav.toss_nav ul li a:hover {
 }
 .goal-text {
   margin-bottom: 60px;
-  display: none;
 }
 .goal-text h1 {
   font-size: 35px;
@@ -79,10 +78,6 @@ header nav.toss_nav ul li a:hover {
   padding: 10px;
   border-radius: 20px;
 }
-.list ul li a:hover {
-  color: #191f28;
-  font-weight: bold;
-}
 .input-center {
   width: 1030px;
   margin: 50px auto;
@@ -106,7 +101,6 @@ header nav.toss_nav ul li a:hover {
   border-radius: 5px;
   border: 1px solid rgb(228, 225, 225);
   outline-color: rgb(33, 33, 243);
-  font-weight: bold;
 }
 .select:hover {
   border: 1px solid rgb(97, 97, 238);
@@ -116,19 +110,16 @@ header nav.toss_nav ul li a:hover {
   border-radius: 5px;
   margin-left: 10px;
   border: 1px solid rgb(228, 225, 225);
-  color: #24282e;
+  color: #575656;
   appearance: none;
   background: url(../images/down.png) no-repeat right 20px center;
   background-size: 15px;
-  font-weight: bold;
+
   filter: opacity(0.7);
 }
 
 #select:hover {
   border: 1px solid rgb(97, 97, 238);
-}
-#select:focus {
-  outline-color: rgb(33, 33, 243);
 }
 option {
   font-size: 19px;
@@ -153,7 +144,6 @@ option {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  display: none;
 }
 .text-box a {
   display: flex;

@@ -188,7 +188,7 @@ option {
   flex-direction: column;
   text-align: center;
   margin-top: 40px;
-  display: none;
+  /* display: none; */
 }
 .gif-center img {
   margin: auto;

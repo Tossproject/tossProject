@@ -106,7 +106,6 @@ header nav.toss_nav ul li a:hover {
   border-radius: 5px;
   border: 1px solid rgb(228, 225, 225);
   outline-color: rgb(33, 33, 243);
-  font-weight: bold;
 }
 .select:hover {
   border: 1px solid rgb(97, 97, 238);
@@ -116,7 +115,7 @@ header nav.toss_nav ul li a:hover {
   border-radius: 5px;
   margin-left: 10px;
   border: 1px solid rgb(228, 225, 225);
-  color: #24282e;
+  color: #575656;
   appearance: none;
   background: url(../images/down.png) no-repeat right 20px center;
   background-size: 15px;
