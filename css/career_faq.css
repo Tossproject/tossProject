@@ -536,18 +536,19 @@ article .qcontent {
     margin: 0 auto;
     display: block;
     margin-left: -8px;
+    text-align: center;
 }
 .pagination .pagination-list {
     display: flex;
-    margin: 0;
-    padding: 0;
     list-style: none;
     border: 0;
     margin-left: 259px;
 }
 .pagination .pagination-list li {
-    margin: 0;
     list-style-type: none;
+    width: 30px;
+    height: 28px;
+    margin-left: 10px;
 }
 
 .pagination .pagination-list li::before {
@@ -556,28 +557,27 @@ article .qcontent {
 
 .pagination .pagination-list button {
     width: 36px;
-    height: 36px;
     border: 0;
     border-radius: 18px;
     background: none;
     outline: none;
-    padding: 0 6px;
     cursor: pointer;
 }
-.pagination .pagination-list .num {
-    background-color: rgba(0, 27, 55, 0.1);
+.pagination .pagination-list a {
     border-radius: 18px;
-    min-width: 36px;
-    height: 36px;
+
     padding: 0 6px;
+    text-decoration: none;
+
 }
 
-.pagination .pagination-list button:active {
-    border-radius: 18px;
-    background-color: #e5e8eb;
-    color: #333d4b;
+.active{
+    background-color: #ccc;
+    border-radius: 25px;
 }
-.pagination .pagination-list .num {
+
+
+.pagination .pagination-list a {
     font-size: 17px;
     color: #6b7684;
     font-weight: 600;
@@ -991,3 +991,63 @@ footer {
     unicode-range: U+0020-007F, U+00A0-00FF;
     font-display: fallback;
   }
+
+
+ /* section 4 */
+
+
+  .greencolor{
+      background-color: #EEF6F3;
+      height: 350px;
+  }
+  .green-center{
+      width: 960px;
+      margin: 50px auto;
+      display: flex;
+  }
+  .hours{
+      margin: 50px 100px 0 150px;
+  }
+.hours h2{
+    color: #333d4b;
+}
+  .four{
+      font-size: 19px;
+      margin-top: 20px;
+        margin-bottom: 50px;
+      color: #333d4b;
+      font-weight: 500;
+  }
+
+.hours ul{
+    display: flex;
+    margin-top: 20px;
+    background: url(../images/vertical-line.png) no-repeat center left 120px;
+    background-size: contain;
+    backdrop-filter:initial;
+    filter: opacity(0.6);
+  }
+.hours ul li{
+    list-style: none;
+    margin-right: 50px;
+
+}
+ 
+  .four-number{
+      font-size: 23px;
+      font-weight: 600;
+  }
+.four-cus{
+    font-size: 14px;
+}
+#four-cus{
+    margin-left: 50px;
+}
+.four-sum{
+    margin-left: 20px;
+}
+.handle img{
+    width: 200px;
+    height: 200px;
+    margin-top: 60px;
+}
