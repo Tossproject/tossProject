@@ -1,0 +1,9 @@
+.first-section {
+  background: url("../images/intro1.jpg") no-repeat center;
+  background-size: cover;
+  height: 1400px;
+  color: white;
+}
+
+.first-section h3 {
+}
