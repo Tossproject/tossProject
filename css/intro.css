@@ -3,7 +3,9 @@ header {
   background: transparent;
   border: none;
 }
-
+section{
+  position: relative;
+}
 .toss_nav .logo {
   filter: brightness(0) invert(1);
 }
@@ -113,7 +115,10 @@ header {
   right: 0;
   bottom: 0;
   left: 0;
-  top: 171px;
+  /* 성우석 수정부분 */
+  top: 218px;
+  /* 성우석 수정부분 */
+  
   display: flex;
   flex-direction: column;
 }
@@ -149,7 +154,6 @@ header {
 }
 
 .secondbox {
-  position: relative;
   z-index: 10;
 }
 
@@ -190,8 +194,11 @@ header {
 
 .second-section img {
   width: 95%;
-  height: 727px;
+  height: 100%;
+  /* 성우석 수정 */
   position: absolute;
+  top: 37%;
+  /* 성우석 수정 */
   bottom: 0;
   right: 0;
 }
@@ -206,6 +213,7 @@ header {
 
 /* section3 */
 .third-section {
+  margin-top: 1px;
   position: relative;
   width: 100%;
   height: 200vh;
@@ -220,7 +228,6 @@ header {
   left: 0;
   top: 0;
   opacity: 0;
-
   z-index: 1;
 }
 
@@ -228,7 +235,7 @@ header {
   background: rgba(26, 30, 36, 0.65);
   backdrop-filter: blur(30px);
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
   border-radius: 15px;
   padding: 40px 15px;
   position: absolute;
@@ -239,7 +246,6 @@ header {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: -0.04em;
-
   z-index: 3;
 }
 
@@ -257,6 +263,7 @@ header {
 .fourth-section {
   background: #121417;
   color: white;
+  position: relative;
   padding-bottom: 100px;
 }
 
@@ -300,9 +307,6 @@ ul.year-tab li.year-active {
 .annual-contents p {
   margin-top: 5px;
 }
-.annual-wrapper {
-  overflow-x: auto;
-}
 
 /* section5 */
 .fifth-section {
@@ -339,9 +343,14 @@ ul.year-tab li.year-active {
   margin-left: 15px;
   width: 90vw;
   height: 400px;
+  position: relative;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 10px;
+  /* 성우석 수정 */
+  overflow: hidden;
+  z-index: 1;
+  /* 성우석 수정 */
 }
 
 .finance_ul li p {
@@ -385,6 +394,98 @@ li .contents h4 {
 
 .fifth-section li .c-ex {
   background: url("../images/intro8.jpg") no-repeat left center;
+}
+
+.filterBlur{
+  filter: blur(30px);
+  transform: scale(1.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  display: none;
+}
+
+.fb_core{
+  background: url("../images/intro3.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.fb_stock{
+  background: url("../images/intro4.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.fb_pay{
+  background: url("../images/intro5.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.fb_insure{
+  background: url("../images/intro6.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.fb_bank{
+  background: url("../images/intro7.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.fb_cx{
+  background: url("../images/intro8.jpg") no-repeat left center;
+  background-size: cover;
+}
+
+.click_contents{
+  z-index: 3;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
+
+
+.click_contents>h4{
+  font-size: 20px !important;
+}
+.click_contents>img{
+  transform: rotate(45deg);
+}
+
+.click_button{
+  width: 100%;
+  height: 100%;
+  z-index:999;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.dp_click{
+  position: absolute;
+  top: 23%;
+  left: 20px;
+  z-index:99;
+  font-weight: 800;
+  font-size: 14px;
+  display: none;
+}
+.dp_click a{
+  display: block;
+  margin-top: 30px;
+  color: #0E82FF;
+}
+
+.dp_click a:hover{
+  color: #0056b3;
 }
 
 /* section6 */
@@ -432,7 +533,6 @@ li .contents h4 {
   font-weight: bold;
   color: #4e5968;
   margin-bottom: 30px;
-  overflow-x: auto;
 }
 
 .seventh-section nav ul li {
@@ -516,23 +616,39 @@ li .contents h4 {
     padding: 20px 31px;
   }
 }
+@media screen and (max-width: 1300px) {
+  .second-section img{
+    top: 65%;
+  }
 
+}
 @media screen and (max-width: 768px) {
+   /* 
+   성우석 수정
   .third {
     overflow-x: scroll;
+    
   }
   .sixth-section {
     overflow-x: scroll;
-  }
+  } */
+
   .first-section .txtbox {
     top: 315px;
   }
+  .second-section img{
+    top: 10%;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
+  /* 
+  성우석 수정부분
   .first-section .txtbox {
     top: 503px;
-  }
+  } */
+
   .fifth-section .txt {
     text-align: center;
     margin: 100px auto;
@@ -552,7 +668,7 @@ li .contents h4 {
   }
   .second-section h4,
   .second-section ul {
-    max-width: 1200px;
+    max-width: 1000px;
   }
   .second-section h4 {
     text-align: left;
@@ -573,7 +689,7 @@ li .contents h4 {
   .second-section h3 {
     font-size: 66px;
   }
-  .second-section li.mr {
+  .second-section .mr {
     margin-right: 400px;
   }
   .second-section .pl {
@@ -594,7 +710,74 @@ li .contents h4 {
   .fourth-section .annual-wrapper {
     display: flex;
     justify-content: center;
+    height: 100%;
   }  
+  /* 성우석 수정 */
+  .time_stamp{
+    width: 10px;
+    height: 600px;
+    position: relative;
+    left: -40px;
+    top: 10px;
+
+  }
+
+  .time_stamp div{
+    width: 1px;
+    height: 100%;
+    border: 1px solid #333D4B;
+    background-color: #333D4B;
+    z-index: 1;
+  }
+  
+
+  .dot_style{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #333D4B;
+    z-index: 2;
+    left: -4px;
+    box-sizing: content-box;
+    cursor: pointer;
+  }
+  .dot1{
+    top: 0;
+    outline: 6px solid white;
+  }
+
+  .dot2{
+    top: 65px;
+  }
+
+  .dot3{
+    top: 132px;
+  }
+
+  .dot4{
+    top: 200px;
+  }
+
+  .dot5{
+    top: 268px;
+  }
+
+  .dot6{
+    top: 333px;
+  }
+
+  .dot7{
+    top: 401px;
+  }
+  .dot8{
+    top: 470px;
+  }
+  .dot9{
+    top: 536px;
+  }
+  /* 성우석 수정 */
+
   ul.year-tab {
     display: block;
     border: none;
@@ -638,6 +821,7 @@ li .contents h4 {
     border-radius: 10px;
     padding: 32px;
     margin-bottom: 10px;
+    position: relative;
   }
   .fifth-section li .contents h4 {
     font-size: 32px;
@@ -648,6 +832,101 @@ li .contents h4 {
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  /* 성우석 작성 */
+  .filterBlur{
+    filter: blur(30px);
+    transform: scale(1.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+  }
+  
+  .fb_core{
+    background: url("../images/intro3.jpg") no-repeat center;
+    background-size: cover;
+  }
+  
+  .fb_stock{
+    background: url("../images/intro4.jpg") no-repeat center;
+    background-size: cover;
+  }
+  
+  .fb_pay{
+    background: url("../images/intro5.jpg") no-repeat center;
+    background-size: cover;
+  }
+  
+  .fb_insure{
+    background: url("../images/intro6.jpg") no-repeat center;
+    background-size: cover;
+  }
+  
+  .fb_bank{
+    background: url("../images/intro7.jpg") no-repeat center;
+    background-size: cover;
+  }
+  
+  .fb_cx{
+    background: url("../images/intro8.jpg") no-repeat left center;
+    background-size: cover;
+  }
+  
+  .click_contents{
+    z-index: 3;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 20px;
+  }
+  
+  
+  .click_contents>h4{
+    font-size: 20px !important;
+  }
+  .click_contents>img{
+    transform: rotate(45deg);
+  }
+  
+  .click_button{
+    width: 100%;
+    height: 100%;
+    z-index:999;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .dp_click{
+    position: absolute;
+    top: 23%;
+    left: 20px;
+    z-index:99;
+    font-weight: 800;
+    font-size: 14px;
+    display: none;
+  }
+  .dp_click a{
+    display: block;
+    margin-top: 30px;
+    color: #0E82FF;
+  }
+  
+  .dp_click a:hover{
+    color: #0056b3;
+  }
+
+  /* 성우석 작성 */
 
   .sixth-section {
     padding: 100px 40px;
@@ -702,5 +981,20 @@ li .contents h4 {
 @media screen and (max-width: 360px) {
   .sixth-section .investor {
     flex-direction: column;
+  }
+}
+
+/* 성우석 수정 */
+
+
+
+@keyframes fadeInUpcontents {
+  0% {
+    margin-top: 30px;
+    opacity: 0;
+  }
+  to {
+      opacity: 1;
+      margin-top: 0px;
   }
 }
