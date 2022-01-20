@@ -97,7 +97,7 @@ ul {
 }
 
 .toss_nav ul li a:hover, .toss_nav ul li a:active {
-    color: #0056b3;
+    border-radius: 4px;
     background-color: #f2f4f6;
 }
 
@@ -148,6 +148,23 @@ nav {
     display: block;
 }
 
+.toss_nav g {
+    fill: white;
+}
+
+.active {
+    background-color: #fff;
+    -webkit-transition-duration:0.2s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.4s;
+    transition-timing-function:ease;
+    border-bottom: 1px solid rgba(0, 27, 55, 0.1);
+}
+
+.toss_nav.active .navicon g {fill: rgb(0, 100, 255);}
+
+.toss_nav.active ul li a {color: #4e5968;}
+
 @media screen and (max-width: 640px) {
     .mobile-nav button {
         display: block;
@@ -171,7 +188,6 @@ nav {
     display: flex;
     padding-top: 310px;
     margin: auto;
-    padding-left: 16px;
 }
 
 .header-wrapper {
@@ -206,6 +222,7 @@ nav {
 }
 
 /* 본문 */
+
 
 
 .contentnonavi {
@@ -549,6 +566,7 @@ nav {
     align-items: center;
     text-align: center;
     text-decoration: none;
+    border-radius: 6px;
     background-color: rgba(69, 147, 252, .12);
     border: 0;
     margin: 1px 0 0;
@@ -559,20 +577,37 @@ nav {
     position: relative;
 }
 
+.welcome-container a:hover {
+    background-color: #c9e2ff;
+}
+
+
 /* nav */
 .sidebar {
     display: flex;
-    flex-direction: column;
+    flex: 1 0 360px;
     height: 100%;
+    width: 280px;
+    margin: auto;
+    margin-right: 322px;
+    min-height: 100px;
 }
 
 .sidebar-container {
     width: 280px;
     min-height: 100px;
+    top: 640px;
+    right: 253px;
     position: fixed;
-    top: 133px;
-    right: 236px;
 }
+
+.fix {
+    position: static;
+    top: 166px;
+    right: 253px;
+}
+
+
 .sidebar-container .side-content {
     padding: 14px 0px;
     cursor: pointer;
