@@ -2,6 +2,7 @@ html, body{
     width:100%;
     overflow-x:hidden;
     letter-spacing: -0.03em;
+    position: relative;
 }
 
 /* header */
@@ -57,6 +58,7 @@ header {
 section {
     width: 100%;
     margin: 0 auto;
+    position: relative;
 }
 
 /* 섹션1 */
@@ -65,7 +67,7 @@ section {
     height: 100vh;
 }
 
-.first-sec {
+.first-secBg {
     background: url("../images/vision-pc@2x.jpg") no-repeat center center;
     background-size: cover;
     width: 100%;
@@ -73,11 +75,24 @@ section {
     position: fixed;
     display: flex;
     flex-direction: column;
+    z-index: -1;
 }
 
+
+.first-sec{
+    max-width: 783px;
+    width: 100%;
+    height: 200vh;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
 .first_text {
     color: #fff;
     text-align: center;
+    padding-top: 190px;
+    position: fixed;
+    
 }
 
 @keyframes arrowicon {
@@ -96,15 +111,20 @@ section {
   }
 
   
-.first-sec .icontxt {
+.icontxt {
   margin-top: 40px;
   text-align: center;
   animation: arrowicon ease 2s;
   animation-iteration-count: infinite;
 }
 
-.first-sec .icontxt i {
+.icontxt i {
     font-size: 26px;
+}
+
+.text_2, .text_3{
+    opacity: 0 ;
+    padding-top: 250px;
 }
 
 .text_1 h2 {
@@ -133,7 +153,9 @@ section {
 
 /* 섹션2 */
 .second {
+    margin-top: 1700px;
     max-width: 900px;
+    position: relative;
 }
 
 .second-sec {
@@ -143,6 +165,7 @@ section {
 .videobox {
     position: relative;
     padding-bottom: 56.25%;
+    width: 100%;
 }
 
 iframe {
@@ -157,7 +180,7 @@ iframe {
 
 .second_text {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     margin-top: 60px;
 }
@@ -165,16 +188,22 @@ iframe {
 .second_text .text_left {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px 40px;
 }
 
 .second_text .text_right {
     display: flex;
+    width: 100%;
     flex-direction: column;
+    margin-left: 30px;
+    align-items: flex-start;
 }
 
 .second_text h2 {
     color: #212529;
-    font-size: 32px;
+    font-size: 27px;
     font-weight: bold;
     line-height: 43px;
 }
@@ -182,11 +211,12 @@ iframe {
 .second_text p {
     color: #333d4b;
     font-size: 17px;
+    font-weight: 800;
 }
 
 .second svg {
     height: 19px;
-    width: 100%;
+    margin-bottom: 25px;
 }
 
 .second a button {
@@ -212,7 +242,38 @@ iframe {
 }
 
 /* 섹션3 */
+.third img{
+    width: 120%;
+}
 
+.ani_tr{
+    width: 5220px;
+    height: 172px;
+    margin-bottom: 12px;
+}
+.left_transform{
+    background: url(https://static.toss.im/assets/career/2021/pc-outro-1.png) 0px center / 33.3% repeat-x;
+    animation: 75s ease 0s infinite normal none running slide;
+
+}
+.right_transform{
+    background: url(https://static.toss.im/assets/career/2021/pc-outro-2.png) 0px center / 33.3% repeat-x;
+    animation: 75s ease-out 0s infinite reverse none running slide;
+}
+.dp_ani{
+    background: url(https://static.toss.im/assets/career/2021/pc-outro-1.png) 0px center / 33.3% repeat-x;
+    animation: 75s ease 0s infinite normal none running slide; 
+    display: none;     
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0px, 0px, 0px);    
+    }
+    100% {
+        transform: translate3d(-732px, 0px, 0px);
+    }
+  }
 
 /* 섹션4 */
 .fourth {
@@ -246,4 +307,94 @@ iframe {
 
 .fourth a button:hover, .fourth a button:active {
     background-color: #1b64da;
+}
+
+
+
+/* 반응형 웹 */
+@media only screen and (max-width: 768px) {
+    .first-sec{
+        max-width: 385px;
+        width: 100%;
+    }
+    .text_1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+        margin: 0 auto;
+    }
+    .text_1 h2 {
+        font-size: 34px;
+        line-height: 42px;
+
+    }
+    .text_1 p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    
+    .text_2 h2 {
+        margin-left: 10px;
+        line-height: 36px;
+        font-size: 27px;
+    }
+    
+    .text_3 h2 {
+        max-width: 300px;
+        font-size: 18px;
+        width: 100%;
+        margin-left: 42px;
+        line-height: 20px;
+        display: block;
+    }
+
+    .second_text {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .ani_tr{
+        width: 3000px;
+        height: 100px;
+        margin-bottom: 6px;
+    }
+    .dp_ani{
+        display: block;     
+    }
+
+    .fourth h2 {
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 23px;
+    }
+    
+    .fourth p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 46px;
+    }
+    .btn_fixed_wrapper{
+        width: 100%;
+        position: fixed;
+        bottom: 10px;
+        z-index: 100;
+
+    }
+
+    .btn_fixed_wrapper a button{
+        background-color: #3182f6;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 18px 28px;
+        width: 98%;
+        border-radius: 8px;
+        margin: 5px;
+    }
+
+    .btn_fixed_wrapper a button:hover,  .btn_fixed_wrapper a button:active {
+        background-color: #1b64da;
+    }
 }
