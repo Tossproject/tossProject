@@ -1,0 +1,1012 @@
+/* header */
+header {
+  background: transparent;
+  border: none;
+}
+section{
+  position: relative;
+}
+.toss_nav .logo {
+  filter: brightness(0) invert(1);
+}
+
+.icon, .icon2 {
+  background-image: linear-gradient(#fff 2px, transparent 2px);
+}
+
+.toss_nav ul li a {
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.toss_nav ul li a:hover, .toss_nav ul li a:active {
+  color: #fff;
+  background-color: rgba(217,217,255, 0.11);
+}
+
+.white_nav {
+  color: #4e5968 !important;
+}
+
+.white_nav:hover, .white_nav:active {
+  color: #0056b3 !important;
+  background-color: #F3F2F1 !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .toss_nav ul li a {
+    padding: 9px 11px;
+    padding-top: 13px;
+  }
+
+  .toss_nav .logo svg {
+    width: 78px;
+    height: 20px;
+  }
+}
+
+/* section animation */
+@keyframes img_bg {
+  0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;         
+}
+}
+
+@keyframes secionimg_line {
+  0% {
+      clip: rect(727px, 1808px, 727px, 0 );
+  }
+  100% {
+      clip: rect(0px, 1808px, 727px, 0 );          
+  }
+}
+
+@keyframes moticon {
+  0% {
+      opacity: 0;
+      transform: translateY(27px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0px);            
+  }
+}
+
+@keyframes arrowicon {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-7px);  
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0px);         
+  }
+}
+
+@keyframes sec_4 {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);         
+  }
+}
+
+
+/* section */
+.block_bg {
+  background-color: #121417;
+}
+
+.first-section, .second, .fourth, .fifth, .sixth, .seventh, .footer {
+  z-index: 4;
+}
+
+/* section1 */
+.first-section {
+  background: url("../images/intro1.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.first-section .txtbox {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* 성우석 수정부분 */
+  top: 218px;
+  /* 성우석 수정부분 */
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.first-section .txt {
+  text-align: center;
+}
+
+.first-section .txt p {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  animation: moticon ease 0.8s forwards;
+}
+
+.first-section .icontxt {
+  margin-top: 25px;
+  text-align: center;
+  animation: arrowicon ease 2s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+.fas {
+  cursor: pointer;
+}
+
+/* section2 */
+.second-section {
+  color: white;
+  height: 100vh;
+  position: relative;
+}
+
+.secondbox {
+  z-index: 10;
+}
+
+.second-section h4 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 100px;
+}
+
+.second-section ul {
+  margin-left: 5%;
+  z-index: 2;
+}
+
+.pl {
+  margin-left: 5%;
+}
+
+.second-section ul li {
+  margin-bottom: 30px;
+}
+
+.second-section p {
+  color: #b0b8c1;
+  letter-spacing: -1px;
+  font-size: 17px;
+}
+
+.second-section h3 {
+  font-size: 40px;
+}
+
+.second-section span {
+  color: #6b7684;
+  font-size: 15px;
+  letter-spacing: -1px;
+}
+
+.second-section img {
+  width: 95%;
+  height: 100%;
+  /* 성우석 수정 */
+  position: absolute;
+  top: 37%;
+  /* 성우석 수정 */
+  bottom: 0;
+  right: 0;
+}
+
+.second_bg_line {
+  z-index: 3;
+}
+
+.second_bg {
+  z-index: 2;
+}
+
+/* section3 */
+.third-section {
+  margin-top: 1px;
+  position: relative;
+  width: 100%;
+  height: 200vh;
+}
+
+.third_img {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/intro2.jpg") no-repeat center center;
+  background-size: cover;
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.third-section .modal {
+  background: rgba(26, 30, 36, 0.65);
+  backdrop-filter: blur(30px);
+  width: 90%;
+  margin: 0 auto 30px auto;
+  border-radius: 15px;
+  padding: 40px 15px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.04em;
+  z-index: 3;
+}
+
+.third-section .modalbox {
+  text-align: center;
+}
+
+.third-section h4 {
+  color: #b0b8c1;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+/* section4 */
+.fourth-section {
+  background: #121417;
+  color: white;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.fourth-section h3 {
+  font-size: 36px;
+  padding: 40px;
+  margin-bottom: 42px;
+}
+
+ul.year-tab {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(78, 89, 104);
+  margin-bottom: 20px;
+}
+
+ul.year-tab li {
+  font-size: 20px;
+  color: rgb(78, 89, 104);
+  padding: 0 9px;
+  cursor: pointer;
+}
+ul.year-tab li.year-active {
+  color: white;
+  border-bottom: 2px solid white;
+}
+.annual-contents {
+  padding: 10px 25px;
+}
+
+.annual-contents li {
+  margin-bottom: 50px;
+}
+
+.annual-contents span {
+  color: rgb(139, 149, 161);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.annual-contents p {
+  margin-top: 5px;
+}
+
+/* section5 */
+.fifth-section {
+  width: 100vw;
+  height: auto;
+  padding: 80px 0;
+}
+
+.fifth-section img {
+  width: 22.4px;
+  height: 22.4px;
+}
+
+.fifth-section li {
+  padding-left: 15px;
+}
+
+.fifth-section .finance h3 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fifth-section .finance p {
+  font-size: 20px;
+  text-align: center;
+  color: #4e5968;
+  margin-bottom: 40px;
+  letter-spacing: -0.03em;
+}
+
+.fifth-section li .contents {
+  background-size: cover;
+  margin-left: 15px;
+  width: 90vw;
+  height: 400px;
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+  /* 성우석 수정 */
+  overflow: hidden;
+  z-index: 1;
+  /* 성우석 수정 */
+}
+
+.finance_ul li p {
+  font-size: 15px;
+  color: #4e5968;
+  letter-spacing: -0.03em;
+}
+
+.finance_ul li div{
+  cursor: pointer;
+}
+
+.fifth-section li .core {
+  background: url("../images/intro3.jpg") no-repeat center;
+  background-size: cover;
+}
+
+li .contents h4 {
+  color: #333d4b;
+  font-size: 28px;
+  letter-spacing: -0.07em;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+.fifth-section li .stock {
+  background: url("../images/intro4.jpg") no-repeat center;
+}
+
+.fifth-section li .pay {
+  background: url("../images/intro5.jpg") no-repeat center;
+}
+
+.fifth-section li .insure {
+  background: url("../images/intro6.jpg") no-repeat center;
+}
+
+.fifth-section li .bank {
+  background: url("../images/intro7.jpg") no-repeat center;
+}
+
+.fifth-section li .c-ex {
+  background: url("../images/intro8.jpg") no-repeat left center;
+}
+
+.filterBlur{
+  filter: blur(30px);
+  transform: scale(1.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  display: none;
+}
+
+.fb_core{
+  background: url("../images/intro3.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.fb_stock{
+  background: url("../images/intro4.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.fb_pay{
+  background: url("../images/intro5.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.fb_insure{
+  background: url("../images/intro6.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.fb_bank{
+  background: url("../images/intro7.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.fb_cx{
+  background: url("../images/intro8.jpg") no-repeat left center;
+  background-size: cover;
+}
+
+.click_contents{
+  z-index: 3;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
+
+
+.click_contents>h4{
+  font-size: 20px !important;
+}
+.click_contents>img{
+  transform: rotate(45deg);
+}
+
+.click_button{
+  width: 100%;
+  height: 100%;
+  z-index:999;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.dp_click{
+  position: absolute;
+  top: 23%;
+  left: 20px;
+  z-index:99;
+  font-weight: 800;
+  font-size: 14px;
+  display: none;
+}
+.dp_click a{
+  display: block;
+  margin-top: 30px;
+  color: #0E82FF;
+}
+
+.dp_click a:hover{
+  color: #0056b3;
+}
+
+/* section6 */
+.sixth-section {
+  width: 100vw;
+  background-color: #f9fafb;
+  padding: 50px 20px;
+}
+
+.sixth-section .investor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.sixth-section img {
+  width: 180px;
+  height: 80px;
+  display: block;
+}
+
+.sixth-section h3 {
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  margin-bottom: 41px;
+}
+
+/* section7 */
+.seventh-section {
+  padding: 100px 50px;
+}
+
+.seventh-section h3 {
+  font-size: 32px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.seventh-section nav ul {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4e5968;
+  margin-bottom: 30px;
+}
+
+.seventh-section nav ul li {
+  margin-right: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.seventh-section nav ul li.news-active {
+  background-color: #f2f4f6;
+  border-radius: 20px;
+  color: black;
+}
+
+.newbox {
+  position: relative;
+}
+
+.news-contents {
+  margin-top: 70px;
+}
+
+.news-contents span {
+  color: rgb(49, 130, 246);
+  margin-right: 10px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.news-contents p {
+  font-size: 14px;
+  color: rgb(176, 184, 193);
+  font-weight: 500;
+}
+
+.news-contents h4 {
+  color: rgb(51, 61, 75);
+  padding: 7px 0;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.news-contents li {
+  border-bottom: 1px solid rgba(69, 79, 93, 0.07);
+  margin-bottom: 30px;
+}
+
+.news-contents li:hover, .news-contents li:active {
+  transform: scale(1.02);
+  transition: all 0.35s ease 0s;
+}
+
+.news-contents li:hover img, .news-contents li:active img {
+  opacity: 0.7;
+}
+
+.news-contents img {
+  display: none;
+}
+
+.seventh-section button {
+  display: block;
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: none;
+  margin-top: 70px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #4e5968;
+  cursor: pointer;
+}
+
+.seventh-section button:active, .seventh-section button:hover {
+  background: #D1D6DB;
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width: 360px) {
+  .second-section {
+    padding: 20px 31px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .second-section img{
+    top: 65%;
+  }
+
+}
+@media screen and (max-width: 768px) {
+   /* 
+   성우석 수정
+  .third {
+    overflow-x: scroll;
+    
+  }
+  .sixth-section {
+    overflow-x: scroll;
+  } */
+
+  .first-section .txtbox {
+    top: 315px;
+  }
+  .second-section img{
+    top: 10%;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  /* 
+  성우석 수정부분
+  .first-section .txtbox {
+    top: 503px;
+  } */
+
+  .fifth-section .txt {
+    text-align: center;
+    margin: 100px auto;
+  }
+  .first-section .txt p {
+    font-size: 72px;
+  }
+  .first-section i {
+    font-size: 31px;
+  }
+  .icontxt {
+    text-align: center;
+    margin-top: 90px !important;
+  }
+  .second-section {
+    padding: 200px 0;
+  }
+  .second-section h4,
+  .second-section ul {
+    max-width: 1000px;
+  }
+  .second-section h4 {
+    text-align: left;
+    margin-left: 25%;
+    font-size: 36px;
+  }
+  .second-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25%;
+  }
+  .second-section li {
+    margin-right: 100px;
+  }
+  .second-section p {
+    font-size: 20px;
+  }
+  .second-section h3 {
+    font-size: 66px;
+  }
+  .second-section .mr {
+    margin-right: 400px;
+  }
+  .second-section .pl {
+    margin-left: 25%;
+  }
+
+  .third-section .modal {
+    width: 800px;
+    padding: 4% 7.5%;
+    font-size: 28px;
+    margin: 0 auto;
+  }
+
+  .fourth-section h3 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .fourth-section .annual-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }  
+  /* 성우석 수정 */
+  .time_stamp{
+    width: 10px;
+    height: 600px;
+    position: relative;
+    left: -40px;
+    top: 10px;
+
+  }
+
+  .time_stamp div{
+    width: 1px;
+    height: 100%;
+    border: 1px solid #333D4B;
+    background-color: #333D4B;
+    z-index: 1;
+  }
+  
+
+  .dot_style{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #333D4B;
+    z-index: 2;
+    left: -4px;
+    box-sizing: content-box;
+    cursor: pointer;
+  }
+  .dot1{
+    top: 0;
+    outline: 6px solid white;
+  }
+
+  .dot2{
+    top: 65px;
+  }
+
+  .dot3{
+    top: 132px;
+  }
+
+  .dot4{
+    top: 200px;
+  }
+
+  .dot5{
+    top: 268px;
+  }
+
+  .dot6{
+    top: 333px;
+  }
+
+  .dot7{
+    top: 401px;
+  }
+  .dot8{
+    top: 470px;
+  }
+  .dot9{
+    top: 536px;
+  }
+  /* 성우석 수정 */
+
+  ul.year-tab {
+    display: block;
+    border: none;
+    margin-right: 50px;
+  }
+  ul.year-tab li.year-active {
+    border-bottom: none;
+  }
+  ul.year-tab li {
+    margin-bottom: 40px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .fourth-section .annual-contents {
+    padding-top: 0;
+  }
+
+  .fifth-section {
+    padding: 150px 0;
+    width: 100%;
+  }
+  .fifth-section .finance {
+    margin-bottom: 50px;
+  }
+  .fifth-section .finance_ul {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  .fifth-section .finance h3 {
+    font-size: 48px;
+    margin-top: 20px;
+  }
+  .fifth-section .finance p {
+    font-size: 24px;
+  }
+  .fifth-section li .contents {
+    background-size: cover;
+    margin-left: 15px;
+    width: 460px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 32px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .fifth-section li .contents h4 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .fifth-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* 성우석 작성 */
+  .filterBlur{
+    filter: blur(30px);
+    transform: scale(1.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+  }
+  
+  .fb_core{
+    background: url("../images/intro3.jpg") no-repeat center;
+    background-size: cover;
+  }
+  
+  .fb_stock{
+    background: url("../images/intro4.jpg") no-repeat center;
+    background-size: cover;
+  }
+  
+  .fb_pay{
+    background: url("../images/intro5.jpg") no-repeat center;
+    background-size: cover;
+  }
+  
+  .fb_insure{
+    background: url("../images/intro6.jpg") no-repeat center;
+    background-size: cover;
+  }
+  
+  .fb_bank{
+    background: url("../images/intro7.jpg") no-repeat center;
+    background-size: cover;
+  }
+  
+  .fb_cx{
+    background: url("../images/intro8.jpg") no-repeat left center;
+    background-size: cover;
+  }
+  
+  .click_contents{
+    z-index: 3;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 20px;
+  }
+  
+  
+  .click_contents>h4{
+    font-size: 20px !important;
+  }
+  .click_contents>img{
+    transform: rotate(45deg);
+  }
+  
+  .click_button{
+    width: 100%;
+    height: 100%;
+    z-index:999;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .dp_click{
+    position: absolute;
+    top: 23%;
+    left: 20px;
+    z-index:99;
+    font-weight: 800;
+    font-size: 14px;
+    display: none;
+  }
+  .dp_click a{
+    display: block;
+    margin-top: 30px;
+    color: #0E82FF;
+  }
+  
+  .dp_click a:hover{
+    color: #0056b3;
+  }
+
+  /* 성우석 작성 */
+
+  .sixth-section {
+    padding: 100px 40px;
+    width: 100%;
+  }
+  .sixth-section h3 {
+    font-size: 45px;
+    margin-bottom: 68px;
+  }
+  .sixth-section .investor {
+    margin: 0 auto;
+    width: 800px;
+    margin-bottom: 30px;
+  }
+
+  .seventh-section {
+    margin: 60px auto;
+    max-width: 1267px;
+    padding: 100px 154px;
+  }
+  .seventh-section h3 {
+    font-size: 44px;
+    margin-right: 40px;
+  }
+  .seventh-section .seventh-nav {
+    display: flex;
+  }
+  .seventh-section .seventh-nav ul {
+    margin-top: 30px;
+  }
+  .seventh-section .seventh-nav ul li {
+    padding: 10px 20px;
+  }
+  .seventh-section button {
+    margin: 80px 0;
+  }
+  .news-contents li {
+    position: relative;
+  }
+  .news-contents img {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 21px;
+    width: 26px;
+    height: 22px;
+    opacity: 0.1;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+  .sixth-section .investor {
+    flex-direction: column;
+  }
+}
+
+/* 성우석 수정 */
+
+
+
+@keyframes fadeInUpcontents {
+  0% {
+    margin-top: 30px;
+    opacity: 0;
+  }
+  to {
+      opacity: 1;
+      margin-top: 0px;
+  }
+}

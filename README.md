@@ -53,3 +53,9 @@
 
 13  https://toss.im/career/apply?gh_jid=4878443003
 = apply.html(지원서 작성 페이지)
+
+14 https://support.toss.im/safety
+= safety.html( 안심보장제 페이지 )
+
+15 https://support.toss.im/suspend
+= suspend.html( toss잠금 안내 페이지 )

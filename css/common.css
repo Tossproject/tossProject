@@ -29,6 +29,7 @@ ul {
 }
 
 /* header */
+
 header {
     background-color: #fff;
     position: fixed;
@@ -94,6 +95,7 @@ header {
     padding: 13px 29px;
     display: block;
 }
+
 
 .toss_nav ul li:first-child a {
     margin-top: 4px;
