@@ -563,12 +563,22 @@ article .qcontent {
     outline: none;
     cursor: pointer;
 }
-.pagination .pagination-list a {
+
+.pagination .pagination-list .num {
+
+
     border-radius: 18px;
 
     padding: 0 6px;
     text-decoration: none;
 
+}
+.numberbtn{
+    display: flex;
+}
+.active{
+    background-color: #ccc;
+    border-radius: 50%;
 }
 
 .active{
