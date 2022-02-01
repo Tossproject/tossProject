@@ -1,0 +1,203 @@
+header nav.toss_nav .navicon a {
+  color: rgb(0, 100, 255);
+  text-decoration: none;
+}
+header nav.toss_nav .navicon a span {
+  font-size: 28px;
+}
+header nav.toss_nav ul li a:hover {
+  background-color: rgba(2, 32, 71, 0.05);
+  border-radius: 10px;
+  color: #3b3b46;
+}
+
+.banner {
+  width: 100%;
+  background-color: rgb(252, 240, 196);
+}
+
+.banner-center {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+}
+
+/* secrion 1 */
+
+.goal-center {
+  width: 1030px;
+  margin: 50px auto;
+}
+.goal-text {
+  margin-bottom: 60px;
+}
+.goal-text h1 {
+  font-size: 35px;
+  color: #24282e;
+  margin-bottom: 30px;
+}
+.goal-text p {
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #24282e;
+  line-height: 20px;
+}
+.goal-text a {
+  color: rgb(66, 66, 241);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+.goal-text a:hover {
+  color: rgb(40, 40, 199);
+}
+.list ul {
+  display: flex;
+}
+.list ul li {
+  margin-right: 10px;
+  padding: 5px;
+}
+.list ul li.list-active {
+  color: #191f28;
+  background-color: rgba(2, 32, 71, 0.05);
+}
+
+.list ul li a {
+  color: #24282e;
+
+  padding: 10px;
+  border-radius: 20px;
+}
+.input-center {
+  width: 1030px;
+  margin: 50px auto;
+}
+.all-box {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+}
+#select {
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+.select {
+  width: 380px;
+  height: 30px;
+  padding: 20px 20px 20px 40px;
+  background: url(../images/glass.png) no-repeat center left 10px;
+  background-size: 5%;
+  filter: opacity(0.7);
+  border-radius: 5px;
+  border: 1px solid rgb(228, 225, 225);
+  outline-color: rgb(33, 33, 243);
+}
+.select:hover {
+  border: 1px solid rgb(97, 97, 238);
+}
+#select {
+  width: 200px;
+  border-radius: 5px;
+  margin-left: 10px;
+  border: 1px solid rgb(228, 225, 225);
+  color: #575656;
+  appearance: none;
+  background: url(../images/down.png) no-repeat right 20px center;
+  background-size: 15px;
+
+  filter: opacity(0.7);
+}
+
+#select:hover {
+  border: 1px solid rgb(97, 97, 238);
+}
+option {
+  font-size: 19px;
+  inline-size: 20px;
+  padding: 10px;
+}
+
+.input-center a {
+  text-decoration: none;
+  color: rgb(117, 117, 117);
+  font-size: 13px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 5px;
+}
+.input-center a:hover {
+  background-color: #f2f2f2;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.text-box a {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  text-decoration: none;
+  border-bottom: none;
+}
+.hero {
+  color: rgb(25, 31, 40);
+  font-size: 15px;
+  width: 300px;
+  margin-right: 150px;
+}
+
+.customer {
+  color: rgb(139, 149, 161);
+  line-height: 25px;
+  width: 250px;
+  margin-right: 50px;
+  font-weight: bold;
+  font-size: 13px;
+}
+.cx {
+  color: rgb(139, 149, 161);
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 13px;
+}
+.gif-center {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 40px;
+  display: none;
+}
+.gif-center img {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+}
+.gif-center p {
+  font-size: 15px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #24282e;
+}
+
+.gif-center a {
+  width: 200px;
+  margin: auto;
+  padding: 20px;
+  border-bottom: none;
+  background-color: rgba(69, 147, 252, 0.12);
+  color: rgb(56, 56, 241);
+  font-weight: bold;
+}
+.gif-center a:hover {
+  background-color: rgba(14, 118, 255, 0.12);
+}

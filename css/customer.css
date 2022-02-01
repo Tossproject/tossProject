@@ -9,7 +9,11 @@
 header{
     background-color: #EBF2EF;
     height: 60px;
+  
+   
 }
+
+
 .toss-center{
     width: 1080px;
     margin: 0 auto;
@@ -307,10 +311,12 @@ header{
 .help-center{
     width: 1080px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 .help-box{
     width: 650px;
     margin: 0 auto;
+    margin-bottom: 70px;
 
 }
 .help-box h1{
@@ -365,3 +371,50 @@ form input{
     font-size: 20px;
 
 }
+.all{
+    margin-left: 220px;
+    text-decoration: none;
+    color: rgb(109, 109, 202);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px;    
+    font-size: 15px;
+  
+}
+
+.all:hover{
+    background-color: rgb(183, 183, 243);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* section4 */
+
+
+
+.background{
+    background-color: #EBF2EF;
+}
+.back-center{
+    width: 960px;
+    margin: 0 auto;
+}
+.number{
+    float: left;
+    margin-left: 160px;
+    margin-top: 50px;
+    margin-right: 100px;
+
+}
+.number h1{
+    color: #161c25;
+    line-height: 40px;
+}
+.number p{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #64727F;
+
+}
+
+

@@ -552,19 +552,22 @@
             } else if (windowScroll >= 2078 && windowScroll < 2180) {
                 $(".third_img").css("opacity", "0.5");
                 $(".fourthbox").css("animation", "moticon ease 0.8s forwards");
-                $(".fourthbox").css("opacity", "0.1");
             } else if (windowScroll >= 2200) {
                 $(".third_img").css("opacity", "0");
                 $(".third_img").css("display", "none");
                 // 성우석 수정========================================
-            } else if (windowScroll >= 6100 && windowScroll < seventh) {
-                $(".sixthbox").css("animation", "moticon ease 0.8s forwards");
-            } else if (windowScroll >= seventh && windowScroll < footer) {
-                $(".seventhbox").css("animation", "moticon ease 0.8s forwards");
             } else {
                 $(".third_img").css("opacity", "0");
                 $(".third_img").css("display", "none");
             }
+
+            if (windowScroll >= 2900 && windowScroll < fifth) {
+                $(".fourthbox").css("animation", "moticon ease 1.2s forwards");
+            } else if (windowScroll >= 6000 && windowScroll < 6600) {
+                $(".sixthbox").css("animation", "moticon ease 1.2s forwards");
+            } else if (windowScroll >= 6700 && windowScroll < footer) {
+                $(".seventhbox").css("animation", "moticon ease 1.2s forwards");
+            } 
         });
 
         /* 섹션1 */

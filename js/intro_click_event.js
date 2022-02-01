@@ -45,8 +45,7 @@ for (let i = 0; i < yearTab.length; i++){
         yearTab[i].classList.add('year-active');
         dot_style[i].style.outline = '6px solid white';
 
-        annualContents.style.marginTop = '30px';
-        annualContents.style.opacity = '1';
+        annualContents.style.animation = 'sec_4 ease 0.8s forwards';
     }
 }
 
@@ -65,7 +64,6 @@ for (let i = 0; i < dot_style.length; i++){
         yearTab[i].classList.add('year-active');
         dot_style[i].style.outline = '6px solid white';
 
-        annualContents.style.marginTop = '30px';
-        annualContents.style.opacity = '1';
+        annualContents.style.animation = 'sec_4 ease 0.8s forwards';
     }
 }
