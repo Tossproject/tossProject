@@ -58,7 +58,7 @@ header nav.toss_nav ul li a:hover {
   font-size: 14px;
 }
 .goal-text a:hover {
-  color: rgb(40, 40, 199);
+  color: #0056b3;
 }
 .list ul {
   display: flex;
@@ -104,18 +104,18 @@ header nav.toss_nav ul li a:hover {
   background-size: 5%;
   filter: opacity(0.7);
   border-radius: 5px;
-  border: 1px solid rgb(228, 225, 225);
-  outline-color: rgb(33, 33, 243);
+  border: 2px solid rgb(228, 225, 225);
+  outline-color: #3182f6;
   font-weight: bold;
 }
 .select:hover {
-  border: 1px solid rgb(97, 97, 238);
+  border-color:#90c2ff;
 }
 #select {
   width: 200px;
   border-radius: 5px;
   margin-left: 10px;
-  border: 1px solid rgb(228, 225, 225);
+  border: 2px solid rgb(228, 225, 225);
   color: #24282e;
   appearance: none;
   background: url(../images/down.png) no-repeat right 20px center;
@@ -125,10 +125,10 @@ header nav.toss_nav ul li a:hover {
 }
 
 #select:hover {
-  border: 1px solid rgb(97, 97, 238);
+  border-color:#90c2ff;
 }
 #select:focus {
-  outline-color: rgb(33, 33, 243);
+  outline-color: #3182f6;
 }
 option {
   font-size: 19px;

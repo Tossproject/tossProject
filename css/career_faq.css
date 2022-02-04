@@ -7,24 +7,51 @@ body {
     font-family: Toss Product Sans,-apple-system,BlinkMacSystemFont,Bazier Square,Noto Sans KR,Segoe UI,Apple SD Gothic Neo,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
-.header-nav {
-    width: 100%;
-    height: 59px
+header{
+    background-color: #eef6f3;
 }
-
-.header-nav .logo {
+.magnifier_li a:hover, .magnifier_li a:active {
+    background-color: transparent !important;
+  }
+.trigger {
     display: flex;
     align-items: center;
-    margin: auto;
-    max-width: 1140px;
-    padding-top: 12px;
-    padding-left: 98px;
-    justify-content: space-between;
+}
+.magnifier {
+    display: block !important;
+    padding-right: 18px;
+}
+.magnifier svg {
+    top: 0;
+}
+.magnifier_li {
+    display: none;
+}
+.logo{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+.logoText{
+    position: absolute;
+    width: 100%;
+    top: 8px;
+    left: 84px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.toss_nav ul li a {
+    border-radius: 8px;
+}
+.toss_nav ul li a:hover, .toss_nav ul li a:active {
+    background-color: rgba(2, 32, 71, 0.05);
+    color: #3b3b46;
 }
 
-@media (max-width: 639px) {
-    .header-nav .logo {
-        padding-left: 26px;
+
+@media only screen and (min-width: 768px) {
+    .trigger {
+        display: none !important;
     }
 }
 
@@ -58,78 +85,8 @@ body {
         -webkit-box-pack: start;
         justify-content: flex-start;
     }
-
 }
 
-.logo-icon span {
-    display: flex;
-    margin-right: 24px;
-}
-
-.logo-container {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-    max-height: 100%;
-    transition: 0.2s ease;
-}
-.logo-container ul {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    margin-right: 40px;
-}
-
-.logo-container ul li {
-    height: 100%;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    padding: 0 8px;
-   
-}
-
-.logo-container ul li a {
-    padding: 12px 10px;
-    font-size: 15px;
-    line-height: 20px;
-    border-radius: 8px;
-    border: 0;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: left;
-    color: #4e5968;
-    font-weight: 600;
-}
-
-
-
-.header {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.header li {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-    
-}
-.header a {
-    font-size: 15px;
-    line-height: 20px;
-    cursor: pointer;
-    border-radius: 8px;
-    border: 0;
-    text-decoration: none;
-    padding: 12px 10px;
-    color: #4e5968;
-    font-weight: bold;
-}
 .mobile-nav {
     display: flex;
     align-items: center;
@@ -153,7 +110,6 @@ body {
     display: none;
 }
 
-
 @media screen and (max-width: 640px) {
     .mobile-nav button {
         display: block;
@@ -169,13 +125,12 @@ body {
 }
 
 /* 본문 */
-
 .container {
     max-width: 1140px;
     width: 100%;
     height: 100%;
     margin: auto;
-    padding: 76px 0;
+    padding: 120px 0;
 }
 
 @media (max-width: 639px) {
@@ -351,6 +306,7 @@ aside {
     padding: 14px 11px;
     font-size: 20px;
     font-weight: 600;
+    border-radius: 8px;
 }
 .subnav li .top, .subnav li .pointer, .subnav li .applyq {
     color: #8b98a1;
@@ -367,9 +323,6 @@ aside {
 .comStyle {
     color: #8b98a1;
 }
-
-
-
 
 .subnav li > a:active {
     color: #3182f6;
@@ -388,7 +341,6 @@ aside {
     justify-content: flex-start;
     width: 100%;
 }
-
 
 .column2 {
     display: flex;
@@ -417,9 +369,6 @@ aside {
     border-radius: 8px;
     border: 0;
 }
-
-
-
 
 .column2 ul li a, .column2-top ul li a {
     display: flex;
@@ -531,24 +480,23 @@ article .qcontent {
     background-color: #1b64da;
 }
 
-
 .pagination {
     margin: 0 auto;
     display: block;
     margin-left: -8px;
-    text-align: center;
 }
 .pagination .pagination-list {
     display: flex;
+    margin: 0;
+    padding: 0;
     list-style: none;
     border: 0;
     margin-left: 259px;
 }
 .pagination .pagination-list li {
+    margin: 0;
     list-style-type: none;
-    width: 30px;
-    height: 28px;
-    margin-left: 10px;
+    border-radius: 18px;
 }
 
 .pagination .pagination-list li::before {
@@ -557,22 +505,41 @@ article .qcontent {
 
 .pagination .pagination-list button {
     width: 36px;
+    height: 36px;
     border: 0;
     border-radius: 18px;
     background: none;
     outline: none;
+    padding: 0 6px;
     cursor: pointer;
 }
-
-.pagination .pagination-list .num {
-
-
-    border-radius: 18px;
-
-    padding: 0 6px;
-    text-decoration: none;
-
+.pagination .pagination-list button:hover {
+    background-color: #f2f4f6;
 }
+
+.pagination .pagination-list button:active {
+    border-radius: 18px;
+    background-color: #e5e8eb;
+    color: #333d4b;
+}
+.pagination .pagination-list .num {
+    font-size: 17px;
+    color: #6b7684;
+    font-weight: 600;
+}
+
+.pagination-list .gray_btn {
+    background-color: #E5E8EB;
+}
+
+.pagination-list .gray_btn .num {
+    color: #333d4b;
+}
+
+.pagination-list .gray_btn button:hover {
+    background-color: #E5E8EB;
+}
+
 .numberbtn{
     display: flex;
 }
@@ -584,13 +551,6 @@ article .qcontent {
 .active{
     background-color: #ccc;
     border-radius: 25px;
-}
-
-
-.pagination .pagination-list a {
-    font-size: 17px;
-    color: #6b7684;
-    font-weight: 600;
 }
 
 
