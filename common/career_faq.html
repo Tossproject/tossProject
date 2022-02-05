@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>토스채용</title>
+    <link rel="stylesheet" href="../css/career_faq.css">
+    <link rel="shortcut icon" href="https://static.toss.im/tds/favicon/favicon.ico">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+
+<body>
+    <!-- 상단 배너 -->
+    <!-- header -->
+    <header class="hd_col_bor_change">
+        <nav class="toss_nav">
+            <div class="navicon">
+                <a href="#" class="logo"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0"
+                    y="0" viewBox="0 0 483.23 55.73" xml:space="preserve" style="width:173.44px; height:20px;">
+                    <g fill="#0064ff">
+                        <path
+                            d="M57.7 27.56C56.21 14.79 45.43 5.36 32.9 5.24h-.28c-.97 0-1.94.06-2.92.17-3.56.41-6.85 1.55-9.76 3.24-.06.04-.13.08-.19.11s-.11.07-.17.1C5.15 17.46 0 37.31 0 49.39l11.63-6.71c4.1 7.81 11.96 12.95 20.72 13.05h.28c.97 0 1.94-.06 2.92-.17 13.85-1.62 23.77-14.15 22.15-28zM185.59 40.2c1.71 3.39 4.75 5.15 8.78 5.14 3.96-.01 6.08-1.92 6.07-4.19-.01-2.76-4.11-3.38-8.99-4.36-6.44-1.33-13.58-3.28-13.6-11.34-.02-6.43 6.19-12.03 15.59-11.99 7.47-.02 12.16 2.58 15.63 7.01l-8.1 4.71c-1.56-2.54-3.97-4.02-7.51-4.01-3.82.01-5.65 1.57-5.65 3.69.01 2.4 3.12 3.03 8.71 4.22 6.37 1.26 13.87 3.43 13.89 11.62.02 5.94-5.27 12.67-16.37 12.62-8.37.02-13.9-2.86-17.1-8.1l-.01-.02 8.66-5zM150.71 40.2c1.71 3.39 4.75 5.15 8.78 5.14 3.96-.01 6.08-1.92 6.07-4.19-.01-2.76-4.11-3.38-8.99-4.36-6.44-1.33-13.58-3.28-13.6-11.34-.02-6.43 6.19-12.03 15.59-11.99 7.47-.02 12.16 2.58 15.63 7.01l-8.1 4.71c-1.56-2.54-3.97-4.02-7.51-4.01-3.82.01-5.65 1.57-5.65 3.69.01 2.4 3.12 3.03 8.71 4.22 6.37 1.26 13.87 3.43 13.89 11.62.02 5.94-5.27 12.67-16.37 12.62-8.37.02-13.9-2.86-17.1-8.1l-.01-.02 8.66-5zM119.94 13.46c-11.01 0-19.93 8.92-19.93 19.93s8.92 19.93 19.93 19.93 19.93-8.92 19.93-19.93-8.93-19.93-19.93-19.93zm0 30.56c-5.87 0-10.63-4.76-10.63-10.63s4.76-10.63 10.63-10.63 10.63 4.76 10.63 10.63-4.76 10.63-10.63 10.63zM94.85 41.39c-1.23.98-3.79 2.19-5.08 2.19-2.5 0-4.21-1.43-4.21-5.5V22.94h11.86v-8.7H85.55V0l-9.89 5.71v8.53h-7.91v8.7h7.91v16.03c0 10.49 4.89 14.35 12.95 14.35 3.57 0 8.33-2.11 10.82-3.97l-4.58-7.96z">
+                        </path>
+                    </g>
+                    <g fill="#0064ff">
+                        <path
+                            d="M228.2 33.78c0-11.12 8.62-19.53 19.6-19.53 8.2 0 14.87 4.66 17.72 11.4l-5.21 2.29c-2.22-5.14-6.74-8.34-12.58-8.34-7.85 0-13.83 6.32-13.83 14.18 0 7.78 6.11 14.18 14.04 14.18 6.05 0 10.42-3.75 12.51-8.69l5.28 2.22c-2.92 6.95-9.24 11.81-17.86 11.81-11.2.01-19.67-8.68-19.67-19.52zM316.83 15.02h5.49v7.09c1.6-5 5.35-7.64 10.7-7.64 2.57 0 4.79.49 6.25 1.39l-2.36 5.42c-1.04-.69-2.57-1.18-4.59-1.18-6.25 0-9.87 3.61-9.87 11.88v20.57h-5.63V15.02zM339.94 33.92c0-11.05 8.34-19.67 19.6-19.67 10.98 0 19.11 7.99 19.11 19.11v2.57H345.5c.83 7.16 6.32 12.23 14.25 12.23 5.98 0 10.01-2.64 12.58-7.23l4.86 2.85c-3.82 5.98-9.24 9.52-17.44 9.52-12.02.01-19.81-8.4-19.81-19.38zm5.7-2.99h27.17c-.9-7.09-5.98-11.6-13.27-11.6-7.16 0-12.65 4.93-13.9 11.6zM383.32 33.92c0-11.05 8.34-19.67 19.6-19.67 10.98 0 19.11 7.99 19.11 19.11v2.57h-33.15c.83 7.16 6.32 12.23 14.25 12.23 5.98 0 10.01-2.64 12.58-7.23l4.86 2.85c-3.82 5.98-9.24 9.52-17.44 9.52-12.02.01-19.81-8.4-19.81-19.38zm5.7-2.99h27.17c-.9-7.09-5.98-11.6-13.27-11.6-7.16 0-12.65 4.93-13.9 11.6zM428.51 15.02H434v7.09c1.6-5 5.35-7.64 10.7-7.64 2.57 0 4.79.49 6.25 1.39l-2.36 5.42c-1.04-.69-2.57-1.18-4.59-1.18-6.25 0-9.87 3.61-9.87 11.88v20.57h-5.63V15.02zM451.55 45.45l4.93-3.34c2.57 3.68 6.39 6.11 12.09 6.11 5.84 0 8.89-2.78 8.89-6.53 0-4.17-5.14-5-10.63-6.11-6.46-1.25-13.34-2.99-13.34-10.49 0-5.84 5.07-10.98 13.97-10.91 6.95 0 11.67 2.57 15.01 6.67l-4.73 3.2c-2.22-2.99-5.49-5-10.28-5-5.77 0-8.13 2.5-8.13 5.98 0 3.89 4.52 4.66 10.35 5.84 6.46 1.25 13.55 3.06 13.55 10.77 0 5.91-5 11.74-14.8 11.67-8.2 0-13.55-3.06-16.88-7.86zM302.8 21.55c-2.99-4.59-8.62-7.3-14.04-7.3-10.49 0-19.11 8.06-19.11 19.53s8.48 19.53 19.11 19.53c5.42 0 11.05-2.78 14.04-7.44v6.67h5.63V15.02h-5.63v6.53zm-13.55 26.41c-7.85 0-13.83-6.05-13.83-14.25 0-7.99 5.98-14.24 13.83-14.24 7.99 0 13.97 6.46 13.97 14.24-.01 7.92-5.98 14.25-13.97 14.25z">
+                        </path>
+                    </g>
+                </svg></a>
+                <div class="trigger">
+                    <a href="#" class="magnifier">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon"
+                            style="width: 17.5px; height: 17.5px; margin: top -13px; margin: left -1px;">
+                            <path
+                                d="M22.3 21.2l-5.7-5.7c1.2-1.5 2-3.4 2-5.5 0-4.7-3.8-8.5-8.5-8.5S1.5 5.3 1.5 10s3.8 8.5 8.5 8.5c2.1 0 4-.8 5.5-2l5.7 5.7c.1.1.3.2.5.2s.4-.1.5-.2c.4-.2.4-.7.1-1zM3 10c0-3.9 3.2-7 7-7s7 3.2 7 7-3.2 7-7 7-7-3.1-7-7z"                                    fill="#333d4b"></path>
+                        </svg>
+                    </a>
+                    <div class="iconbox">
+                        <span class="icon"></span>
+                        <span class="icon2"></span>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li><a href="#">자주 묻는 질문</a></li>
+                <li><a href="#">피해 사건 신고</a></li>
+                <li><a href="#">토스의 보안</a></li>
+                <li class="magnifier_li"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon"
+                        style="width: 17.5px; height: 17.5px; margin: top -13px; margin: left -1px;">
+                        <path
+                            d="M22.3 21.2l-5.7-5.7c1.2-1.5 2-3.4 2-5.5 0-4.7-3.8-8.5-8.5-8.5S1.5 5.3 1.5 10s3.8 8.5 8.5 8.5c2.1 0 4-.8 5.5-2l5.7 5.7c.1.1.3.2.5.2s.4-.1.5-.2c.4-.2.4-.7.1-1zM3 10c0-3.9 3.2-7 7-7s7 3.2 7 7-3.2 7-7 7-7-3.1-7-7z"                                    fill="#333d4b"></path>
+                    </svg>
+                </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 본문 -->
+    <main>
+        <section>
+            <div class="container">
+                <div class="main">
+                    <h1>자주 묻는 질문</h1>
+                    <form action="#">
+                        <div class="searchbox">
+                            <span class="faq_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon" style="width: 28px; height: 28px;"><path d="M22.3 21.2l-5.7-5.7c1.2-1.5 2-3.4 2-5.5 0-4.7-3.8-8.5-8.5-8.5S1.5 5.3 1.5 10s3.8 8.5 8.5 8.5c2.1 0 4-.8 5.5-2l5.7 5.7c.1.1.3.2.5.2s.4-.1.5-.2c.4-.2.4-.7.1-1zM3 10c0-3.9 3.2-7 7-7s7 3.2 7 7-3.2 7-7 7-7-3.1-7-7z" fill="#333d4b"></path></svg></span>
+                            <input type="text" placeholder="무엇이든 찾아보세요">
+                        </div>
+                    </form>
+    
+        <!-- 본문 중 2칼럼 레이아웃 -->
+                    <div class="columns">
+                        <button class="mobilebtn">
+                            지금 가장 핫한 질문
+                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon"><path d="M6.6 9.8c0-.2.1-.5.3-.6.4-.4.9-.4 1.3 0L12 13l3.9-3.9c.4-.4.9-.4 1.3 0s.4.9 0 1.3l-4.5 4.5c-.4.4-.9.4-1.3 0l-4.5-4.5c-.2-.2-.3-.4-.3-.6" fill-rule="evenodd" clip-rule="evenodd" fill="#b0b8c1"></path></svg></span>
+                        </button>
+                        <aside>
+                            <div class="column1">
+                                <ul class="subnav">
+                                    <li><a href="#" class="top">질문 TOP</a></li>
+                                    <li><a href="#" class="pointer">지금 가장 핫한 질문</a></li>
+                                    <li><a href="#" class="applyq">지원 문의</a></li>
+                                    <li><a href="#" class="screening">전형 문의</a></li>
+                                    <li><a href="#" class="etc">기타 문의</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+    
+                        <div class="column2" id="allcolumn">
+                            <ul>
+                                <li><a href="#">지금도 최대 1.5배 연봉을 제시하고 스톡옵션을 부여하나요?</a></li>
+                                <li><a href="#">어떤 복지들이 있나요?</a></li>
+                                <li><a href="#">비포괄임금제로 바뀌었나요?</a></li>
+                                <li><a href="#">겨울방학 제도가 무엇인가요?</a></li>
+                                <li><a href="#">3개월 리뷰 과정(3MR)과 스트라이크 제도가 사라졌나요?</a></li>
+                                    <li><a href="#">인센티브(성과급)가 있나요?</a></li>
+                                    <li><a href="#">정말 휴가가 무제한인가요?</a></li>
+                                    <li><a href="#">Early Friday 제도가 무엇인가요?</a></li>
+                                    <li><a href="#">불합격한 이력이 있어도 재지원이 가능한가요?</a></li>
+                                
+                                
+                            </ul>
+                        </div>
+
+                        <div class="column2" id="showcolum1" style="display: none;">
+                            <ul>
+                                    <li><a href="#">인센티브(성과급)가 있나요?</a></li>
+                                    <li><a href="#">정말 휴가가 무제한인가요?</a></li>
+                                    <li><a href="#">Early Friday 제도가 무엇인가요?</a></li>
+                                    <li><a href="#">불합격한 이력이 있어도 재지원이 가능한가요?</a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="column2" id="showcolum2" style="display: none;">
+                            <ul>
+                                <li><a href="#">비포괄임금제로 바뀌었나요?</a></li>
+                                <li><a href="#">겨울방학 제도가 무엇인가요?</a></li>
+                                <li><a href="#">3개월 리뷰 과정(3MR)과 스트라이크 제도가 사라졌나요?</a></li>  
+                            </ul>
+
+                        </div>
+
+
+                        <div class="column2-top">
+                            <ul>
+                                <li><a href="#">인터뷰는 어떻게 진행되나요?</a></li>
+                                <li><a href="#">전형에 대한 결과는 언제 알 수 있나요?</a></li>
+                                <li><a href="#">지원서가 정상적으로 제출되었는지 어떻게 확인할 수 있을까요?</a></li>
+                                <li><a href="#">지원 시 유의사항이 있나요?</a></li>
+                                <li><a href="#">불합격한 이력이 있어도 재지원이 가능한가요?</a></li>
+                                <li><a href="#">지원서 제출 중 오류가 발생하면 어떻게 대응하면 될까요?</a></li>
+                                <li><a href="#">이력서와 경력기술서 양식은 어디서 확인할 수 있나요?</a></li>
+                                <li><a href="#">인재풀인 포지션에 등록했는데, 언제 결과를 알 수 있나요?</a></li>
+                                <li><a href="#">최종합격 후 프로세스는 어떻게 진행되나요?</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="column-content">
+                            <button type="button" class="text">
+                                <span class="p-icon icon--colored p-icon--colored css-y1f223" aria-hidden="false" role="presentation" style="height: 18px; width: 18px; min-width: 18px; color: rgb(107, 118, 132);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon"><path fill="#B0B8C1" fill-rule="evenodd" d="M10.992 20.7c-.307 0-.614-.116-.849-.351l-7.5-7.5a1.201 1.201 0 010-1.697l7.5-7.5a1.2 1.2 0 011.698 1.697L5.189 12l6.652 6.65a1.201 1.201 0 01-.849 2.05"></path></svg></span>
+                                질문 목록 보기
+                            </button>
+                            <h1 class="qtitle">지금도 최대 1.5배 연봉을 제시하고 스톡옵션을 부여하나요?</h1>
+                            <article>
+                                <p class="qcontent">네, 여전히 <strong>최대</strong> 1.5배 연봉을 제시하고 있어요. 지원자 분의 포지션과 역량, 계열사에 따라 <strong>스톡옵션 부여 여부 및 규모는 다를 수 있어요.</strong></p>
+                            </article>
+                            <p class="update">최근 업데이트 : 2021.12.22</p>
+                            <button type="button" class="viewbutton"><a href="job_detail.html">채용 공고 보기</a></button>
+                        </div>
+                    </div>
+
+                    <nav class="pagination">
+                        <ul class="pagination-list">
+                            <li><button><span class="p-icon" aria-hidden="false" role="presentation" style="height: 24px; width: 24px; min-width: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon"><path d="M14.3 17.4c-.2 0-.5-.1-.6-.3l-4.5-4.5c-.4-.4-.4-.9 0-1.3l4.5-4.5c.4-.4.9-.4 1.3 0s.4.9 0 1.3L11 12l3.9 3.9c.4.4.4.9 0 1.3-.2.1-.4.2-.6.2z" fill="#a8b2bc"></path></svg></span></button></li>
+                            <li class="gray_btn"><button><span class="num">1</span></button></li>
+                            <li><button><span class="p-icon" aria-hidden="false" role="presentation" style="height: 24px; width: 24px; min-width: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon"><path d="M9.8 17.4c-.2 0-.5-.1-.6-.3-.4-.4-.4-.9 0-1.3L13 12 9.1 8.1c-.4-.4-.4-.9 0-1.3s.9-.4 1.3 0l4.5 4.5c.4.4.4.9 0 1.3l-4.5 4.5c-.2.2-.4.3-.6.3" fill-rule="evenodd" clip-rule="evenodd" fill="#b0b8c1"></path></svg></span></button></li>
+    
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+    <!-- footer -->
+    <footer>
+    <div class="footerbox">
+
+    <!-- footer_top -->
+    <div class="footer_top">
+        <ul class="list_service">
+            <li class="title">서비스</li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">자주 묻는 질문</a></li>
+            <li><a href="#">공동인증서 관리</a></li>
+            <li><a href="#">계정 일시잠금</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">브랜드리소스센터</a></li>
+        </ul>
+        <ul class="list_company">
+            <li class="title">회사</li>
+            <li><a href="#">회사 소개</a></li>
+            <li><a href="#">토스페이먼츠</a></li>
+            <li><a href="#">토스인슈어런스</a></li>
+            <li><a href="#">토스증권</a></li>
+            <li><a href="#">토스씨엑스</a></li>
+            <li><a href="#">토스뱅크</a></li>
+            <li><a href="#">채용</a></li>
+            <li><a href="#">블로그</a></li>
+            <li><a href="#">공고</a></li>
+        </ul>
+        <ul class="list_inquire">
+            <li class="title">문의</li>
+            <li><a href="#">사업 제휴</a></li>
+            <li><a href="#">광고 문의</a></li>
+            <li><a href="#">인증 사업 문의</a></li>
+            <li><a href="#">마케팅·PR</a></li>
+            <li><a href="#">IR</a></li>
+        </ul>
+        <ul class="list_center">
+            <li class="title">고객센터</li>
+            <li><a href="#">전화: 1599-49-5 (24시간 연중무휴)</a></li>
+            <li><a href="#">이메일(고객전용): support@toss.im</a></li>
+            <li><a href="#">이메일(외부기관전용): support-af@toss.im</a></li>
+            <li><a href="#">민원 접수</a></li>
+        </ul>
+    </div>
+
+    <!-- footer_bottom -->
+    <div class="footer_bottom">
+        <!-- footer_bottom_infobox -->  
+        <div class="infobox">
+            <p><strong>(주)비바리퍼블리카</strong></p>
+            <p>
+                사업자 등록번호 : 120-88-01280 | 대표 : 이승건<br>
+                호스팅 서비스 : 주식회사 비바리퍼블리카 | 통신판매업 신고번호 : 2014-서울강남-03377 <a href="#">사업자정보확인</a><br>
+                06236 서울특별시 강남구 테헤란로 142, 12층 (역삼동, 아크플레이스)<br>
+                고객센터 : 서울특별시 강남구 테헤란로 133, 8층 (역삼동, 한국타이어빌딩)
+            </p>
+        </div>
+
+        <!-- footer_bottom_smaillListbox -->            
+        <div class="smallListbox">
+            <ul class="smallList">
+                <li><a href="#">서비스 이용약관</a></li>
+                <li><a href="#">통합 금융정보 서비스 약관</a></li>
+                <li><a href="#">이용자의 권리 및 유의사항</a></li>
+                <li><a href="#"><strong>개인정보 처리방침</strong></a></li>
+                <li><a href="#"><strong>채용팀 개인정보 처리방침</strong></a></li>
+                <li><a href="#">영상정보처리기기 운영 관리 방침</a></li>
+                <li><a href="#">위치기반서비스 이용약관</a></li>
+                <li><a href="#">가맹점 고지사항</a></li>
+                <li><a href="#">토스 전자서명인증업무준칙</a></li>
+                <li><a href="#">토스인증 서비스 약관</a></li>
+                <li><a href="#">금융소비자보호</a></li>
+            </ul>
+        </div>
+
+        <!-- footer_bottom_snsbox -->               
+        <div class="snsbox">
+            <ul class="sns">
+                <li><a href="#"><img src="../images/icn-facebook.svg"></a></li>
+                <li><a href="#"><img src="../images/icn-blog.svg"></a></li>
+                <li><a href="#"><img src="../images/icn-naver.svg"></a></li>
+                <li><a href="#"><img src="../images/icn-twitter.svg"></a></li>
+                <li><a href="#"><img src="../images/icn-instagram.svg"></a></li>
+            </ul>
+        </div>            
+    </div>
+    </div>
+</footer>
+    </div>
+
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(".mobilebtn").on("click", function() {
+            $(".column1").css("display", "block");
+
+            if($(".mobile").css("display", "block")) {
+                
+                $("body").toggleClass("clicknav");
+                $("aside").toggleClass("clickitem");
+                $(".column1").toggleClass("clickwrapper");
+                $("input").toggleClass("clickinput");
+
+            } else if($("body").removeClass("clicknav")) {
+                $(".column1").css("display", "none");
+                $("body").css("background", "white");
+            };
+        });
+
+        $(".top").on("click", function() {
+            $(".subnav li .top").css("color", "#3182f6");
+            $(".column1 .subnav .pointer").css("color", "#8b98a1");
+            $(".column1 .subnav .applyq").css("color", "#8b98a1");
+            $(".column1 .subnav .screening").css("color", "#8b98a1");
+            $(".column1 .subnav .etc").css("color", "#8b98a1");
+            $(".column2-top").css("display", "flex");
+            $(".column2").css("display", "none");
+
+        });
+
+        $(".pointer").on("click", function() {
+            $(".subnav li .pointer").css("color", "#3182f6");
+            $(".column1 .subnav .top").css("color", "#8b98a1");
+            $(".column1 .subnav .applyq").css("color", "#8b98a1");
+            $(".column1 .subnav .screening").css("color", "#8b98a1");
+            $(".column1 .subnav .etc").css("color", "#8b98a1");
+            $(".column2-top").css("display", "none");
+            $(".column2").css("display", "flex");
+
+        });
+        $(".applyq").on("click", function() {
+            $(".subnav li .applyq").css("color", "#3182f6");
+            $(".column1 .subnav .top").css("color", "#8b98a1");
+            $(".column1 .subnav .pointer").css("color", "#8b98a1");
+            $(".column1 .subnav .screening").css("color", "#8b98a1");
+            $(".column1 .subnav .etc").css("color", "#8b98a1");
+            $(".column2-top").css("display", "flex");
+            $(".column2").css("display", "none");
+        });
+        $(".screening").on("click", function() {
+            $(".subnav li .screening").css("color", "#3182f6");
+            $(".column1 .subnav .top").css("color", "#8b98a1");
+            $(".column1 .subnav .pointer").css("color", "#8b98a1");
+            $(".column1 .subnav .applyq").css("color", "#8b98a1");
+            $(".column1 .subnav .etc").css("color", "#8b98a1");
+            $(".column2-top").css("display", "none");
+            $(".column2").css("display", "flex");
+
+        });
+        $(".etc").on("click", function() {
+            $(".subnav li .etc").css("color", "#3182f6");
+            $(".column1 .subnav .top").css("color", "#8b98a1");
+            $(".column1 .subnav .pointer").css("color", "#8b98a1");
+            $(".column1 .subnav .applyq").css("color", "#8b98a1");
+            $(".column1 .subnav .screening").css("color", "#8b98a1");
+            $(".column2-top").css("display", "flex");
+            $(".column2").css("display", "none");
+        });
+
+
+    </script>
+    <script>
+        $(".column2 li a").on("click", function() {
+            $(".column2 li a").css("display", "none");
+            $(".column2").css("width", "0px");
+            $(".column-content").css("display", "block");
+            $(".pagination .pagination-list").css("display","none");
+        });
+
+        $(".text").on("click", function() {
+            $(".column2 li a").css("display", "flex");
+            $(".column2").css("width", "100%");
+            $(".column-content").css("display", "none");
+            $(".pagination .pagination-list").css("display","flex");
+        });
+    </script>
+
+    <script>
+        $(".pagination-list a").on("click",function(){
+            $(".active").removeClass("active");
+        });
+    </script>
+
+    <script>
+        $(".pagination-list a").on("click",function(){
+            $(".pagination-list li.active").removeClass("active");
+
+            let $li = $(this).parent();
+            $li.addClass("active");
+
+            let currentID = $li.attr("id");
+            if(currentID == "external"){
+                $(".column").css("display","none");
+                $("#showcolum1").css("display","block");
+                $("#allcolumn").css("display","none");
+                $("#showcolum2").css("display","none");
+            } else if(currentID == "charactor"){
+                $("#showcolum1").css("display","none");
+                $("#allcolumn").css("display","block");
+                $(".column").css("display","none");
+                $("#showcolum2").css("display","none");
+            } else if(currentID == "design"){
+                $("#showcolum1").css("display","none");
+                $("#allcolumn").css("display","none");
+                $(".column").css("display","none");
+                $("#showcolum2").css("display","block");
+            }
+        });
+    </script>
+
+    <script>
+        /* nav */
+        $(".trigger").on("click", function () {
+            if ($(".icon2").css("display") == "none") {
+                $(".icon2").css("display", "block").css("backgroundSize", "100% 21px").css("transform", "translate(-50%, -50%) rotate(45deg)");
+                $(".icon").css("backgroundSize", "100% 21px").css("transform", "translate(15%, 71%) rotate(-45deg)");
+                $(".toss_nav ul").slideDown(300, "swing");
+    
+            } else if ($(".icon2").css("display") == "block") {
+                $(".icon2").css("display", "none");
+                $(".magnifier").css("display", "none");
+                $(".icon").css("backgroundSize", "100% 8px").css("transform", "none");
+                $(".toss_nav ul").slideUp(300, "swing");
+            }
+        });
+        /* nav */
+    </script>
+    <script src="../js/question.js"></script>
+</body>
+</html>

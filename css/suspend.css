@@ -1,0 +1,140 @@
+/* 헤더 */
+header{
+    background-color: #fff;
+}
+.magnifier_li a:hover, .magnifier_li a:active {
+    background-color: transparent !important;
+  }
+  .trigger {
+    display: flex;
+    align-items: center;
+  }
+  .magnifier {
+    display: block !important;
+    padding-right: 18px;
+  }
+  .magnifier svg {
+    top: 0;
+  }
+  .magnifier_li {
+    display: none;
+  }
+.logo{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+.logoText{
+    position: absolute;
+    width: 100%;
+    top: 8px;
+    left: 84px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.toss_nav ul li a {
+    border-radius: 8px;
+}
+.toss_nav ul li a:hover, .toss_nav ul li a:active {
+    background-color: rgba(2, 32, 71, 0.05);
+    color: #3b3b46;
+}
+
+@media only screen and (min-width: 768px) {
+    .trigger {
+        display: none !important;
+    }
+}
+
+.content_box{
+    position: relative;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.content_wrapper{
+    margin: 70px auto;
+    width: 100%;
+    max-width: 690px;
+    padding: 0 auto;
+}
+
+
+.hd_text{
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.hd_text span{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 38px;
+    color: rgb(78, 89, 104);
+}
+.img_wrapper{
+    text-align: center;
+    margin-bottom: 24px;
+}
+.img_wrapper img{
+    width: 250px;
+}
+.guide_num{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.guide_num span{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 38px;
+    color: rgb(78, 89, 104);
+    cursor: auto;
+}
+.guide_num button{
+    display: none;
+}
+.guide_text{
+    background-color: #F9FAFB;
+    margin-bottom: 30px;
+}
+.guide_text ul li::before{
+    content: "•";
+    width: 16px;
+    padding-right: 10px;
+}
+
+.guide_text ul{
+    padding: 20px 0;
+    width: 100%;
+}
+.guide_text ul li{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 38px;
+    color: rgb(78, 89, 104);
+    background-color: #F9FAFB;
+    text-align: center;
+}
+
+@media screen and (max-width: 640px){
+    .guide_num span{
+        display: none;
+    }
+    .guide_num button{
+        display: block;
+        margin: 0 10px;
+        width: 97%;
+        background-color: #3182F6;
+        color: #f9fafb;
+        border: none;
+        border-radius: 6px;
+        padding: 20px 0;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .guide_text ul li::before{
+        padding-left: 20px;
+    }
+    .guide_text ul li{
+        text-align: left;
+    }
+}

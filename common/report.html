@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>피해 사건 신고 - 토스</title>
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/report.css">
     <link rel="shortcut icon" href="https://static.toss.im/tds/favicon/favicon.ico">
 </head>
 </head>
@@ -14,46 +15,286 @@
 <body>
     <div class="container">
         <!-- header -->
-        <header>
+        <header class="hd_col_bor_change">
             <nav class="toss_nav">
                 <div class="navicon">
-                    <a href="#" class="logo"><img src="../images/logo.svg" alt="toss"></a>
+                    <div>
+                        <a href="#" class="logo">
+                            <img src="../images/logo.svg" alt="toss">
+                            <span class="logoText"> 고객센터</span>
+                        </a>
+                    </div>
                     <div class="trigger">
-                        <span class="icon"></span>
-                        <span class="icon2"></span>
+                        <a href="#" class="magnifier">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon"
+                                style="width: 17.5px; height: 17.5px; margin: top -13px; margin: left -1px;">
+                                <path
+                                    d="M22.3 21.2l-5.7-5.7c1.2-1.5 2-3.4 2-5.5 0-4.7-3.8-8.5-8.5-8.5S1.5 5.3 1.5 10s3.8 8.5 8.5 8.5c2.1 0 4-.8 5.5-2l5.7 5.7c.1.1.3.2.5.2s.4-.1.5-.2c.4-.2.4-.7.1-1zM3 10c0-3.9 3.2-7 7-7s7 3.2 7 7-3.2 7-7 7-7-3.1-7-7z"                                    fill="#333d4b"></path>
+                            </svg>
+                        </a>
+                        <div class="iconbox">
+                            <span class="icon"></span>
+                            <span class="icon2"></span>
+                        </div>
                     </div>
                 </div>
                 <ul>
                     <li><a href="#">자주 묻는 질문</a></li>
                     <li><a href="#">피해 사건 신고</a></li>
                     <li><a href="#">토스의 보안</a></li>
-                    <li><a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon"
-                                style="width: 17.5px; height: 17.5px; margin: top -13px; margin: left -1px;">
-                                <path
-                                    d="M22.3 21.2l-5.7-5.7c1.2-1.5 2-3.4 2-5.5 0-4.7-3.8-8.5-8.5-8.5S1.5 5.3 1.5 10s3.8 8.5 8.5 8.5c2.1 0 4-.8 5.5-2l5.7 5.7c.1.1.3.2.5.2s.4-.1.5-.2c.4-.2.4-.7.1-1zM3 10c0-3.9 3.2-7 7-7s7 3.2 7 7-3.2 7-7 7-7-3.1-7-7z"
-                                    fill="#333d4b"></path>
-                            </svg>
-                        </a>
+                    <li class="magnifier_li"><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon"
+                            style="width: 17.5px; height: 17.5px; margin: top -13px; margin: left -1px;">
+                            <path
+                                d="M22.3 21.2l-5.7-5.7c1.2-1.5 2-3.4 2-5.5 0-4.7-3.8-8.5-8.5-8.5S1.5 5.3 1.5 10s3.8 8.5 8.5 8.5c2.1 0 4-.8 5.5-2l5.7 5.7c.1.1.3.2.5.2s.4-.1.5-.2c.4-.2.4-.7.1-1zM3 10c0-3.9 3.2-7 7-7s7 3.2 7 7-3.2 7-7 7-7-3.1-7-7z"                                    fill="#333d4b"></path>
+                        </svg>
+                    </a>
                     </li>
-                    <!-- 임의 반응형 웹 설정 추후 수정해야함! 이유는 토글옆에 돋보기가 보여야함 -->
                 </ul>
             </nav>
         </header>
         <!--섹션 1-->
-        <section>
+        <section class="content_box">
+            <div class="content_wrapper">
+                <form action="">
+                    <div class="thd_text_wrapper">
+                        <span>피해 사건 신고</span>
+                    </div>
+                    <div class="hd_text_wrapper">
+                        <span class="circle_num">
+                            <span class="dp_num">1</span>
+                        </span>
+                        <span class="hd_text">이런 경우 신고해주세요</span>
+                    </div>
+                    <div class="display_content">
+                        <div class="ul_wrapper">
+                            <ul>
+                                <li>
+                                    자녀를 사칭하는 사람에게 카카오톡 또는 문자를 받아 토스로 돈을 보냈어요.
+                                </li>
+                                <li>
+                                    검찰, 경찰, 금융감독원을 사칭하는 곳에 토스로 돈을 보냈어요.
+                                </li>
+                                <li>
+                                    개인정보가 유출되어 토스로 돈이 나갔어요.
+                                </li>
+                                <li>
+                                    중고 거래를 하다가 사기를 당했어요.
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button class="next_btn btn_sty" type="button">다음</button>
+                        </div>
+                    </div>
+                    <div class="line_bar_dp_none lbdn2"></div>
+                    <div class="hd_text_wrapper htw2">
+                        <span class="circle_num">
+                            <span class="dp_num">2</span>
+                        </span>
+                        <span class="hd_text">연락드릴 정보를 알려주세요</span>
+                    </div>
+                    <div class="info_hidden_content">
+                        <div class="info_ip_wrapper">
+                            <div class="ip_name_wrapper ip_wrapper_sty">
+                                <label class="lb_sty" for="">이름</label>
+                                <input maxlength="20" type="text" placeholder="이름 입력" name="user_name"
+                                    class=" ip_sty sb_ip">
+                                <span class="err_message">이름을 다시 확인해주세요.</span>
+                            </div>
+                            <div class="ip_birth_wrapper ip_wrapper_sty">
+                                <label class="lb_sty" for="">생년월일</label>
+                                <input oninput="maxLengthCheck(this)" maxlength="8" type="number" placeholder="YYYYMMDD"
+                                    name="user_birth" class="sb_ip ip_sty">
+                                <span class="err_message">생년월일을 다시 확인해주세요.</span>
+                            </div>
+                            <div class="ip_phone_wrapper ip_wrapper_sty">
+                                <label class="lb_sty" for="">휴대폰 번호</label>
+                                <input maxlength="11" type="tel" placeholder="휴대폰 번호 입력" name="user_phone"
+                                    class="sb_ip ip_sty">
+                                <span class="err_message">휴대폰 번호를 다시 확인해주세요.</span>
+                            </div>
+                        </div>
+                        <div class="guide_box">
+                            <div class="i_wrapper">
+                                <span class="iBox">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                </span>
+                                <span class="blackBox"></span>
+                            </div>
+                            <div>
+                                <span class="fs_sty">정보가 잘못 입력된 경우 따로 연락을 드릴 수 없으니 다시 한번 확인해 주세요. <br>
+                                    본인의 피해 내용만 신고할 수 있어요.</span>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" class="info_next_btn btn_sty">다음</button>
+                        </div>
+                    </div>
+                    <div class="line_bar_dp_none lbdn3"></div>
+                    <div class="hd_text_wrapper htw3">
+                        <span class="circle_num">
+                            <span>3</span>
+                        </span>
+                        <span class="hd_text">어떤 피해를 입으셨나요?</span>
+                    </div>
+                    <div class="report_hidden_content">
+                        <div class="rhc_wrapper">
+                            <div class="flex_div_box top_fd_box">
+                                <div class="leftDiv_sty">
+                                    <label class="lb_sty" for="">피해 종류</label>
+                                    <button type="button" class="ip_sty select_box_controller">
+                                        <div class="s_d_ip" style="width: 90%; text-align: left; opacity: 0.5;">어떤 종류의
+                                            피해자 인가요</div>
+                                        <div style="width: 10%; opacity: 0.5;"><i class="fas fa-chevron-down"></i></div>
+                                    </button>
+                                    <span class="err_message">피해 종류를 다시 확인해주세요.</span>
+                                    <input type="text" class="utd_ip " name="user_typeDamage" style="display: none;">
+                                    <ul class="dropbox_temp">
+                                        <li class="default_li">어떤 종류의 피해인가요?</li>
+                                        <li class="select_li s_d">보이스피싱</li>
+                                        <li class="select_li s_d">명의 도용</li>
+                                        <li class="select_li s_d">휴대폰 불법개통</li>
+                                        <li class="select_li s_d">중고거래 사기</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <label class="lb_sty" for="">피해 금액 (원)</label>
+                                    <input oninput="maxLengthCheck(this)" maxlength="20" class="ip_sty rep_ip_chk"
+                                        placeholder="피해 금액을 입력하세요" type="number" name="" id="">
+                                    <span class="err_message">피해 금액을 다시 확인해주세요.</span>
+                                    <span class="money_count"> </span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="flex_div_box">
+                                <div class="leftDiv_sty">
+                                    <label class="lb_sty" for="">피해 발생일</label>
+                                    <input class="ip_sty rep_ip_chk" oninput="maxLengthCheck(this)" maxlength="8"
+                                        type="number" placeholder="YYYYMMDD" type="number" name="" id="">
+                                    <span class="err_message">피해 발생일을 다시 확인해주세요.</span>
+                                </div>
+                                <div>
+                                    <label class="lb_sty" for="">피해 발생 시각</label>
+                                    <input class="ip_sty rep_ip_chk" type="time">
+                                    <span class="err_message">피해 발생 시각을 다시 확인해주세요.</span>
+                                </div>
+                            </div>
+                            <div class="flex_div_box">
+                                <div class="leftDiv_sty">
+                                    <label class="lb_sty" for="">출금 계좌 은행</label>
+                                    <button type="button" class="ip_sty select_box_controller">
+                                        <div class="ih_event s_b_ip"
+                                            style="width: 90%; text-align: left; opacity: 0.5;">거래 은행
+                                        </div>
+                                        <div style="width: 10%; opacity: 0.5;"><i class="fas fa-chevron-down"></i></div>
+                                    </button>
+                                    <span class="err_message">출금 계좌 은행을 다시 확인해주세요.</span>
+                                    <input type="text" class="ubn_ip" name="user_bankName" style="display: none;">
+                                    <ul class="dropbox_temp">
+                                        <li class="default_li">출금 계좌 은행</li>
+                                        <li class="select_li s_b">기업은행</li>
+                                        <li class="select_li s_b">농협</li>
+                                        <li class="select_li s_b">수협</li>
+                                        <li class="select_li s_b">국민은행</li>
+                                        <li class="select_li s_b">KDB은행</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <label class="lb_sty" for="">출금 계좌 번호</label>
+                                    <input class="ip_sty rep_ip_chk" placeholder="계좌 번호 (-없이 입력)" type="number" name=""
+                                        id="">
+                                    <span class="err_message">출금 계좌 번호를 다시 확인해주세요.</span>
+                                </div>
+                            </div>
+                            <div class="ta_box">
+                                <label class="lb_sty" for="">피해 내용</label>
+                                <textarea placeholder="자세히 알려주실수록 빠르게 도와드릴 수 있어요(10자 이상)"
+                                    class="ip_sty rep_ip_chk ta_sty" cols="30" rows="10"></textarea>
+                                <span class="err_message">피해 내용을 다시 확인해주세요.</span>
+                            </div>
+                            <div class="chk_box">
+                                <div class="top_chk_wrapper" id="focusMe">
+                                    <div>
+                                        <span class="check_on1"><i class="fas fa-check-square"></i></span>
+                                        <span class="check_off1"><i class="far fa-check-square"></i></span>
+                                        <span class="check_text"><a href="#">개인정보 수집 이용</a>에
+                                            동의합니다.</span>
+                                        <span class="err_message">개인정보 수집 이용에 동의해주세요.</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span class="check_on2"><i class="fas fa-check-square"></i></span>
+                                        <span class="check_off2"><i class="far fa-check-square"></i></span>
+                                        <span class="check_text"><a href="#">개인정보 제3자 제공</a>에 동의합니다.</span>
+                                        <span class="err_message">개인정보 제3자 제공에 동의해주세요.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exp_box">
+                                <span class="hd_exp">이런 경우 피해 보호 대상에서 제외됩니다.</span>
+                                <ul>
+                                    <li>제도 시행일(2020년 7월 6일) 이전의 피해건</li>
+                                    <li>계정 소지자가 로그인 비밀번호, 공동인증서 (구 공인인증서) 등 접속 정보를 스스로 타인에게 <br>
+                                        알려주었거나 가족 또는 지인이 도용한 명의 도용 사고</li>
+                                    <li>이용자의 고의 및 중과실로 인한 보이스피싱 사고</li>
+                                    <li>FDS(이상금융거래감지시스템)를 통해 사용이 차단되었지만 해제된 경우</li>
+                                    <li>토스가 아닌 타 기관(카드사, 은행, 증권사 등)을 통한 거래에서 피해를 입은 경우</li>
+                                </ul>
+                            </div>
+                            <div class="confirm_box">
+                                <span class="hd_con">확인해주세요</span>
+                                <ul>
+                                    <li>안심보상은 신고 기준 최초 1회에 한하여 최대 5천만원까지 신청할 수 있습니다.</li>
+                                    <li>토스로 송금한 후 30일 이내에 보상을 신청한 피해 건에 한하여 보상합니다.</li>
+                                    <li>토스는 피해 보상 심사를 위해 필요한 증빙 서류를 요구할 수 있으며, 해당 서류를 제출하지<br>
+                                        않으면 피해 보상 대상에서 제외될 수 있습니다.</li>
+                                    <li>본 제도를 부적절한 목적으로 이용했다고 판단하는 경우, 회사는 해당 이용자에 대한 서비스<br>
+                                        이용을 영구적으로 제한할 수 있습니다.</li>
+                                    <li>회사는 사정에 따라 사전 공지 없이 제도를 변경하거나 종료할 수 있습니다.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button class="btn_sty last_button" type="button">제출</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
 
         </section>
 
         <!--섹션 2-->
-        <section>
+        <section class="ad_box">
+            <div class="ad_wrapper">
+                <div class="ad_text_wrapper">
+                    <div class="h2_box">
+                        <h2>토스 안심보상제를 <br>
+                            알려드릴게요</h2>
+                    </div>
+                    <div class="ad_sm_img_wrapper">
+                        <img src="../images/reward_1.png" alt="">
+                    </div>
+                    <div>
+                        <div class="p_box">
+                            <p>사칭, 보이스피싱 또는 중고거래 피해를 입으셨나요? <br>
+                                너무 걱정하지 마세요. 토스 안심보상제가 있어요.</p>
+                            <div class="ad_btn_box"><button type="button">더 알아보기</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ad_img_wrapper">
+                    <img src="../images/reward.png" alt="">
+                </div>
+            </div>
 
         </section>
+
 
         <!-- footer -->
         <footer>
             <div class="footerbox">
-
                 <!-- footer_top -->
                 <div class="footer_top">
                     <ul class="list_service">
@@ -144,7 +385,6 @@
     <script>
         /* nav */
         $(".trigger").on("click", function () {
-
             if ($(".icon2").css("display") == "none") {
                 $(".icon2").css("display", "block").css("backgroundSize", "100% 21px").css("transform", "translate(-50%, -50%) rotate(45deg)");
                 $(".icon").css("backgroundSize", "100% 21px").css("transform", "translate(15%, 71%) rotate(-45deg)");
@@ -152,12 +392,15 @@
 
             } else if ($(".icon2").css("display") == "block") {
                 $(".icon2").css("display", "none");
+                $(".magnifier").css("display", "none");
                 $(".icon").css("backgroundSize", "100% 8px").css("transform", "none");
                 $(".toss_nav ul").slideUp(300, "swing");
             }
         });
     /* nav */
     </script>
+    <script src="../js/report_event.js"></script>
+    <script src="https://kit.fontawesome.com/39caf77dda.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
