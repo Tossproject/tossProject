@@ -370,12 +370,10 @@
             $(".toss_nav ul li a").addClass("white_nav");
         }
 
+        /* right nav */
         let footer = $("footer").outerHeight();
         let end = $(document).height() - $(window).height() - footer;
 
-        console.log(end);
-
-        /* right nav */
         if(windowScroll >= 504 && windowScroll < 5100) {
             $(".sidebar-container").removeClass("end"); 
             $(".sidebar-container").addClass("fixed");

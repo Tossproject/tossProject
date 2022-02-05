@@ -4,6 +4,7 @@ let contents_change = document.querySelectorAll('.contents_change');
 let c_img  = document.querySelectorAll('.c_img');
 let dp_click = document.querySelectorAll('.dp_click');
 
+let fb_core = document.querySelectorAll('.fb_core');
 
 let yearTab = document.querySelectorAll('.year-tab li');
 let annualContents = document.querySelector('.annual-contents');
