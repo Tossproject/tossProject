@@ -204,12 +204,12 @@ section{
 }
 
 .second-section img {
-  width: 95%;
-  height: 100%;
-  /* 성우석 수정 */
+  max-width: 1769px;
+  max-height: 721px;
+  width: 69%;
+  height: 77%;
   position: absolute;
-  top: 37%;
-  /* 성우석 수정 */
+  top: 22%;
   bottom: 0;
   right: 0;
 }

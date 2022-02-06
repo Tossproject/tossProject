@@ -96,7 +96,7 @@
         <!--섹션 2-->
         <section class="second">
             <!-- second 1 -->
-            <div class="second-sec">
+            <div class="second-sec sec_1">
                 <div class="videobox">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/1wJ4iFYKZWU"
                         title="YouTube video player" frameborder="0"
@@ -127,7 +127,7 @@
             </div>
 
             <!-- second 2 -->
-            <div class="second-sec">
+            <div class="second-sec sec_2">
                 <div class="videobox">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/iV3yI4CtJpg"
                         title="YouTube video player" frameborder="0"
@@ -166,7 +166,7 @@
             </div>
 
             <!-- second 3 -->
-            <div class="second-sec">
+            <div class="second-sec sec_3">
                 <div class="videobox">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/QnxZo4sKWMg"
                         title="YouTube video player" frameborder="0"
@@ -195,10 +195,11 @@
                         </h2>
                     </div>
                     <div class="text_right">
-                        변화가 더디고 진입 장벽 또한 높았던 결제 산업, 이제 바뀌어야 합니다.
-                        토스페이먼츠는 그동안 어렵고 힘들었던 결제 경험을 혁신하고자 합니다.
-                        소비자들에게 쉽고 편한 서비스 경험을 제공하고, 가맹점들에게는 오직 사업에만
-                        집중할 수 있는 환경을 보장하는 제품을 만들어 냅니다.
+                        <p>
+                            변화가 더디고 진입 장벽 또한 높았던 결제 산업, 이제 바뀌어야 합니다.
+                            토스페이먼츠는 그동안 어렵고 힘들었던 결제 경험을 혁신하고자 합니다.
+                            소비자들에게 쉽고 편한 서비스 경험을 제공하고, 가맹점들에게는 오직 사업에만
+                            집중할 수 있는 환경을 보장하는 제품을 만들어 냅니다.
                         </p>
                         <a href="../common/career_job.html"><button type="button">토스페이먼츠 채용공고 확인하기</button></a>
                     </div>
@@ -206,7 +207,7 @@
             </div>
 
             <!-- second 4 -->
-            <div class="second-sec">
+            <div class="second-sec sec_4">
                 <div class="videobox">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/Jw88JYf5AEw"
                         title="YouTube video player" frameborder="0"
@@ -247,7 +248,7 @@
             </div>
 
             <!-- second 5 -->
-            <div class="second-sec">
+            <div class="second-sec sec_5">
                 <div class="videobox">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/Q8U4Q1tf85Y"
                         title="YouTube video player" frameborder="0"
@@ -289,7 +290,7 @@
             </div>
 
             <!-- second 6 -->
-            <div class="second-sec">
+            <div class="second-sec sec_6">
                 <div class="videobox">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/KkHtMsxgdIs"
                         title="YouTube video player" frameborder="0"
@@ -459,16 +460,14 @@
     $(window).on("scroll", function () {
     let windowScroll = $(window).scrollTop();
 
-    console.log(windowScroll);
-
     /* header nav */
-    if(windowScroll >= 0 && windowScroll < 3000) {
+    if(windowScroll >= 0 && windowScroll < 2400) {
         $("header").css("background", "transparent").css("borderColor", "transparent");
         $(".navicon a").css("filter", "brightness(0) invert(1)");
         $(".icon").css("backgroundImage", "linear-gradient(#fff 2px, transparent 2px)");
         $(".icon2").css("backgroundImage", "linear-gradient(#fff 2px, transparent 2px)");
         $(".toss_nav ul li a").removeClass("white_nav");
-    } else if(windowScroll >= 3000) {
+    } else if(windowScroll >= 2400) {
         $("header").css("background", "#fff").css("backdropFilter", "none").css("borderBottom", "1px solid #E5E8EB");
         $(".navicon a").css("filter", "none");
         $(".icon").css("backgroundImage", "linear-gradient(#3b3b46 2px, transparent 2px)");
@@ -483,33 +482,26 @@
 
         let second = $(".second").offset().top;
 
-        if (windowScroll >= 0 && windowScroll < 100) {
+        if (windowScroll >= 0 && windowScroll <= 100) {
             $(".text_1").css("opacity", ".7");
             $(".first-secBg").css("filter", " brightness(.8)");
             $(".text_2").css("opacity", "0");
             $(".text_3").css("opacity", "0");
-
-
         } else if (windowScroll > 101 && windowScroll < 201) {
             $(".text_1").css("opacity", ".3");
             $(".first-secBg").css("filter", " brightness(.7)");
             $(".text_2").css("opacity", "0");
             $(".text_3").css("opacity", "0");
-
-
         } else if (windowScroll > 202 && windowScroll < 301) {
             $(".text_1").css("opacity", ".1");
             $(".first-secBg").css("filter", " brightness(.6)");
             $(".text_2").css("opacity", "0");
             $(".text_3").css("opacity", "0");
-
-
         } else if (windowScroll > 302 && windowScroll < 401) {
             $(".text_1").css("opacity", "0");
             $(".first-secBg").css("filter", " brightness(.55)");
             $(".text_2").css("opacity", "0");
             $(".text_3").css("opacity", "0");
-
         } else if (windowScroll > 402 && windowScroll < 501) {
             $(".text_2").css("opacity", ".3");
             $(".first-secBg").css("filter", " brightness(.5)");
@@ -590,21 +582,54 @@
             $(".first-secBg").css("filter", "brightness(0) invert(100%)");
             $(".text_1").css("opacity", "0");
             $(".text_3").css("opacity", ".5");
-        } else if (windowScroll > 2002 && windowScroll < second) {
-            $("header").css("background", "#fff").css("borderBottom", "1px solid #E5E8EB");
-            $(".toss_nav .logo").css("filter", "none");
-            $(".icon").css("backgroundImage", "linear-gradient(#3b3b46 2px, transparent 2px)");
-            $(".icon2").css("backgroundImage", "linear-gradient(#3b3b46 2px, transparent 2px)");
-            $(".toss_nav ul li a").addClass("white_nav");
-            $(".icon").css("backgroundImage", "linear-gradient(#3b3b46 2px, transparent 2px)");
-            $(".icon2").css("backgroundImage", "linear-gradient(#3b3b46 2px, transparent 2px)");
+        // } else if (windowScroll > 2002 && windowScroll < second) {
+        //     $("header").css("background", "#fff").css("borderBottom", "1px solid #E5E8EB");
+        //     $(".toss_nav .logo").css("filter", "none");
+        //     $(".icon").css("backgroundImage", "linear-gradient(#3b3b46 2px, transparent 2px)");
+        //     $(".icon2").css("backgroundImage", "linear-gradient(#3b3b46 2px, transparent 2px)");
+        //     $(".toss_nav ul li a").addClass("white_nav");
+        //     $(".icon").css("backgroundImage", "linear-gradient(#3b3b46 2px, transparent 2px)");
+        //     $(".icon2").css("backgroundImage", "linear-gradient(#3b3b46 2px, transparent 2px)");
+        // 겹쳐서 지웠습니다
         } else {
             $(".text_2").css("opacity", "0");
             $(".first-secBg").css("filter", "brightness(0) invert(100%)");
             $(".text_1").css("opacity", "0");
             $(".text_3").css("opacity", "0");
         }
+
+        /* second2 */
+        let sec_1 = $(".sec_1").offset().top;
+        let sec_2 = $(".sec_2").offset().top;
+        let sec_3 = $(".sec_3").offset().top;
+        let sec_4 = $(".sec_4").offset().top;
+        let sec_5 = $(".sec_5").offset().top;
+        let sec_6 = $(".sec_6").offset().top;
+        let third = $(".third").offset().top;
+
+        if(windowScroll >= 2420 && windowScroll < 3120) {
+            $(".second_amimation").removeClass("second_amimation");
+            $(".sec_1").addClass("second_amimation");
+        } else if(windowScroll >= 3120 && windowScroll < 4120) {
+            $(".second_amimation").removeClass("second_amimation");
+            $(".sec_2").addClass("second_amimation");
+        } else if(windowScroll >= 4120 && windowScroll < 5020) {
+            $(".second_amimation").removeClass("second_amimation");
+            $(".sec_3").addClass("second_amimation");
+        } else if(windowScroll >= 5020 && windowScroll < 6020) {
+            $(".second_amimation").removeClass("second_amimation");
+            $(".sec_4").addClass("second_amimation");
+        } else if(windowScroll >= 6020 && windowScroll < 6920) {
+            $(".second_amimation").removeClass("second_amimation");
+            $(".sec_5").addClass("second_amimation");
+        } else if(windowScroll >= 6920 && windowScroll < 7620) {
+            $(".second_amimation").removeClass("second_amimation");
+            $(".sec_6").addClass("second_amimation");
+        }            
     });
+
+
+    
     </script>
     <script src="../js/getScroll.js"></script>
 </body>

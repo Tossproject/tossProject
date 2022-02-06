@@ -212,7 +212,7 @@ section{
 
 .title {
     max-width: 960px;
-    margin: 0px auto;
+    margin: 0 auto;
     margin-top: 100px;
 }
 
@@ -232,14 +232,20 @@ section{
     white-space: pre-line;
 }
 
-@media (max-width: 639px) {
+@media (max-width: 931px) {
     .title {
         padding: 0 30px;
     }
+}
 
+@media (max-width: 639px) {
     .title .title1 {
         font-size: 30px;
         line-height: 45px;
+    }
+
+    .title .title2 {
+        font-size: 17px;
     }
 }
 
@@ -280,7 +286,7 @@ section{
     }
 }
 
-.dark {
+/* .dark {
     filter: brightness(80%);
 }
 
@@ -294,7 +300,7 @@ section{
 
 .bright {
     opacity: 0.7;
-}
+} */
 
 .notitle {
     position: relative;
@@ -373,19 +379,29 @@ section{
     overflow: hidden;
 }
 
-@media (max-width: 639px) {
+@media (max-width: 931px) {
+    .notitle .nocontent1 .image {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
     .notitle .nocontent2 .image {
-        margin-left: 0px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .notitle .nocontent3 .image {
-        margin-left: 0px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .notitle .nocontent4 .image {
-        margin-left: 0px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
+}
 
+@media (max-width: 639px) {
     .notitle {
         padding: 0 30px;
     }
@@ -546,6 +562,7 @@ section .interview1 .inter1, section .interview2 .inter2, section .interview3 .i
 .interviewContent {
     width: 100%;
     margin: 0 0 28px;
+    padding: 0 20px;
     font-size: 17px;
     line-height: 25px;
     color: rgb(78, 89, 104);
@@ -601,6 +618,11 @@ section .interview1 .inter1, section .interview2 .inter2, section .interview3 .i
     cursor: pointer;
 }
 
+.insurance {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
 .insurtitle {
     margin-bottom: 56px;
     font-size: 56px;
@@ -612,7 +634,6 @@ section .interview1 .inter1, section .interview2 .inter2, section .interview3 .i
 .wrapper {
     display: flex;
     -webkit-box-pack: justify;
-    margin-left: 280px;
 }
 
 @media (max-width: 440px) {
@@ -642,7 +663,7 @@ section .interview1 .inter1, section .interview2 .inter2, section .interview3 .i
     section .interview3 {
         padding: 33px 0px;
     }
-
+    
     .interviewContent {
         margin: 0 0 18px;
         margin-top: -27px;
@@ -672,10 +693,12 @@ section .interview1 .inter1, section .interview2 .inter2, section .interview3 .i
     .insurtitle {
         font-size: 28px;
         line-height: 40px;
+        margin-bottom: 35px;
     }
 
     .wrapper {
         margin-left: 0px;
+        padding: 0px !important;
         flex-direction: column;
     }
 }
@@ -684,6 +707,12 @@ section .interview1 .inter1, section .interview2 .inter2, section .interview3 .i
     .wrapper .insurcontent {
         min-width: 268px;
         margin-right: 40px;
+    }
+}
+
+@media (max-width: 931px) {
+    .wrapper {
+        padding: 0 30px;
     }
 }
 
@@ -749,13 +778,12 @@ section .interview1 .inter1, section .interview2 .inter2, section .interview3 .i
 }
 
 .bx-wrapper .bxcontrols-direction .bx-prev i{
-    left: 62%;
+    left: 45%;
     color: #aeb5be;
-
 }
 
 .bx-wrapper .bxcontrols-direction .bx-next i {
-    right: 30%;
+    right: 45%;
     color: #aeb5be;
 }
 
@@ -820,5 +848,16 @@ section .interview1 .inter1, section .interview2 .inter2, section .interview3 .i
     .outro .outrocontent .outrotitle {
         font-size: 30px;
         line-height: 40px;
+    }
+}
+
+/* footer */
+.footer_top .title {
+    margin: 0 !important;
+}
+
+@media (max-width: 931px) {
+    .footer_top .title {
+        padding: 0 0 10px 0;
     }
 }
