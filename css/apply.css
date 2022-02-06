@@ -26,9 +26,6 @@ section .container {
     }
 }
 
-.container .containerwrapper {
-    min-width: 100vh;
-}
 
 @media (min-width: 721px) {
     .container .containerwrapper {
@@ -64,9 +61,6 @@ section .container {
 form {
     position: relative;
 }
-label {
-    position: absolute;
-}
 
 .required {
     display: inline-block;
@@ -76,6 +70,39 @@ label {
     line-height: 1.6;
     position: relative;
     color: rgb(78, 89, 104);
+    cursor: pointer;
+}
+.resume:hover {
+    border: 2px solid #90ceff;
+}
+.resumeFile {
+    display: inline-block;
+    padding: 4px 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+    position: relative;
+    color: rgb(78, 89, 104);
+    cursor: pointer;
+}
+
+.resumeName, .portfolioName {
+    display: inline-block;
+    padding: 4px 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+    position: relative;
+    color: rgb(78, 89, 104);
+}
+.resumeName::after {
+    display: inline-block;
+    margin: 0 0 2px 6px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #f44336;
 }
 
 form .required::after {
@@ -102,7 +129,8 @@ form .required::after {
     border: none;
     outline: none;
 }
-.containerwrapper .resume, .containerwrapper .portfolio {
+
+.resume, .portfolio {
     width: 100%;
     height: 48px;
     align-items: center;
@@ -112,6 +140,23 @@ form .required::after {
     border: 2px solid #e5e8eb;
     border-radius: 8px;
 }
+.portfolioFile {
+    width: 100%;
+    height: 48px;
+    align-items: center;
+    margin: 0;
+    padding: 0 18px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+}
+
+
+.portfolio:hover {
+    border: 2px solid #90ceff;
+    cursor: pointer;
+}
+
 
 .name input, .phone input, .email input, .link input {
     width: 100%;
@@ -124,7 +169,7 @@ form .required::after {
     box-shadow: rgba(0, 27, 55, 0.1);
 }
 
-.name input:hover, .phone input:hover, .email input:hover, .resume input:hover, .portfolio input:hover, .link input:hover {
+.name input:hover, .phone input:hover, .email input:hover, .link input:hover {
     border: 2px solid #90ceff;
 }
 
@@ -181,7 +226,7 @@ button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 0 0;
+    margin: 15px 0 0;
     font-size: 17px;
     line-height: 1.6;
     font-weight: 600;
@@ -192,4 +237,14 @@ button {
     width: 115px;
     height: 63px;
     cursor: pointer;
+}
+
+.inlinespace {
+    width: 100%;
+}
+
+@media (min-width:721px) {
+    .inlinespace {
+        height: 8px;
+    }
 }
