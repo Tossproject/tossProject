@@ -3,6 +3,10 @@ html, body {
     letter-spacing: -0.03em;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* header */
 header {
     background: transparent;
@@ -22,12 +26,11 @@ section{
 
 .toss_nav ul li a {
     color: #fff;
-    font-weight: 600;
     border-radius: 8px;
 }
 
 .toss_nav ul li a:hover, .toss_nav ul li a:active {
-    color: #fff !important;
+    color: #fff;
     background-color: rgba(217,217,255, 0.11);
 }
 
@@ -36,13 +39,13 @@ section{
 }
 
 .white_nav:hover, .white_nav:active {
+    color: #4e5968 !important;
     background-color: #F3F2F1 !important;
 }
 
 @media only screen and (min-width: 768px) {
     .toss_nav ul li a {
         padding: 9px 11px;
-        padding-top: 13px;
     }
 
     .toss_nav .logo svg {
@@ -777,13 +780,19 @@ section .interview1 .inter1, section .interview2 .inter2, section .interview3 .i
     font-weight: bolder;
 }
 
+.bx-wrapper .bx-prev {
+    left: 45% !important;
+}
+
+.bx-wrapper .bx-next {
+    right: 45% !important;
+}
+
 .bx-wrapper .bxcontrols-direction .bx-prev i{
-    left: 45%;
     color: #aeb5be;
 }
 
 .bx-wrapper .bxcontrols-direction .bx-next i {
-    right: 45%;
     color: #aeb5be;
 }
 
