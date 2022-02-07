@@ -1,17 +1,65 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+.banner{
+    width: 100%;
+    background-color:  rgb(252, 240, 196);;
+
+}
+
+.banner-center{
+    width: 450px;
+    margin: 0 auto;
+}
+
+
+.banner img{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+=======
+=======
+body {
+  overflow: auto;
+  min-width: 1031px;
+}
+
+/* header */
+>>>>>>> master
 header {
-  border-bottom: 1px solid rgba(0, 27, 55, 0.1);
+  border: none;
+  letter-spacing: 0;
 }
-header nav.toss_nav .navicon a {
-  color: rgb(0, 100, 255);
-  text-decoration: none;
+section{
+  position: relative;
 }
-header nav.toss_nav .navicon a span {
-  font-size: 28px;
+
+.toss_nav ul li a {
+  color: #4e5968 !important;
+  border-radius: 8px;
 }
-header nav.toss_nav ul li a:hover {
-  background-color: rgba(2, 32, 71, 0.05);
-  border-radius: 10px;
-  color: #3b3b46;
+
+.toss_nav ul li a:hover, .toss_nav ul li a:active {
+  color: #4e5968 !important;
+  background-color: rgba(2, 32, 71, 0.05) !important;
+}
+
+.white_nav {
+  color: #4e5968 !important;
+}
+
+.white_nav:hover, .white_nav:active {
+  background-color: #F3F2F1 !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .toss_nav ul li a {
+      padding: 9px 11px;
+  }
+
+  .toss_nav .logo svg {
+      width: 78px;
+      height: 20px;
+  }
 }
 
 .banner {
@@ -28,10 +76,117 @@ header nav.toss_nav ul li a:hover {
   width: 100%;
   height: auto;
   margin-top: 60px;
+>>>>>>> origin/modify
 }
 
 /* secrion 1 */
+<<<<<<< HEAD
 
+<<<<<<< HEAD
+.goal-center{
+    width: 1030px;
+    margin: 50px auto;
+}
+.goal-text{
+    margin-bottom: 60px;
+}
+.goal-text h1{
+    font-size: 35px;
+    color: #24282e;
+    margin-bottom: 30px;
+}
+.goal-text p{
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #24282e;
+    line-height: 20px;
+}
+.goal-text a{
+    color: rgb(66, 66, 241);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+
+
+}
+.goal-text a:hover{
+    color: rgb(40, 40, 199);
+}
+.list ul{
+    display: flex;
+
+}
+.list ul li{
+    margin-right: 10px;
+}
+
+.list ul li a{
+    color: #24282e;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+.input-center{
+    width: 1030px;
+    margin: 50px auto;
+}
+.all-box{
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+#select{
+    padding: 5px 10px;
+    box-sizing: border-box;
+  
+}
+.select{
+    width: 380px;
+    height: 30px;
+    padding: 20px 20px 20px 40px;
+    background: url(../images/glass.png)  no-repeat center left 10px;
+    background-size: 5%;
+    filter: opacity(0.7);
+    border-radius: 5px;
+    border: 1px solid rgb(228, 225, 225);
+    outline-color: rgb(33, 33, 243);
+}
+.select:hover{
+    border: 1px solid rgb(97, 97, 238);
+}
+#select{
+    width: 200px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 1px solid rgb(228, 225, 225);
+    color: #575656;
+
+}
+#select:hover{
+    border: 1px solid rgb(97, 97, 238);
+}
+#select option{
+    font-size: 20px;
+    line-height: 30px;
+   
+}
+
+.input-center a{
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+    font-size: 13px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    padding: 6px;
+    border-radius: 5px;
+}
+.input-center a:hover{
+    background-color: #f2f2f2;
+}
+=======
+=======
+>>>>>>> master
 .goal-center {
   width: 1030px;
   margin: 50px auto;
@@ -58,7 +213,7 @@ header nav.toss_nav ul li a:hover {
   font-size: 14px;
 }
 .goal-text a:hover {
-  color: rgb(40, 40, 199);
+  color: #0056b3;
 }
 .list ul {
   display: flex;
@@ -104,18 +259,18 @@ header nav.toss_nav ul li a:hover {
   background-size: 5%;
   filter: opacity(0.7);
   border-radius: 5px;
-  border: 1px solid rgb(228, 225, 225);
-  outline-color: rgb(33, 33, 243);
+  border: 2px solid rgb(228, 225, 225);
+  outline-color: #3182f6;
   font-weight: bold;
 }
 .select:hover {
-  border: 1px solid rgb(97, 97, 238);
+  border-color:#90c2ff;
 }
 #select {
   width: 200px;
   border-radius: 5px;
   margin-left: 10px;
-  border: 1px solid rgb(228, 225, 225);
+  border: 2px solid rgb(228, 225, 225);
   color: #24282e;
   appearance: none;
   background: url(../images/down.png) no-repeat right 20px center;
@@ -125,10 +280,10 @@ header nav.toss_nav ul li a:hover {
 }
 
 #select:hover {
-  border: 1px solid rgb(97, 97, 238);
+  border-color:#90c2ff;
 }
 #select:focus {
-  outline-color: rgb(33, 33, 243);
+  outline-color: #3182f6;
 }
 option {
   font-size: 19px;
@@ -215,6 +370,7 @@ option {
 .gif-center a:hover {
   background-color: rgba(14, 118, 255, 0.12);
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 .gif-center a{
@@ -405,3 +561,6 @@ footer {
 }
 =======
 >>>>>>> career
+=======
+>>>>>>> origin/modify
+>>>>>>> sum

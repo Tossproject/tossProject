@@ -1,7 +1,7 @@
-html, body{
-width:100%;
-overflow-x:hidden;
-letter-spacing: -0.03em;
+html, body {
+  width:100%;
+  overflow-x:hidden;
+  letter-spacing: -0.03em;
 }
 
 /* header */
@@ -10,51 +10,108 @@ header {
   backdrop-filter: blur(30px);
   border-color: transparent;
 }
+
+section{
+  position: relative;
+}
+
 .magnifier_li a:hover, .magnifier_li a:active {
   background-color: transparent !important;
 }
+
 .trigger {
   display: flex;
   align-items: center;
 }
+
 .magnifier {
   display: block !important;
   padding-right: 18px;
 }
+
 .magnifier svg {
   top: 0;
 }
+
 .magnifier_li {
   display: none;
 }
+
 header nav .navicon a {
   color: white;
   text-decoration: none;
   font-size: 18px;
 }
-header nav .navicon a span {
-  margin-left: 8px;
+
+.logo{
+  text-decoration: none;
+  color: black;
+  position: relative;
 }
-header nav.toss_nav ul li a {
-  color: white;
+.logoText{
+  position: absolute;
+  width: 100%;
+  top: 8px;
+  left: 84px;
+  font-weight: 500;
+  font-size: 18px;
 }
-header nav.toss_nav ul li a:hover {
-  background-color: #232429;
-  color: white;
-  border-radius: 5px;
-}
-.toss_nav .logo {
-  filter: brightness(0) invert(1);
-}
+
 .line-icon {
   position: relative;
   top: 2px;
 }
+
 .line-icon path {
   fill: #fff;
 }
+
 .icon, .icon2 {
   background-image: linear-gradient(#fff 2px, transparent 2px);
+}
+
+.toss_nav .logo {
+  filter: brightness(0) invert(1);
+}
+
+.icon, .icon2 {
+  background-image: linear-gradient(#fff 2px, transparent 2px);
+}
+
+.toss_nav ul li a {
+  color: #fff;
+  border-radius: 8px;
+}
+
+.toss_nav ul li a:hover, .toss_nav ul li a:active {
+  color: #fff;
+  background-color: rgba(217,217,255, 0.11);
+}
+
+.white_nav {
+  color: #4e5968 !important;
+}
+
+.white_nav:hover, .white_nav:active {
+  color: #4e5968 !important;
+  background-color: #F3F2F1 !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .toss_nav ul li a {
+      padding: 9px 11px;
+  }
+
+  .toss_nav .logo svg {
+      width: 78px;
+      height: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .trigger {
+      display: none !important;
+  }
 }
 
 /* section */
@@ -71,6 +128,7 @@ section {
 .first-sec {
   background-color: rgb(14, 16, 16);
   width: 100%;
+  height: 670px;
   text-align: center;
   padding-top: 120px;
 }
@@ -80,6 +138,10 @@ section {
   z-index: 3;
   position: relative;
 }
+.txt-wrapper {
+  margin: 0;
+}
+
 .txt-wrapper h1 {
   font-size: 36px;
   margin-bottom: 20px;
@@ -95,19 +157,18 @@ section {
 .first-sec img {
   width: 100%;
   position: relative;
-  bottom: 71px;
+  bottom: 95px;
 }
 .first-sec img:last-child {
   width: 66px;
   height: 19px;
   position: absolute;
-  bottom: 14px;
   left: 45%;
   opacity: 0.2;
   text-align: center;
   animation: arrowicon ease 2s;
   animation-iteration-count: infinite;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 @keyframes arrowicon {
   0% {
@@ -287,9 +348,12 @@ footer .footer_top li.title {
 }
 
 /* 미디어쿼리 */
-@media screen and (min-width: 768px) {
-  .trigger, .magnifier {
-    display: none !important;
+@media screen and (min-width: 1024px) {
+  .txt-wrapper {
+    position: absolute !important;
+    top: 291px;
+    left: 23%;
+    text-align: left;
   }
   .magnifier_li {
     display: block;
@@ -301,12 +365,6 @@ footer .footer_top li.title {
     padding-top: 0;
     overflow: hidden;
   }
-  .txt-wrapper {
-    position: absolute !important;
-    top: 291px;
-    left: 511px;
-    text-align: left;
-  }
   .txt-wrapper h1 {
     font-size: 64px;
     line-height: 79px;
@@ -315,15 +373,42 @@ footer .footer_top li.title {
     font-size: 24px;
   }
   .img-wrapper img.lock {
-    width: 917px;
-    height: 900px;
+    width: 917px !important;
+    height: 900px !important;
     position: relative;
-    bottom: 49px;
+    bottom: 49px !important;
     left: 55px;
   }
   .first-sec img:last-child {
     bottom: 0;
     left: 48%;
+    margin-bottom: 40px !important;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .trigger, .magnifier {
+    display: none !important;
+  }
+
+  .first-sec {
+    height: 813px;
+  }
+  .txt-wrapper h1 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+  .txt-wrapper p {
+    font-size: 19px;
+  }
+  .first-sec img:last-child {
+    margin-bottom: -59px;
+  }
+  .img-wrapper img.lock {
+    bottom: 132px;
+    right: 16%;
+    width: 650px;
+    height: auto;
   }
 
   .second-sec {

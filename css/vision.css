@@ -9,37 +9,46 @@ html, body{
 header {
     background: transparent;
     border: none;
+    letter-spacing: 0;
 }
-  
+section{
+    position: relative;
+}
+.toss_nav .logo {
+    filter: brightness(0) invert(1);
+}
+
+.icon, .icon2 {
+    background-image: linear-gradient(#fff 2px, transparent 2px);
+}
+
 .toss_nav ul li a {
     color: #fff;
-    font-weight: 600;
     border-radius: 8px;
 }
-  
+
 .toss_nav ul li a:hover, .toss_nav ul li a:active {
     color: #fff;
     background-color: rgba(217,217,255, 0.11);
 }
-  
+
 .white_nav {
     color: #4e5968 !important;
 }
-  
+
 .white_nav:hover, .white_nav:active {
-    color: #0056b3 !important;
+    color: #4e5968 !important;
     background-color: #F3F2F1 !important;
 }
-  
+
 @media only screen and (min-width: 768px) {
     .toss_nav ul li a {
-      padding: 9px 11px;
-      padding-top: 13px;
+        padding: 9px 11px;
     }
-  
+
     .toss_nav .logo svg {
-      width: 78px;
-      height: 20px;
+        width: 78px;
+        height: 20px;
     }
 }
 
@@ -78,7 +87,6 @@ section {
     z-index: -1;
 }
 
-
 .first-sec{
     max-width: 783px;
     width: 100%;
@@ -86,13 +94,16 @@ section {
     position: relative;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
+
 .first_text {
     color: #fff;
     text-align: center;
-    padding-top: 190px;
+    padding-top: 20em;
     position: fixed;
-    
+    margin: 0 auto;    
 }
 
 @keyframes arrowicon {
@@ -108,9 +119,8 @@ section {
       opacity: 0;
       transform: translateY(0px);         
     }
-  }
+}
 
-  
 .icontxt {
   margin-top: 40px;
   text-align: center;
@@ -124,7 +134,7 @@ section {
 
 .text_2, .text_3{
     opacity: 0 ;
-    padding-top: 250px;
+    padding-top: 23em;
 }
 
 .text_1 h2 {
@@ -158,8 +168,22 @@ section {
     position: relative;
 }
 
+@keyframes second {
+    0% {
+        transform: scale(0.85);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .second-sec {
     margin-bottom: 160px;
+    padding: 0 10px;
+}
+
+.second_amimation {
+    animation: second 0.4s ease-out forwards;
 }
 
 .videobox {
@@ -183,6 +207,7 @@ iframe {
     flex-direction: row;
     align-items: flex-start;
     margin-top: 60px;
+    padding: 0 40px;
 }
 
 .second_text .text_left {
@@ -190,14 +215,13 @@ iframe {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    padding: 10px 40px;
+    padding: 10px 40px 10px 0;
 }
 
 .second_text .text_right {
     display: flex;
     width: 100%;
     flex-direction: column;
-    margin-left: 30px;
     align-items: flex-start;
 }
 
@@ -210,8 +234,8 @@ iframe {
 
 .second_text p {
     color: #333d4b;
-    font-size: 17px;
-    font-weight: 800;
+    font-size: 16.5px;
+    font-weight: 400;
 }
 
 .second svg {
@@ -234,11 +258,14 @@ iframe {
     background-color: #d1d6db;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
     .second_text {
         flex-direction: row;
     }
 
+    .second_text .text_right {
+        margin-left: 30px;
+    }
 }
 
 /* 섹션3 */
@@ -344,8 +371,7 @@ iframe {
         max-width: 300px;
         font-size: 18px;
         width: 100%;
-        margin-left: 42px;
-        line-height: 20px;
+        line-height: 21px;
         display: block;
     }
 

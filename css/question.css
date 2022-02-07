@@ -1,65 +1,123 @@
-* {
-    margin: 0;
-    padding: 0;
+
+/* header */
+header {
+    border: none;
+    letter-spacing: 0;
 }
 
-body {
-    font-family: Toss Product Sans,-apple-system,BlinkMacSystemFont,Bazier Square,Noto Sans KR,Segoe UI,Apple SD Gothic Neo,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+section{
+    position: relative;
 }
 
-.header-nav {
-    width: 100%;
-    height: 59px
+.magnifier_li a:hover, .magnifier_li a:active {
+    background-color: transparent !important;
 }
 
-.header-nav .logo {
+.trigger {
     display: flex;
     align-items: center;
-    margin: auto;
-    max-width: 1140px;
-    padding-top: 12px;
-    padding-left: 98px;
-    justify-content: space-between;
 }
 
-.logo-icon span {
-    display: flex;
-    margin-right: 24px;
+.line-icon {
+    position: relative;
+    top: 2px;
 }
 
-.logo-container {
-    display: flex;
-    flex: 1;
-    justify-content: space-around;
-    max-height: 100%;
-    margin-left: 375px;
+.magnifier {
+    display: block !important;
+    padding-right: 18px;
 }
 
-.header {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+.magnifier svg {
+    top: 0;
 }
 
-.header li {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-    
+.magnifier_li {
+    display: none;
 }
-.header a {
-    font-size: 15px;
-    line-height: 20px;
-    cursor: pointer;
-    border-radius: 8px;
-    border: 0;
+
+.logo{
     text-decoration: none;
-    padding: 12px 10px;
-    color: #4e5968;
-    font-weight: bold;
+    color: black;
+    position: relative;
 }
+.logoText{
+    position: absolute;
+    width: 100%;
+    top: 8px;
+    left: 84px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.toss_nav ul li a {
+    color: #4e5968 !important;
+    border-radius: 8px;
+}
+
+.toss_nav ul li a:hover, .toss_nav ul li a:active {
+    color: #4e5968 !important;
+    background-color: rgba(2, 32, 71, 0.05) !important;
+}
+
+.white_nav {
+    color: #4e5968 !important;
+}
+
+.white_nav:hover, .white_nav:active {
+    background-color: #F3F2F1 !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .toss_nav ul li a {
+        padding: 9px 11px !important;
+    }
+
+    .toss_nav .logo svg {
+        width: 78px;
+        height: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .trigger {
+        display: none !important;
+    }
+}
+
+@media (max-width: 639px) {
+    .clickitem {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-left: -3.7%;
+        max-height: 70%;
+        overflow-y: scroll;
+    }
+
+    .clickwrapper {
+        width: 100%;
+        padding: 20px 20px 1px 20px;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        position: relative;
+        z-index: 78;
+        background-color: #fff;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .subnav li a {
+        font-size: 17px !important;
+    }
+}
+
 .mobile-nav {
     display: flex;
     align-items: center;
@@ -79,6 +137,10 @@ body {
     background-color: #f2f4f6;
 }
 
+.mobile-nav .hide svg {
+    display: none;
+}
+
 @media screen and (max-width: 640px) {
     .mobile-nav button {
         display: block;
@@ -87,16 +149,25 @@ body {
     .logo-container {
         display: none;
     }
+
+    .mobile-nav .hide svg {
+        display: block;
+    }
 }
 
 /* 본문 */
-
 .container {
     max-width: 1140px;
     width: 100%;
     height: 100%;
     margin: auto;
-    padding: 76px 0;
+    padding: 120px 0;
+}
+
+@media (max-width: 639px) {
+    .container {
+        padding: 38px 0;
+    }
 }
 
 .main {
@@ -112,11 +183,22 @@ h1 {
     color: #333d4b;
     margin-bottom: 65px;
 }
+
+@media (max-width: 639px) {
+    h1 {
+        display: none;
+    }
+}
+
 form {
     position: relative;
     width: 100%;
     margin-bottom: 72px;
 }
+.searchbox {
+    position: relative;
+}
+
 .searchbox input {
     margin-top: -3px;
     font-size: 32px;
@@ -129,10 +211,55 @@ form {
     border-bottom: 1px solid #b0b8c1;
     color: #4e5968;
 }
-.searchbox span {
-    position: absolute;
+
+.searchbox input::placeholder {
+    color: #A8B1BB;
 }
 
+.searchbox span {
+    position: absolute;
+    top: 3px;
+}
+
+.searchbox .faq_icon svg {
+    width: 28px;
+    height: auto;
+}
+
+.searchbox .faq_icon svg path {
+    fill: #A8B1BB;
+}
+
+.searchbox input:focus {
+    outline: none;
+    border-bottom: 1px solid #3182f6;
+}
+
+@media (max-width: 639px)  {
+    form {
+        margin-bottom: 45px;
+    }
+
+    .searchbox {
+        margin-top: 60px;
+    }
+
+    .searchbox input {
+        padding-bottom: 12px;
+        padding-left: 26px;
+        font-size: 18px;
+        min-height: 38px;
+    }
+
+    .searchbox span {
+        top: 0;
+    }
+
+    .searchbox .faq_icon svg {
+        width: 19px;
+        height: auto;
+    }
+}
 
 .searchbox input:focus {
     outline: none;
@@ -143,6 +270,54 @@ form {
     display: flex;
 }
 
+.columns button {
+    display: none;
+}
+
+@media (max-width: 639px) {
+    .columns {
+        flex-direction: column;
+    }
+    .columns button {
+        display: block;
+        text-align: left;
+    }
+
+    .columns button svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.mobilebtn {
+    background: none;
+    border: 0px;
+    padding: 0px;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: rgb(51, 61, 75);
+    margin-bottom: 40px;
+}
+
+.mobilebtn .btn_svg {
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    min-width: 24px;
+    position: relative;
+    top: 5px;
+}
+
 aside {
     width: 100%;
     max-width: 200px;
@@ -150,18 +325,61 @@ aside {
     margin-right: 60px;
 }
 
+@media (max-width: 639px) {
+    aside {
+        max-width: 635px;
+    }
+}
+
+.bg {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 75;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.16);
+
+    display: none;
+}
+
 .column1 .subnav {
     list-style: none;
 }
 
-.subnav li > a {
+@media (max-width: 639px) {
+    .column1 {
+        display: none;
+    }
+}
+
+@media (max-width: 639px) {
+    .column2 li a:hover {
+        color: #0056b3;
+    }
+}
+
+.bluetext {
+    color: #3182f6 !important;
+}
+
+.subnav li  a {
     display: flex;
     margin-bottom: 10px;
     text-decoration: none;
     cursor: pointer;
-    padding: 12px 16px;
+    padding: 14px 11px;
     font-size: 20px;
     font-weight: 600;
+    border-radius: 8px;
+    color: #8b98a1;
+}
+
+.navStyle {
+    background: #fff;
+    color: #3182f6;
+}
+.comStyle {
     color: #8b98a1;
 }
 
@@ -180,6 +398,13 @@ aside {
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
+}
+
+@media (max-width: 639px) {
+    .column2 li a {
+        font-size: 17px !important;
+        padding: 10px 16px !important;
+    }
 }
 
 .column2 ul {
@@ -219,7 +444,100 @@ aside {
     color: #b0b8c1;
     content: "Q";
 }
+.column-content {
+    width: 100%;
+    margin-top: 16px;
+    display: none;
+}
 
+.column-content .text {
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 24px;
+    padding-left: 0px;
+    text-decoration: none;
+    display: inline-flex;
+    background: none;
+    border: 0;
+    font-weight: 500;
+    color: #6b7684;
+}
+.column-content .text:hover {
+    background-color: #f2f4f6;
+}
+
+.column-content span {
+    height: 18px;
+    width: 18px;
+    max-width: 18px;
+    color: rgb(107, 118, 132);
+    display: inline-block;
+    line-height: 0;
+    font-size: 24px;
+    margin: 7px auto;
+}
+.column-content h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 130%;
+    color: rgb(51, 61, 75);
+    margin-bottom: 28px;
+}
+
+.column-content article {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: rgb(107, 118, 132);
+    margin-bottom: 72px;
+}
+
+article .qcontent {
+    margin: 0 0 24px;
+}
+
+.qcontent strong {
+    font-weight: 600;
+    color: rgb(78, 89, 104);
+    font-size: 18px;
+    white-space: pre-line;
+    text-decoration: underline;
+}
+.column-content .update {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(176, 184, 193);
+}
+
+.column-content .viewbutton {
+    cursor: pointer;
+    margin-top: 25px;
+    color: #f9fafb;
+    background-color: #3182f6;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    border: 0 solid transparent;
+    padding: 14px 18px;
+    border-radius: 6px;
+}
+
+.column-content .viewbutton a {
+    color: #f9fafb;
+    text-decoration: none;
+}
+
+.column-content .viewbutton:hover {
+    background-color: #1b64da;
+}
+
+/* pagination */
 .pagination {
     margin: 0 auto;
     display: block;
@@ -236,6 +554,7 @@ aside {
 .pagination .pagination-list li {
     margin: 0;
     list-style-type: none;
+    border-radius: 18px;
 }
 
 .pagination .pagination-list li::before {
@@ -267,7 +586,19 @@ aside {
     font-weight: 600;
 }
 
+.pagination-list .gray_btn {
+    background-color: #E5E8EB;
+}
 
+.pagination-list .gray_btn .num {
+    color: #333d4b;
+}
+
+.pagination-list .gray_btn button:hover {
+    background-color: #E5E8EB;
+}
+
+/* 배너 */
 .info {
     display: flex;
     flex-direction: row;
@@ -337,7 +668,6 @@ aside {
     background-color: rgba(0, 27, 55, 0.1);
 }
 
-
 .number .num2 {
     width: 110px;
     height: 54px;
@@ -358,15 +688,13 @@ aside {
     color: rgba(3, 18, 40, 0.7);
 }
 .image {
-    margin-left: 630px;
-    margin-top: -9px;
+    margin-left: 538px;
+    margin-top: 14px;
     position: absolute;
 }
-
-
-img {
-    width: 340px;
-    height: 340px;
+.image img {
+    width: 273px;
+    height: auto;
 }
 
 .mobile {
@@ -404,6 +732,11 @@ img {
     display: none;
 }
 
+@media only screen and (min-width: 768px) {
+    .trigger {
+        display: none !important;
+    }
+}
 
 @media screen and (max-width: 639px) {
     .number .num1 {
@@ -421,227 +754,18 @@ img {
     .mobile .call {
         display: block;
     }
+    .info {
+        background-color: #f5f6f8;
+    }
     .info .image {
         display: none;
     }
-}
-
-
-/* footer */
-footer {
-    background-color: #f9fafb;
-    width: 100%;
-    padding: 50px 0 100px;
-    line-height: 20px;
-}
-
-.footerbox {
-    max-width: 1064px;
-    margin: auto;
-    padding: 0 67px;
-}
-
-.footerbox a:active, .footerbox a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-/* footer_top */
-.footer_top {
-    padding-bottom: 50px;
-    font-size: 15px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer_top ul:first-child {
-    margin: 0;
-}
-
-.footer_top a {
-    color: #6b7684;
-    padding: 3.5px 0;
-    display: block;
-}
-
-.footer_top .title {
-    color: #333d4b;
-    font-weight: bold;
-    padding-bottom: 10px;
-}
-
-@media only screen and (min-width: 768px) {
-    .footer_top ul {
-        margin-left: 72px;
+    .info .container p {
+        font-size: 24px;
+        font-weight: 500;
     }
-
-    .footer_top {
-        justify-content: flex-start;
+    .info .container span {
+        font-size: 17px;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .footer_top ul {
-        margin-left: 30px;
-    }
-
-    .footer_top {
-        justify-content: space-between;
-    }
-}
-
-@media only screen and (max-width: 639px) {
-    .footer {
-        width: 100%;
-    }
-
-    .footer_top {
-        padding: 0;
-        flex-direction: column;
-    }
-
-    .footer_top ul {
-        padding-bottom: 40px;
-        margin: 0;
-    }
-}
-
-/* footer_bottom */
-/* footer_bottom_infobox */
-.infobox {
-    margin-bottom: 16px;
-}
-.infobox strong {
-    padding-bottom: 16px;
-    font-size: 15px;
-    color: #333d4b;
-    display: block;
-}
-
-.infobox p {
-    font-size: 13px;
-    color: #8b95a1;
-}
-
-.infobox p a {
-    font-size: 13px;
-    color: #8b95a1;
-    text-decoration: none;
-}
-
-/* footer_bottom_smaillListbox */
-.smallListbox {
-    font-size: 13px;
-    padding: 24px 0 30px 0;
-}
-
-.smallList {
-    display: flex;
-    justify-content: space-between;
-}
-
-.smallListbox li {
-    padding-right: 15px;
-}
-
-.smallListbox li:last-child {
-    padding: 0;
-}
-
-.smallListbox li a {
-    color: #6b7684;
-    display: block;
-}
-
-.smallListbox li a strong {
-    color: #333d4b;
-    font-weight: 500;
-}
-
-@media only screen and (max-width: 639px) {
-    .smallList {
-        flex-direction: column;
-    }
-
-    .smallListbox li {
-        margin: 0;
-        padding: 0;
-    }
-
-    .smallListbox li a {
-        padding: 5px 0;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-}
-
-/* footer_bottom_snsbox */
-.snsbox {
-    margin-bottom: 16px;
-}
-
-.snsbox ul {
-    display: flex;
-}
-
-.snsbox li {
-    margin-right: 8px;
-}
-
-.snsbox li a {
-    cursor: pointer;
-    display: inline-block;
-    width: 36px;
-    height: 36px;
-    opacity: 0.7;
-}
-
-.snsbox li a:active, .snsbox li a:hover {
-    opacity: 1;
-}
-
-/* font */
-@font-face {
-    font-family: "TDSiOSsubset";
-    src: url("https://static.toss.im/fonts/tds-ios-subset/TDSiOSsubset-Regular.woff2") format("woff2"), url("https://static.toss.im/fonts/tds-ios-subset/TDSiOSsubset-Regular.woff") format("woff"), url("https://static.toss.im/fonts/tds-ios-subset/TDSiOSsubset-Regular.ttf") format("truetype");
-    unicode-range: U+002A, U+003C, U+003E, U+2731;
-  }
-
-@font-face {
-    font-family: "Basier Square";
-    src: url("https://static.toss.im/fonts/basier/basiersquare-regular-webfont.eot");
-    src: url("https://static.toss.im/fonts/basier/basiersquare-regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://static.toss.im/fonts/basier/basiersquare-regular-webfont.woff2") format("woff2"), url("https://static.toss.im/fonts/basier/basiersquare-regular-webfont.woff") format("woff"), url("https://static.toss.im/fonts/basier/basiersquare-regular-webfont.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    unicode-range: U+0020-007F, U+00A0-00FF;
-    font-display: fallback;
-  }
-
-  @font-face {
-    font-family: "Basier Square";
-    src: url("https://static.toss.im/fonts/basier/basiersquare-medium-webfont.eot");
-    src: url("https://static.toss.im/fonts/basier/basiersquare-medium-webfont.eot?#iefix") format("embedded-opentype"), url("https://static.toss.im/fonts/basier/basiersquare-medium-webfont.woff2") format("woff2"), url("https://static.toss.im/fonts/basier/basiersquare-medium-webfont.woff") format("woff"), url("https://static.toss.im/fonts/basier/basiersquare-medium-webfont.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
-    unicode-range: U+0020-007F, U+00A0-00FF;
-    font-display: fallback;
-  }
-  @font-face {
-    font-family: "Basier Square";
-    src: url("https://static.toss.im/fonts/basier/basiersquare-semibold-webfont.eot");
-    src: url("https://static.toss.im/fonts/basier/basiersquare-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("https://static.toss.im/fonts/basier/basiersquare-semibold-webfont.woff2") format("woff2"), url("https://static.toss.im/fonts/basier/basiersquare-semibold-webfont.woff") format("woff"), url("https://static.toss.im/fonts/basier/basiersquare-semibold-webfont.ttf") format("truetype");
-    font-weight: 600;
-    font-style: normal;
-    unicode-range: U+0020-007F, U+00A0-00FF;
-    font-display: fallback;
-  }
-  @font-face {
-    font-family: "Basier Square";
-    src: url("https://static.toss.im/fonts/basier/basiersquare-bold-webfont.eot");
-    src: url("https://static.toss.im/fonts/basier/basiersquare-bold-webfont.eot?#iefix") format("embedded-opentype"), url("https://static.toss.im/fonts/basier/basiersquare-bold-webfont.woff2") format("woff2"), url("https://static.toss.im/fonts/basier/basiersquare-bold-webfont.woff") format("woff"), url("https://static.toss.im/fonts/basier/basiersquare-bold-webfont.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-    unicode-range: U+0020-007F, U+00A0-00FF;
-    font-display: fallback;
-  }

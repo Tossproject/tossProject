@@ -16,7 +16,6 @@ section{
 
 .toss_nav ul li a {
   color: #fff;
-  font-weight: 600;
   border-radius: 8px;
 }
 
@@ -37,7 +36,6 @@ section{
 @media only screen and (min-width: 768px) {
   .toss_nav ul li a {
     padding: 9px 11px;
-    padding-top: 13px;
   }
 
   .toss_nav .logo svg {
@@ -130,7 +128,6 @@ section{
   /* 성우석 수정부분 */
   top: 218px;
   /* 성우석 수정부분 */
-  
   display: flex;
   flex-direction: column;
 }
@@ -205,12 +202,12 @@ section{
 }
 
 .second-section img {
-  width: 95%;
-  height: 100%;
-  /* 성우석 수정 */
+  max-width: 1769px;
+  max-height: 721px;
+  width: 69%;
+  height: 77%;
   position: absolute;
-  top: 37%;
-  /* 성우석 수정 */
+  top: 22%;
   bottom: 0;
   right: 0;
 }
@@ -408,7 +405,7 @@ li .contents h4 {
   background: url("../images/intro8.jpg") no-repeat left center;
 }
 
-.filterBlur{
+.filterBlur {
   filter: blur(30px);
   transform: scale(1.4);
   width: 100%;
@@ -466,8 +463,11 @@ li .contents h4 {
 
 
 .click_contents>h4{
-  font-size: 20px !important;
+  text-align: left;
+  transform-origin: 0 0;
+  animation: h4_sc ease 0.3s forwards;
 }
+
 .click_contents>img{
   transform: rotate(45deg);
 }
@@ -481,6 +481,26 @@ li .contents h4 {
   left: 0;
 }
 
+@keyframes h4_sc {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.75);  
+  }
+}
+
+@keyframes dp {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 .dp_click{
   position: absolute;
   top: 23%;
@@ -489,7 +509,9 @@ li .contents h4 {
   font-weight: 800;
   font-size: 14px;
   display: none;
+  animation: dp ease 0.3s forwards;
 }
+
 .dp_click a{
   display: block;
   margin-top: 30px;
@@ -902,10 +924,6 @@ li .contents h4 {
     padding: 25px 20px;
   }
   
-  
-  .click_contents>h4{
-    font-size: 20px !important;
-  }
   .click_contents>img{
     transform: rotate(45deg);
   }
