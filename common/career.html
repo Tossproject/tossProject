@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>토스채용</title>
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/career.css">
-
     <link href="../css/jquery.bxslider.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -16,590 +16,607 @@
 
 <body>
     <div class="container">
-        <!-- header -->
-        <header>
-            <div class="header-image">
-                <nav class="toss_nav">
-                    <div class="navicon">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 483.23 55.73" xml:space="preserve" style="width:173.44px; height:20px;"><g fill="#fff"><path d="M57.7 27.56C56.21 14.79 45.43 5.36 32.9 5.24h-.28c-.97 0-1.94.06-2.92.17-3.56.41-6.85 1.55-9.76 3.24-.06.04-.13.08-.19.11s-.11.07-.17.1C5.15 17.46 0 37.31 0 49.39l11.63-6.71c4.1 7.81 11.96 12.95 20.72 13.05h.28c.97 0 1.94-.06 2.92-.17 13.85-1.62 23.77-14.15 22.15-28zM185.59 40.2c1.71 3.39 4.75 5.15 8.78 5.14 3.96-.01 6.08-1.92 6.07-4.19-.01-2.76-4.11-3.38-8.99-4.36-6.44-1.33-13.58-3.28-13.6-11.34-.02-6.43 6.19-12.03 15.59-11.99 7.47-.02 12.16 2.58 15.63 7.01l-8.1 4.71c-1.56-2.54-3.97-4.02-7.51-4.01-3.82.01-5.65 1.57-5.65 3.69.01 2.4 3.12 3.03 8.71 4.22 6.37 1.26 13.87 3.43 13.89 11.62.02 5.94-5.27 12.67-16.37 12.62-8.37.02-13.9-2.86-17.1-8.1l-.01-.02 8.66-5zM150.71 40.2c1.71 3.39 4.75 5.15 8.78 5.14 3.96-.01 6.08-1.92 6.07-4.19-.01-2.76-4.11-3.38-8.99-4.36-6.44-1.33-13.58-3.28-13.6-11.34-.02-6.43 6.19-12.03 15.59-11.99 7.47-.02 12.16 2.58 15.63 7.01l-8.1 4.71c-1.56-2.54-3.97-4.02-7.51-4.01-3.82.01-5.65 1.57-5.65 3.69.01 2.4 3.12 3.03 8.71 4.22 6.37 1.26 13.87 3.43 13.89 11.62.02 5.94-5.27 12.67-16.37 12.62-8.37.02-13.9-2.86-17.1-8.1l-.01-.02 8.66-5zM119.94 13.46c-11.01 0-19.93 8.92-19.93 19.93s8.92 19.93 19.93 19.93 19.93-8.92 19.93-19.93-8.93-19.93-19.93-19.93zm0 30.56c-5.87 0-10.63-4.76-10.63-10.63s4.76-10.63 10.63-10.63 10.63 4.76 10.63 10.63-4.76 10.63-10.63 10.63zM94.85 41.39c-1.23.98-3.79 2.19-5.08 2.19-2.5 0-4.21-1.43-4.21-5.5V22.94h11.86v-8.7H85.55V0l-9.89 5.71v8.53h-7.91v8.7h7.91v16.03c0 10.49 4.89 14.35 12.95 14.35 3.57 0 8.33-2.11 10.82-3.97l-4.58-7.96z"></path></g><g fill="#0064ff"><path d="M228.2 33.78c0-11.12 8.62-19.53 19.6-19.53 8.2 0 14.87 4.66 17.72 11.4l-5.21 2.29c-2.22-5.14-6.74-8.34-12.58-8.34-7.85 0-13.83 6.32-13.83 14.18 0 7.78 6.11 14.18 14.04 14.18 6.05 0 10.42-3.75 12.51-8.69l5.28 2.22c-2.92 6.95-9.24 11.81-17.86 11.81-11.2.01-19.67-8.68-19.67-19.52zM316.83 15.02h5.49v7.09c1.6-5 5.35-7.64 10.7-7.64 2.57 0 4.79.49 6.25 1.39l-2.36 5.42c-1.04-.69-2.57-1.18-4.59-1.18-6.25 0-9.87 3.61-9.87 11.88v20.57h-5.63V15.02zM339.94 33.92c0-11.05 8.34-19.67 19.6-19.67 10.98 0 19.11 7.99 19.11 19.11v2.57H345.5c.83 7.16 6.32 12.23 14.25 12.23 5.98 0 10.01-2.64 12.58-7.23l4.86 2.85c-3.82 5.98-9.24 9.52-17.44 9.52-12.02.01-19.81-8.4-19.81-19.38zm5.7-2.99h27.17c-.9-7.09-5.98-11.6-13.27-11.6-7.16 0-12.65 4.93-13.9 11.6zM383.32 33.92c0-11.05 8.34-19.67 19.6-19.67 10.98 0 19.11 7.99 19.11 19.11v2.57h-33.15c.83 7.16 6.32 12.23 14.25 12.23 5.98 0 10.01-2.64 12.58-7.23l4.86 2.85c-3.82 5.98-9.24 9.52-17.44 9.52-12.02.01-19.81-8.4-19.81-19.38zm5.7-2.99h27.17c-.9-7.09-5.98-11.6-13.27-11.6-7.16 0-12.65 4.93-13.9 11.6zM428.51 15.02H434v7.09c1.6-5 5.35-7.64 10.7-7.64 2.57 0 4.79.49 6.25 1.39l-2.36 5.42c-1.04-.69-2.57-1.18-4.59-1.18-6.25 0-9.87 3.61-9.87 11.88v20.57h-5.63V15.02zM451.55 45.45l4.93-3.34c2.57 3.68 6.39 6.11 12.09 6.11 5.84 0 8.89-2.78 8.89-6.53 0-4.17-5.14-5-10.63-6.11-6.46-1.25-13.34-2.99-13.34-10.49 0-5.84 5.07-10.98 13.97-10.91 6.95 0 11.67 2.57 15.01 6.67l-4.73 3.2c-2.22-2.99-5.49-5-10.28-5-5.77 0-8.13 2.5-8.13 5.98 0 3.89 4.52 4.66 10.35 5.84 6.46 1.25 13.55 3.06 13.55 10.77 0 5.91-5 11.74-14.8 11.67-8.2 0-13.55-3.06-16.88-7.86zM302.8 21.55c-2.99-4.59-8.62-7.3-14.04-7.3-10.49 0-19.11 8.06-19.11 19.53s8.48 19.53 19.11 19.53c5.42 0 11.05-2.78 14.04-7.44v6.67h5.63V15.02h-5.63v6.53zm-13.55 26.41c-7.85 0-13.83-6.05-13.83-14.25 0-7.99 5.98-14.24 13.83-14.24 7.99 0 13.97 6.46 13.97 14.24-.01 7.92-5.98 14.25-13.97 14.25z"></path></g></svg>
-                        <div class="trigger">
-                            <span class="icon"></span>
-                            <span class="icon2"></span>
-                        </div>
-                    </div>
-                    <ul>
-                        <li><a href="#">팀 문화</a></li>
-                        <li><a href="#">비전</a></li>
-                        <li><a href="#">채용 공고</a></li>
-                        <li><a href="#">지금 가장 핫한 질문</a></li>
-                        <li><a href="#">합류 여정</a></li>
-                    </ul>
-                </nav>
+    <!-- header -->
+    <header>
+        <nav class="toss_nav">
+            <div class="navicon">
+                <a href="career.html" class="logo"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0"
+                    y="0" viewBox="0 0 483.23 55.73" xml:space="preserve" style="width:173.44px; height:20px;">
+                    <g fill="#0064ff">
+                        <path
+                            d="M57.7 27.56C56.21 14.79 45.43 5.36 32.9 5.24h-.28c-.97 0-1.94.06-2.92.17-3.56.41-6.85 1.55-9.76 3.24-.06.04-.13.08-.19.11s-.11.07-.17.1C5.15 17.46 0 37.31 0 49.39l11.63-6.71c4.1 7.81 11.96 12.95 20.72 13.05h.28c.97 0 1.94-.06 2.92-.17 13.85-1.62 23.77-14.15 22.15-28zM185.59 40.2c1.71 3.39 4.75 5.15 8.78 5.14 3.96-.01 6.08-1.92 6.07-4.19-.01-2.76-4.11-3.38-8.99-4.36-6.44-1.33-13.58-3.28-13.6-11.34-.02-6.43 6.19-12.03 15.59-11.99 7.47-.02 12.16 2.58 15.63 7.01l-8.1 4.71c-1.56-2.54-3.97-4.02-7.51-4.01-3.82.01-5.65 1.57-5.65 3.69.01 2.4 3.12 3.03 8.71 4.22 6.37 1.26 13.87 3.43 13.89 11.62.02 5.94-5.27 12.67-16.37 12.62-8.37.02-13.9-2.86-17.1-8.1l-.01-.02 8.66-5zM150.71 40.2c1.71 3.39 4.75 5.15 8.78 5.14 3.96-.01 6.08-1.92 6.07-4.19-.01-2.76-4.11-3.38-8.99-4.36-6.44-1.33-13.58-3.28-13.6-11.34-.02-6.43 6.19-12.03 15.59-11.99 7.47-.02 12.16 2.58 15.63 7.01l-8.1 4.71c-1.56-2.54-3.97-4.02-7.51-4.01-3.82.01-5.65 1.57-5.65 3.69.01 2.4 3.12 3.03 8.71 4.22 6.37 1.26 13.87 3.43 13.89 11.62.02 5.94-5.27 12.67-16.37 12.62-8.37.02-13.9-2.86-17.1-8.1l-.01-.02 8.66-5zM119.94 13.46c-11.01 0-19.93 8.92-19.93 19.93s8.92 19.93 19.93 19.93 19.93-8.92 19.93-19.93-8.93-19.93-19.93-19.93zm0 30.56c-5.87 0-10.63-4.76-10.63-10.63s4.76-10.63 10.63-10.63 10.63 4.76 10.63 10.63-4.76 10.63-10.63 10.63zM94.85 41.39c-1.23.98-3.79 2.19-5.08 2.19-2.5 0-4.21-1.43-4.21-5.5V22.94h11.86v-8.7H85.55V0l-9.89 5.71v8.53h-7.91v8.7h7.91v16.03c0 10.49 4.89 14.35 12.95 14.35 3.57 0 8.33-2.11 10.82-3.97l-4.58-7.96z">
+                        </path>
+                    </g>
+                    <g fill="#0064ff">
+                        <path
+                            d="M228.2 33.78c0-11.12 8.62-19.53 19.6-19.53 8.2 0 14.87 4.66 17.72 11.4l-5.21 2.29c-2.22-5.14-6.74-8.34-12.58-8.34-7.85 0-13.83 6.32-13.83 14.18 0 7.78 6.11 14.18 14.04 14.18 6.05 0 10.42-3.75 12.51-8.69l5.28 2.22c-2.92 6.95-9.24 11.81-17.86 11.81-11.2.01-19.67-8.68-19.67-19.52zM316.83 15.02h5.49v7.09c1.6-5 5.35-7.64 10.7-7.64 2.57 0 4.79.49 6.25 1.39l-2.36 5.42c-1.04-.69-2.57-1.18-4.59-1.18-6.25 0-9.87 3.61-9.87 11.88v20.57h-5.63V15.02zM339.94 33.92c0-11.05 8.34-19.67 19.6-19.67 10.98 0 19.11 7.99 19.11 19.11v2.57H345.5c.83 7.16 6.32 12.23 14.25 12.23 5.98 0 10.01-2.64 12.58-7.23l4.86 2.85c-3.82 5.98-9.24 9.52-17.44 9.52-12.02.01-19.81-8.4-19.81-19.38zm5.7-2.99h27.17c-.9-7.09-5.98-11.6-13.27-11.6-7.16 0-12.65 4.93-13.9 11.6zM383.32 33.92c0-11.05 8.34-19.67 19.6-19.67 10.98 0 19.11 7.99 19.11 19.11v2.57h-33.15c.83 7.16 6.32 12.23 14.25 12.23 5.98 0 10.01-2.64 12.58-7.23l4.86 2.85c-3.82 5.98-9.24 9.52-17.44 9.52-12.02.01-19.81-8.4-19.81-19.38zm5.7-2.99h27.17c-.9-7.09-5.98-11.6-13.27-11.6-7.16 0-12.65 4.93-13.9 11.6zM428.51 15.02H434v7.09c1.6-5 5.35-7.64 10.7-7.64 2.57 0 4.79.49 6.25 1.39l-2.36 5.42c-1.04-.69-2.57-1.18-4.59-1.18-6.25 0-9.87 3.61-9.87 11.88v20.57h-5.63V15.02zM451.55 45.45l4.93-3.34c2.57 3.68 6.39 6.11 12.09 6.11 5.84 0 8.89-2.78 8.89-6.53 0-4.17-5.14-5-10.63-6.11-6.46-1.25-13.34-2.99-13.34-10.49 0-5.84 5.07-10.98 13.97-10.91 6.95 0 11.67 2.57 15.01 6.67l-4.73 3.2c-2.22-2.99-5.49-5-10.28-5-5.77 0-8.13 2.5-8.13 5.98 0 3.89 4.52 4.66 10.35 5.84 6.46 1.25 13.55 3.06 13.55 10.77 0 5.91-5 11.74-14.8 11.67-8.2 0-13.55-3.06-16.88-7.86zM302.8 21.55c-2.99-4.59-8.62-7.3-14.04-7.3-10.49 0-19.11 8.06-19.11 19.53s8.48 19.53 19.11 19.53c5.42 0 11.05-2.78 14.04-7.44v6.67h5.63V15.02h-5.63v6.53zm-13.55 26.41c-7.85 0-13.83-6.05-13.83-14.25 0-7.99 5.98-14.24 13.83-14.24 7.99 0 13.97 6.46 13.97 14.24-.01 7.92-5.98 14.25-13.97 14.25z">
+                        </path>
+                    </g>
+                </svg></a>
+                <div class="trigger">
+                    <span class="icon"></span>
+                    <span class="icon2"></span>
+                </div>
             </div>
-        </header>
+            <ul>
+                <li><a href="career.html">팀 문화</a></li>
+                <li><a href="vision.html">비전</a></li>
+                <li><a href="career_job.html">채용 공고</a></li>
+                <li><a href="career_faq.html">지금 가장 핫한 질문</a></li>
+                <li><a href="join_guide.html">합류 여정</a></li>
+            </ul>
+        </nav>
+    </header>
     </div>
-        <!--섹션 1-->
-        <div class="main">
-            <div class="event1">
-                <div class="event2"></div>
-                <div class="arrow">
-                    <img src="../images/down-arrow.png" class="animation">
-                </div>
-                <div class="event3"></div>
-                <p class="maintitle">당신도 깊게 몰입했던<br> 무언가가 있나요?</p>
-                <p class="subtitle1">시간 가는 줄 모르고 무엇에 빠져드는 경험.
-                    함께 한 방향으로 달려가는 느낌.
-                    해냈을 때의 쾌감과 기쁨.    
-                </p>
-                <p class="subtitle2">이 몰입의 경험을 일에서 느낀다면 어떨까요?
-                    일을 방해하는 요소가 없다면 어떨까요?
-                </p>
-                <p class="subtitle3">토스커뮤니티에 모인 사람들은
-                    일에 몰입하는 즐거움과 성장의 기쁨을 느끼며,
-                    새로운 역사를 만들고 있습니다.
-                </p>
+
+    <!--섹션 1-->
+    <div class="main">
+        <div class="event1">
+            <div class="event2"></div>
+            <div class="arrow">
+                <img src="../images/down-arrow.png">
             </div>
-            <div class="blurpage"></div>
+            <div class="event3"></div>
+            <p class="maintitle">당신도 깊게 몰입했던<br> 무언가가 있나요?</p>
+            <p class="subtitle1">시간 가는 줄 모르고 무엇에 빠져드는 경험.
+                함께 한 방향으로 달려가는 느낌.
+                해냈을 때의 쾌감과 기쁨.    
+            </p>
+            <p class="subtitle2">이 몰입의 경험을 일에서 느낀다면 어떨까요?
+                일을 방해하는 요소가 없다면 어떨까요?
+            </p>
+            <p class="subtitle3">토스커뮤니티에 모인 사람들은
+                일에 몰입하는 즐거움과 성장의 기쁨을 느끼며,
+                새로운 역사를 만들고 있습니다.
+            </p>
         </div>
+        <div class="blurpage"></div>
+    </div>
 
-            <div class="article">
-                <!--섹션 2-->
-                <div class="title">
-                    <p class="title1">누구나 가진 몰입의 힘을 믿습니다</p>
-                    <p class="title2">만약 누군가의 몰입이 없었다면, 모두를 위한 새로운 혁신은 없었을 것입니다.
-                        토스커뮤니티에서는 누구나 각자의 방식으로 몰입할 수 있습니다.
-                    </p>
-                </div>
-                <section class="notitle">
-                    <div class="nocontent1">
-                        <div class="image">
-                            <img src="../images/layout1.jpg">
-                            <p class="cardtitle">Earn trust</p>
-                            <p class="cardmaintitle">성취가 신뢰로,<br> 신뢰가 존경으로 이어집니다</p>
-                            <span class="plusicon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
-                            <p class="cardbody">
-                                토스커뮤니티에서는 성취를 통해 동료들에게 어떤 신뢰를 주었는지가 가장 중요합니다. 개개인이 가진 신뢰의 크기에 따라 권한과 책임이 주어지는 합리적인 문화를 추구합니다.<br>
-                                더 나아가 신뢰는 존경으로 이어지고, 그렇게 리더가 탄생합니다. 토스 커뮤니티에서의 리더가 지시와 감독을 하지 않는 이유입니다. 리더가 된 후에도 끊임 없이 신뢰를 쌓기 위해 뛰어난 실무 능력을 갖춰야 함은 물론, 더 나은 방향을 제안할 수 있어야 합니다.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="nocontent2">
-                        <div class="image">
-                            <img src="../images/layout2.jpg">
-                            <p class="cardtitle">Learn from failure</p>
-                            <p class="cardmaintitle" style="color: #333d4b;">실패를 나누고<br>함께 성장합니다</p>
-                            <span class="plusicon" style="color: #333d4b;"><svg xmlns="http://www.w3.org/2000/svg" style="color:black;" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
-                            <p class="cardbody" style="color: #333d4b;">
-                                토스커뮤니티에서 가장 두려운 것은 실패가 아닙니다. ‘도전하지 않는 것’ 입니다. 도전 끝에 마주하는 실패는 소중한 경험입니다. 중요한 것은 그 과정에서 얻게 되는 배움입니다.<br>
-                                성공 경험은 물론 실패 경험 또한 자유롭게 공유됩니다. 실패 속에서 배운 것을 서로 공유하고 더 나은 방향을 함께 찾아갑니다. 실패를 두려워하지 않고 새로운 도전을 멈추지 않는 것, 토스커뮤니티가 일을 대하는 자세입니다.
-                            </p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="nocontent3">
-                        <div class="image">
-                            <img src="../images/layout3.jpg">
-                            <p class="cardtitle" style="color: #333d4b;">Break formality</p>
-                            <p class="cardmaintitle" style="color: #333d4b;">형식을 고수하기보다,<br>일의 본질에 집중합니다</p>
-                            <span class="plusicon" style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" style="color:black;" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
-                            <p class="cardbody" style="color: #333d4b;">
-                                일을 위한 일, 토스커뮤니티에는 없습니다. 핵심만 전달하고 빠르게 실행합니다. 형식적인 보고를 위한 문서나 이메일은 필요하지 않습니다.<br>
-                                전달하고자 하는 메시지나 생각을 간결하게 정리하여 공유합니다. 일에 필요 없는 절차, 형식, 양식 등 모든 것을 파괴하고 실질적인 것에만 집중하면 됩니다.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="nocontent4">
-                        <div class="image">
-                            <img src="../images/layout4.jpg">
-                            <p class="cardtitle">Be a guardian of culture</p>
-                            <p class="cardmaintitle" style="color: #333d4b;">문화는 끊임 없이<br>진화하고 있습니다</p>
-                            <span class="plusicon" style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" style="color:black;" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
-                            <p class="cardbody" style="color: #333d4b;">
-                                지금의 문화가 누군가에게 맞지 않을 수 있습니다. 문화가 제대로 작동하지 않거나 더 좋은 방향이 떠오른다면 자유롭게 표현할 수 있습니다. 토스커뮤니티라면 누구나 문화에 대해 의견을 나누고 개선책을 제안할 수 있습니다.<br>
-                                토스커뮤니티에 합류한 순간부터, 문화는 단순히 누리는 것이 아닌 함께 만들어 나가는 것입니다.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        <!--섹션 3-->
-        <section class="interview">
-            <div class="interview1">
-                <div class="inter1">
-                    <img src="../images/1-1.png" alt="윤기열님">
-                    <p class="interviewContent">
-                        토스커뮤니티의 모든 분들이 느끼는 점일텐데요, 일에 방해되는 불필요한 절차나
-                        형식적인 문화가 거의 없는 곳이 바로 토스커뮤니티입니다. 업무나 역할에 크게
-                        제한이 없는 것 또한 큰 장점이라, 이런 환경 속에서 자신이 그려나가는 바를 마음껏
-                        실현시켜 나가면 되는 문화예요.
-                    </p>
-                    <p class="interviewer">Communications Team Leader, 윤기열 님</p>
-                </div>
-                <div class="leftarrow">
-                    <img src="../images/icn-left-arrow-circle.png">
-                </div>
-                <div class="rightarrow">
-                    <img src="../images/icn-right-arrow-circle.png">
-                </div>
-            </div>
-            <div class="interview2">
-                <div class="inter2">
-                    <img src="../images/1-2.png" alt="강수영님">
-                    <p class="interviewContent">
-                        힘든 점이요? 벤치마킹할 곳이 많지 않다는 점이요.
-                        '아무도 가지 않은 길'을 가는 느낌이랄까요.
-                        그런데 시행착오를 겪으며 배우는 것이 더 많아요.
-                    </p>
-                    <p class="interviewer">Platform Designer, 강수영 님</p>
-                </div>
-                <div class="leftarrow">
-                    <img src="../images/icn-left-arrow-circle.png">
-                </div>
-                <div class="rightarrow">
-                    <img src="../images/icn-right-arrow-circle.png">
-                </div>
-            </div>
-            <div class="interview3">
-                <div class="inter3">
-                    <img src="../images/1-3.png" alt="박준하님">
-                    <p class="interviewContent">
-                        모든 정보가 100% 투명하게 공개되고 있어요. 이에 따라 제가 속한 사일로와 챕터가
-                        지향해야 하는 일의 방향도 직접 결정할 수 있습니다. 토스커뮤니티가 지향하는 목표와 일의 우선순위를 고려해, 궁극적으로 팀 전체에 도움되는 방향으로 제품을 만들 수 있는 환경이죠.
-                    </p>
-                    <p class="interviewer">Server Developer, 박준하 님</p>
-                </div>
-                <div class="leftarrow">
-                    <img src="../images/icn-left-arrow-circle.png">
-                </div>
-                <div class="rightarrow">
-                    <img src="../images/icn-right-arrow-circle.png">
-                </div>
-            </div>
-        </section>
-
-        <!--섹션 4-->
-        <section>
-
-            <div class="title">
-                <p class="title1">탁월한 동료들이 함께합니다</p>
-                <p class="title2">공동의 목표를 향해 함께 달릴 준비가 된,<br>훌륭한 동료들이 곁에 있습니다.</p>
-            </div>
-        </section>
-
-        <!--섹션 5-->
+    <div class="article">
+        <!--섹션 2-->
+        <div class="title">
+            <p class="title1">누구나 가진 몰입의 힘을 믿습니다</p>
+            <p class="title2">만약 누군가의 몰입이 없었다면, 모두를 위한 새로운 혁신은 없었을 것입니다.
+                토스커뮤니티에서는 누구나 각자의 방식으로 몰입할 수 있습니다.
+            </p>
+        </div>
         <section class="notitle">
             <div class="nocontent1">
                 <div class="image">
-                    <img src="../images/layout1-2.jpg">
-                    <p class="cardtitle">Be part of the mission</p>
-                    <p class="cardmaintitle" style="color: #333d4b;">팀을 위한 일이<br>최우선 순위가 됩니다</p>
-                    <span class="plusicon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
-                    <p class="cardbody" style="color: #333d4b;">
-                        일을 하다 보면 우선순위를 정할 때 고민되는 상황이 생기기 마련입니다. 이때 토스커뮤니티에서는 팀의 목표에 가장 큰 영향을 줄 수 있는 일이 최우선 순위가 됩니다.<br>
-                        지금 당신이 맡은 일이 팀에 가장 필요한 일이라면, 동료들은 언제라도 두 팔 걷고 함께할 준비가 되어 있습니다.
+                    <div class="imgbox">
+                        <img src="../images/layout1.jpg">
+                    </div>
+                    <p class="cardtitle" style="color: #333d4b;">Independence</p>
+                    <p class="cardmaintitle" style="color: #333d4b;">하고 싶은 일을<br> 할 수 있습니다</p>
+                    <span class="plusicon" style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
+                    <p class="cardbody"  style="color: #333d4b;">
+                        토스커뮤니티에서 당신이 할 수 없는 일은 없습니다. 해내고 싶은 일이 생겼다면 실행에 옮기세요.
+
+                        연차, 나이, 경험은 걸림돌이 되지 않습니다. 당신이 시작하고 싶은 일에 대한 공감을 얻어 함께할 팀원을 직접 모을 수 있습니다.                     
+                        
+                        일에 대한 모든 것을 스스로 결정하고 주도적으로 진행할 수 있습니다.
                     </p>
                 </div>
             </div>
 
             <div class="nocontent2">
                 <div class="image">
-                    <img src="../images/layout2-2.jpg">
-                    <p class="cardtitle">Execution over perfection</p>
-                    <p class="cardmaintitle" style="color: #333d4b;">완벽한 전략보다<br>빠른 실행을 함께 합니다</p>
-                    <span class="plusicon" style="color: #333d4b;"><svg xmlns="http://www.w3.org/2000/svg" style="color:black;" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
+                    <img src="../images/layout2.jpg">
+                    <p class="cardtitle" style="color: #333d4b;">Radical transparency</p>
+                    <p class="cardmaintitle" style="color: #333d4b;">정보는 모두에게<br>열려있습니다</p>
+                    <span class="plusicon" style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" style="color:black;" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
                     <p class="cardbody" style="color: #333d4b;">
-                        끝나지 않을 것 같은 긴 회의, 정답 없는 수많은 논의로 일을 시작하기도 전에 지칠 필요 없습니다. 토스커뮤니티에서는 이러한 과정을 최소화하기 위해 팀원 모두가 노력합니다.<br>
-                        완벽한 전략을 세우기보다 중요한 핵심 가치를 전달하기 위해, 모두가 집중하여 빠르게 실행하고 개선합니다.
+                        일의 시작과 올바른 의사결정은 충분한 정보 공유를 통해 이뤄질 수 있습니다. 단 하나의 정보에서 일이 시작될 수 있고, 그것이 일의 판도를 완전히 바꿔버릴 수도 있죠. 토스커뮤니티에서는 의사결정에 필요한 최대한의 정보를 팀 전체에 공개하고 있으며, 접근하기 힘든 정보가 있다면 접근성을 높이기 위해 노력합니다.
+
+                        당연히, 정보의 비대칭으로 생기는 계급 또한 없습니다. 모두의 자율성과 효율 극대화를 위해 토스커뮤니티는 과감한 정보 투명성을 지향합니다.
                     </p>
                 </div>
+
             </div>
 
 
             <div class="nocontent3">
                 <div class="image">
-                    <img src="../images/layout3-2.jpg">
-                    <p class="cardtitle" style="color: #ffffff;">Dare to make conflict</p>
-                    <p class="cardmaintitle" style="color: #ffffff;">더 나음을 위한<br>충돌을 만듭니다</p>
-                    <span class="plusicon" style="color: #ffffff;"><svg xmlns="http://www.w3.org/2000/svg" style="color:#ffffff;" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
-                    <p class="cardbody" style="color: #ffffff;">
-                        동료와 의견이 다른 상황에서 솔직하게 말하면 기분 나쁘지 않을까 걱정되는 순간이 있습니다. 갈등이 두려워 피드백을 전하지 못한다면, 더 나은 해결책을 찾기 어렵습니다.<br>
-                        토스커뮤니티에서는 솔직하고 객관적인 피드백을 통해 최선이 아닌 최고의 결과물을 만들어 내는데 집중합니다.
+                    <img src="../images/layout3.jpg">
+                    <p class="cardtitle" style="color: #333d4b;">Focus on impact</p>
+                    <p class="cardmaintitle" style="color: #333d4b;">가장 큰 임팩트를<br>만들 수 있는 일에 집중합니다</p>
+                    <span class="plusicon" style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" style="color:black;" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
+                    <p class="cardbody" style="color: #333d4b;">
+                        지금 해결해야 하는, 가장 중요한 일에만 집중하면 됩니다. 나중에 해도 되는 일은 우선순위를 뒤로 배정해 리소스를 낭비하지 않도록 합니다. 꼭 필요한 일이 아니라면 과감히 생략하고, 가장 큰 임팩트를 만들 수 있는 일을 먼저 합니다. 임팩트는 토스커뮤니티가 가장 중시하는 가치 중 하나입니다.
                     </p>
                 </div>
             </div>
 
             <div class="nocontent4">
                 <div class="image">
-                    <img src="../images/layout4-2.jpg">
-                    <p class="cardtitle" style="color: #ffffff;">Be professional</p>
-                    <p class="cardmaintitle" style="color: #ffffff;">프로답게<br>스포츠팀처럼</p>
-                    <span class="plusicon" style="color: #ffffff;"><svg xmlns="http://www.w3.org/2000/svg" style="color:black;" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
-                    <p class="cardbody" style="color: #ffffff;">
-                        멀리서 볼 때 하나처럼 보입니다. 각자가 맡은 업무에 항상 프로답게 임하고 있기 때문입니다. 동료들의 놀라운 속도와 열정은 매 순간 당신을 놀라게하고 자극합니다.
+                    <img src="../images/layout4.jpg">
+                    <p class="cardtitle" style="color: #333d4b;">Go the extra-mile</p>
+                    <p class="cardmaintitle" style="color: #333d4b;">좋은 것을 넘어,<br>위대한 것을 추구합니다</p>
+                    <span class="plusicon" style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" style="color:black;" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
+                    <p class="cardbody" style="color: #333d4b;">
+                        토스커뮤니티는 적당한 수준에서 일을 마무리 짓지 않습니다. 목표를 달성한 후에도 그것을 개선하고 더 큰 성과를 만들어 내기 위한 방법을 찾습니다. 이는 몰입이 끊임없이 지속되는 이유 중 하나입니다.
+
+                        토스커뮤니티에서의 목표 달성은 새로운 몰입의 시작으로 이어집니다.
                     </p>
                 </div>
             </div>
         </section>
+    </div>
 
-        <!--섹션 6-->
-        <section class="interview">
-            <div class="interview1">
-                <div class="inter1">
-                    <img src="../images/2-1.png" alt="최명규님">
-                    <p class="interviewContent">
-                        다른 팀에 업무를 부탁하면 하루 만에 해결됩니다.
-                        "제가 더 도와드릴 것 없을까요?" 라며 물어봐주시고요. 이런 사람들이 많다는 것이 가장 큰 차이점이자 매력인 것 같아요. 모두가 하나의 목표를 보고 함께 달리고 있으며, 팀 성장에 도움되는 일이라면 망설임 없이 적극적으로 도와주시니까요.
-                    </p>
-                    <p class="interviewer">DevOps Engineer, 최명규 님</p>
-                </div>
-                <div class="leftarrow">
-                    <img src="../images/icn-left-arrow-circle.png">
-                </div>
-                <div class="rightarrow">
-                    <img src="../images/icn-right-arrow-circle.png">
-                </div>
+    <!--섹션 3-->
+    <section class="interview">
+        <div class="interview1">
+            <div class="inter1">
+                <img src="../images/1-1.png" alt="윤기열님">
+                <p class="interviewContent">
+                    토스커뮤니티의 모든 분들이 느끼는 점일텐데요, 일에 방해되는 불필요한 절차나
+                    형식적인 문화가 거의 없는 곳이 바로 토스커뮤니티입니다. 업무나 역할에 크게
+                    제한이 없는 것 또한 큰 장점이라, 이런 환경 속에서 자신이 그려나가는 바를 마음껏
+                    실현시켜 나가면 되는 문화예요.
+                </p>
+                <p class="interviewer">Communications Team Leader, 윤기열 님</p>
             </div>
-            <div class="interview2">
-                <div class="inter2">
-                    <img src="../images/2-2.png" alt="김서연님">
-                    <p class="interviewContent">
-                        토스는 하나의 서비스를 출시한 후 안주하는 조직이 아닙니다.
-                        '이런 기능이 들어가면 고객들이 더 편하지 않을까?' 를 끊임없이 고민하며, 부족한 점을 빠르게 개선하는 애자일 조직이거든요. 이런 환경에서 기존의 방법을 고수하기보다, 팀의 속도에 발맞춰 유연하게 리서치를 운영하는 것이 훨씬 효과적입니다.
-                    </p>
-                    <p class="interviewer">UX Researcher, 김서연 님</p>
-                </div>
-                <div class="leftarrow">
-                    <img src="../images/icn-left-arrow-circle.png">
-                </div>
-                <div class="rightarrow">
-                    <img src="../images/icn-right-arrow-circle.png">
-                </div>
+            <img src="../images/icn-left-arrow-circle.png" class="leftarrow">
+            <img src="../images/icn-right-arrow-circle.png" class="rightarrow">
+        </div>
+        <div class="interview2">
+            <div class="inter2">
+                <img src="../images/1-2.png" alt="강수영님">
+                <p class="interviewContent">
+                    힘든 점이요? 벤치마킹할 곳이 많지 않다는 점이요.
+                    '아무도 가지 않은 길'을 가는 느낌이랄까요.
+                    그런데 시행착오를 겪으며 배우는 것이 더 많아요.
+                </p>
+                <p class="interviewer">Platform Designer, 강수영 님</p>
             </div>
-            <div class="interview3">
-                <div class="inter3">
-                    <img src="../images/2-3.png" alt="최승일님">
-                    <p class="interviewContent">
-                        이전 직장에서 무섭고 힘들었던 점은, '내일, 한 달, 1년 후의 나에게 확신을 가질 수
-                        있는가?' 라는 질문에 답을 내릴 수 없었다는 건데요. 토스커뮤니티에서는 미래의 나에게 확신을 가질 수 있습니다. 프로답게 일하는 것이 요구되는 토스커뮤니티에서는,
-                        몸은 지칠 수 있지만 매일 성장하고 있다 확신할 수 있어요. '프로다움'이 주는 힘듦과 자부심이죠.
-                    </p>
-                    <p class="interviewer">Internal Product Developer, 최승일 님</p>
-                </div>
-                <div class="leftarrow">
-                    <img src="../images/icn-left-arrow-circle.png">
-                </div>
-                <div class="rightarrow">
-                    <img src="../images/icn-right-arrow-circle.png">
-                </div>
+            <img src="../images/icn-left-arrow-circle.png" class="leftarrow">
+            <img src="../images/icn-right-arrow-circle.png" class="rightarrow">
+        </div>
+        <div class="interview3">
+            <div class="inter3">
+                <img src="../images/1-3.png" alt="박준하님">
+                <p class="interviewContent">
+                    모든 정보가 100% 투명하게 공개되고 있어요. 이에 따라 제가 속한 사일로와 챕터가
+                    지향해야 하는 일의 방향도 직접 결정할 수 있습니다. 토스커뮤니티가 지향하는 목표와 일의 우선순위를 고려해, 궁극적으로 팀 전체에 도움되는 방향으로 제품을 만들 수 있는 환경이죠.
+                </p>
+                <p class="interviewer">Server Developer, 박준하 님</p>
             </div>
-        </section>
+            <img src="../images/icn-left-arrow-circle.png" class="leftarrow">
+            <img src="../images/icn-right-arrow-circle.png" class="rightarrow">
+        </div>
+    </section>
 
-        <!-- 일하는 문화 -->
-        <section class="culture">
-            <div class="cultureimage">
-                <p class="culturetitle">일하는 문화를 새롭게<br> 만들고 있습니다</p>
-                <p class="culturecontent">토스커뮤니티는 완전히 새로운 조직 문화를 지향합니다.
-                    세상에 없던 제품과 서비스를 선보이려면, 새로운 문화가 바탕이 되어야 한다고 믿습니다.
+    <!--섹션 4-->
+    <section>
+
+        <div class="title">
+            <p class="title1">탁월한 동료들이 함께합니다</p>
+            <p class="title2">공동의 목표를 향해 함께 달릴 준비가 된,<br>훌륭한 동료들이 곁에 있습니다.</p>
+        </div>
+    </section>
+
+    <!--섹션 5-->
+    <section class="notitle">
+        <div class="nocontent1">
+            <div class="image">
+                <img src="../images/layout1-2.jpg">
+                <p class="cardtitle" style="color: #333d4b;">Be part of the mission</p>
+                <p class="cardmaintitle" style="color: #333d4b;">팀을 위한 일이<br>최우선 순위가 됩니다</p>
+                <span class="plusicon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
+                <p class="cardbody" style="color: #333d4b;">
+                    일을 하다 보면 우선순위를 정할 때 고민되는 상황이 생기기 마련입니다. 이때 토스커뮤니티에서는 팀의 목표에 가장 큰 영향을 줄 수 있는 일이 최우선 순위가 됩니다.<br>
+                    지금 당신이 맡은 일이 팀에 가장 필요한 일이라면, 동료들은 언제라도 두 팔 걷고 함께할 준비가 되어 있습니다.
                 </p>
             </div>
-        </section>
-        <!-- 제목 없는 2*2 사진 -->
-        <section class="notitle" style="margin-top: 100px;">
-            <div class="nocontent1">
-                <div class="image">
-                    <img src="../images/layout1-3.jpg">
-                    <p class="cardtitle">Earn trust</p>
-                    <p class="cardmaintitle">성취가 신뢰로,<br> 신뢰가 존경으로 이어집니다</p>
-                    <span class="plusicon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
-                    <p class="cardbody">
-                        토스커뮤니티에서는 성취를 통해 동료들에게 어떤 신뢰를 주었는지가 가장 중요합니다. 개개인이 가진 신뢰의 크기에 따라 권한과 책임이 주어지는 합리적인 문화를 추구합니다.<br>
-                        더 나아가 신뢰는 존경으로 이어지고, 그렇게 리더가 탄생합니다. 토스 커뮤니티에서의 리더가 지시와 감독을 하지 않는 이유입니다. 리더가 된 후에도 끊임 없이 신뢰를 쌓기 위해 뛰어난 실무 능력을 갖춰야 함은 물론, 더 나은 방향을 제안할 수 있어야 합니다.
-                    </p>
-                </div>
-            </div>
-            <div class="nocontent2">
-                <div class="image">
-                    <img src="../images/layout2-3.jpg">
-                    <p class="cardtitle">Learn from failure</p>
-                    <p class="cardmaintitle" style="color: #333d4b;">실패를 나누고<br>함께 성장합니다</p>
-                    <span class="plusicon" style="color: #333d4b;"><svg xmlns="http://www.w3.org/2000/svg" style="color:black;" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
-                    <p class="cardbody" style="color: #333d4b;">
-                        토스커뮤니티에서 가장 두려운 것은 실패가 아닙니다. ‘도전하지 않는 것’ 입니다. 도전 끝에 마주하는 실패는 소중한 경험입니다. 중요한 것은 그 과정에서 얻게 되는 배움입니다.<br>
-                        성공 경험은 물론 실패 경험 또한 자유롭게 공유됩니다. 실패 속에서 배운 것을 서로 공유하고 더 나은 방향을 함께 찾아갑니다. 실패를 두려워하지 않고 새로운 도전을 멈추지 않는 것, 토스커뮤니티가 일을 대하는 자세입니다.
-                    </p>
-                </div>
-            </div>
-            <div class="nocontent3">
-                <div class="image">
-                    <img src="../images/layout3-3.jpg">
-                    <p class="cardtitle" style="color: #333d4b;">Break formality</p>
-                    <p class="cardmaintitle" style="color: #333d4b;">형식을 고수하기보다,<br>일의 본질에 집중합니다</p>
-                    <span class="plusicon" style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" style="color:black;" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
-                    <p class="cardbody" style="color: #333d4b;">
-                        일을 위한 일, 토스커뮤니티에는 없습니다. 핵심만 전달하고 빠르게 실행합니다. 형식적인 보고를 위한 문서나 이메일은 필요하지 않습니다.<br>
-                        전달하고자 하는 메시지나 생각을 간결하게 정리하여 공유합니다. 일에 필요 없는 절차, 형식, 양식 등 모든 것을 파괴하고 실질적인 것에만 집중하면 됩니다.
-                    </p>
-                </div>
-            </div>
+        </div>
 
-            <div class="nocontent4">
-                <div class="image">
-                    <img src="../images/layout4-3.jpg">
-                    <p class="cardtitle">Be a guardian of culture</p>
-                    <p class="cardmaintitle" style="color: #333d4b;">문화는 끊임 없이<br>진화하고 있습니다</p>
-                    <span class="plusicon" style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" style="color:black;" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
-                    <p class="cardbody" style="color: #333d4b;">
-                        지금의 문화가 누군가에게 맞지 않을 수 있습니다. 문화가 제대로 작동하지 않거나 더 좋은 방향이 떠오른다면 자유롭게 표현할 수 있습니다. 토스커뮤니티라면 누구나 문화에 대해 의견을 나누고 개선책을 제안할 수 있습니다.<br>
-                        토스커뮤니티에 합류한 순간부터, 문화는 단순히 누리는 것이 아닌 함께 만들어 나가는 것입니다.
-                    </p>
-                </div>
+        <div class="nocontent2">
+            <div class="image">
+                <img src="../images/layout2-2.jpg">
+                <p class="cardtitle" style="color: #333d4b;">Execution over perfection</p>
+                <p class="cardmaintitle" style="color: #333d4b;">완벽한 전략보다<br>빠른 실행을 함께 합니다</p>
+                <span class="plusicon" style="color: #333d4b;"><svg xmlns="http://www.w3.org/2000/svg" style="color:black;" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
+                <p class="cardbody" style="color: #333d4b;">
+                    끝나지 않을 것 같은 긴 회의, 정답 없는 수많은 논의로 일을 시작하기도 전에 지칠 필요 없습니다. 토스커뮤니티에서는 이러한 과정을 최소화하기 위해 팀원 모두가 노력합니다.<br>
+                    완벽한 전략을 세우기보다 중요한 핵심 가치를 전달하기 위해, 모두가 집중하여 빠르게 실행하고 개선합니다.
+                </p>
             </div>
-        </section>
-
-        <!--섹션 9-->
-        <section class="interview">
-            <div class="interview1">
-                <div class="inter1">
-                    <img src="../images/3-1.png" alt="류리나님">
-                    <p class="interviewContent">
-                        토스커뮤니티에서는 연차가 아닌 팀원들에게 받는 '신뢰'로 리더가 결정됩니다. 신뢰는 모든 팀원들에게 중시되는 가치인데요. 재택 근무나 무제한 휴가 같은 제도가 이에서 시작된다고 생각해요. 동료 간의 신뢰는 물론, 회사가 팀원 한 명, 한 명에게 가지는 신뢰가 느껴지는 이 문화가 정말 좋아요.
-                    </p>
-                    <p class="interviewer">Finance Team Leader, 류리나 님</p>
-                </div>
-                <div class="leftarrow">
-                    <img src="../images/icn-left-arrow-circle.png">
-                </div>
-                <div class="rightarrow">
-                    <img src="../images/icn-right-arrow-circle.png">
-                </div>
-            </div>
-            <div class="interview2">
-                <div class="inter2">
-                    <img src="../images/3-2.png" alt="이태호님">
-                    <p class="interviewContent">
-                        예전에는 기술 직군인데도 격식 차리는 문서를 만드는 일이 많았어요.
-                        토스커뮤니티에서는 불필요한 일은 생략할 수 있어 꼭 필요한 일에 집중하고 성과를
-                        만들어낼 수 있어요.
-                        그리고 실패하더라도 괜찮은 문화, 실패를 통해 배운 점을 바탕으로 더 좋은 결과물을
-                        만들 수 있는 환경이 다른 곳과의 가장 큰 차이점입니다.
-                    </p>
-                    <p class="interviewer">Security Engineer, 이태호 님</p>
-                </div>
-                <div class="leftarrow">
-                    <img src="../images/icn-left-arrow-circle.png">
-                </div>
-                <div class="rightarrow">
-                    <img src="../images/icn-right-arrow-circle.png">
-                </div>
-            </div>
-        </section>
+        </div>
 
 
-        <!--섹션 10-->
-        <section class="insurance">
-            <div class="title">
-                <p class="insurtitle">몰입하는 당신을 위한,<br>아낌 없는 보상과 지원</p>
+        <div class="nocontent3">
+            <div class="image">
+                <img src="../images/layout3-2.jpg">
+                <p class="cardtitle" style="color: #ffffff;">Dare to make conflict</p>
+                <p class="cardmaintitle" style="color: #ffffff;">더 나음을 위한<br>충돌을 만듭니다</p>
+                <span class="plusicon" style="color: #ffffff;"><svg xmlns="http://www.w3.org/2000/svg" style="color:#ffffff;" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
+                <p class="cardbody" style="color: #ffffff;">
+                    동료와 의견이 다른 상황에서 솔직하게 말하면 기분 나쁘지 않을까 걱정되는 순간이 있습니다. 갈등이 두려워 피드백을 전하지 못한다면, 더 나은 해결책을 찾기 어렵습니다.<br>
+                    토스커뮤니티에서는 솔직하고 객관적인 피드백을 통해 최선이 아닌 최고의 결과물을 만들어 내는데 집중합니다.
+                </p>
             </div>
-            <div class="wrapper">
-                <div class="insurcontent">
-                    <p class="insurheader">
-                        자율적인 근무 환경에서<br>효율적인 업무가 가능합니다
-                    </p>
-                    <p class="insurbody">
-                        탄력적인 출퇴근 시간
-                        원격 근무 가능
-                        별도 승인 없는 무제한 휴가
-                        근속 3년마다 리프레시 휴가 1개월
-                    </p>
-                </div>
-                <div class="insurcontent">
-                    <p class="insurheader">
-                        업무와 성장에<br>몰두할 수 있도록 지원합니다
-                    </p>
-                    <p class="insurbody">
-                        업계 최고 수준의 연봉
-                        반기별 성과급 지급
-                        개인 법인카드 지급 (식대, 야근교통비 등에 자율 사용)
-                        도서, 워크샵, 세미나 등 업무 교육비 100% 지원
-                        최고급 하드웨어 및 업무용 소프트웨어 제공
-                    </p>
-                </div>
-                <div class="insurcontent">
-                    <p class="insurheader">
-                        사소한 것까지<br>회사가 책임집니다
-                    </p>
-                    <p class="insurbody">
-                        1억 무이자 주택자금 대출(토스씨엑스 및 토스인슈어런스
-                        제외)
-                        전문 미용사가 상주하는 사내 헤어살롱
-                        다양한 간식과 물품이 상시 구비되어 있는 사내 편의점
-                        직장단체보험 (가족 포함)및 각종 경조사비 지원
-                        매월 체력단련비, 통신비 지원
-                    </p>
-                </div>
+        </div>
+
+        <div class="nocontent4">
+            <div class="image">
+                <img src="../images/layout4-2.jpg">
+                <p class="cardtitle" style="color: #ffffff;">Be professional</p>
+                <p class="cardmaintitle" style="color: #ffffff;">프로답게<br>스포츠팀처럼</p>
+                <span class="plusicon" style="color: #ffffff;"><svg xmlns="http://www.w3.org/2000/svg" style="color:black;" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
+                <p class="cardbody" style="color: #ffffff;">
+                    멀리서 볼 때 하나처럼 보입니다. 각자가 맡은 업무에 항상 프로답게 임하고 있기 때문입니다. 동료들의 놀라운 속도와 열정은 매 순간 당신을 놀라게하고 자극합니다.
+                </p>
             </div>
-        </section>
-        <section>
-            <p class="welfaredetail">
-                토스커뮤니티 복지 자세히 보기
+        </div>
+    </section>
+
+    <!--섹션 6-->
+    <section class="interview">
+        <div class="interview1">
+            <div class="inter1">
+                <img src="../images/2-1.png" alt="최명규님">
+                <p class="interviewContent">
+                    다른 팀에 업무를 부탁하면 하루 만에 해결됩니다.
+                    "제가 더 도와드릴 것 없을까요?" 라며 물어봐주시고요. 이런 사람들이 많다는 것이 가장 큰 차이점이자 매력인 것 같아요. 모두가 하나의 목표를 보고 함께 달리고 있으며, 팀 성장에 도움되는 일이라면 망설임 없이 적극적으로 도와주시니까요.
+                </p>
+                <p class="interviewer">DevOps Engineer, 최명규 님</p>
+            </div>
+            <img src="../images/icn-left-arrow-circle.png" class="leftarrow">
+            <img src="../images/icn-right-arrow-circle.png" class="rightarrow">
+        </div>
+        <div class="interview2">
+            <div class="inter2">
+                <img src="../images/2-2.png" alt="김서연님">
+                <p class="interviewContent">
+                    토스는 하나의 서비스를 출시한 후 안주하는 조직이 아닙니다.
+                    '이런 기능이 들어가면 고객들이 더 편하지 않을까?' 를 끊임없이 고민하며, 부족한 점을 빠르게 개선하는 애자일 조직이거든요. 이런 환경에서 기존의 방법을 고수하기보다, 팀의 속도에 발맞춰 유연하게 리서치를 운영하는 것이 훨씬 효과적입니다.
+                </p>
+                <p class="interviewer">UX Researcher, 김서연 님</p>
+            </div>
+            <img src="../images/icn-left-arrow-circle.png" class="leftarrow">
+            <img src="../images/icn-right-arrow-circle.png" class="rightarrow">
+        </div>
+        <div class="interview3">
+            <div class="inter3">
+                <img src="../images/2-3.png" alt="최승일님">
+                <p class="interviewContent">
+                    이전 직장에서 무섭고 힘들었던 점은, '내일, 한 달, 1년 후의 나에게 확신을 가질 수
+                    있는가?' 라는 질문에 답을 내릴 수 없었다는 건데요. 토스커뮤니티에서는 미래의 나에게 확신을 가질 수 있습니다. 프로답게 일하는 것이 요구되는 토스커뮤니티에서는,
+                    몸은 지칠 수 있지만 매일 성장하고 있다 확신할 수 있어요. '프로다움'이 주는 힘듦과 자부심이죠.
+                </p>
+                <p class="interviewer">Internal Product Developer, 최승일 님</p>
+            </div>
+            <img src="../images/icn-left-arrow-circle.png" class="leftarrow">
+            <img src="../images/icn-right-arrow-circle.png" class="rightarrow">
+        </div>
+    </section>
+
+    <!-- 일하는 문화 -->
+    <section class="culture">
+        <div class="cultureimage">
+            <p class="culturetitle">일하는 문화를 새롭게<br> 만들고 있습니다</p>
+            <p class="culturecontent">토스커뮤니티는 완전히 새로운 조직 문화를 지향합니다.
+                세상에 없던 제품과 서비스를 선보이려면, 새로운 문화가 바탕이 되어야 한다고 믿습니다.
             </p>
-            <div class="detailcontent">
-                <ul class="bxslider">
-                    <li>
-                        <img src="../images/slide1.jpg">
-                        <p>
-                        <strong>1억 무이자 주택자금 대출(토스씨엑스 및 토스인슈어런스 제외)</strong>
-                        토스커뮤니티 모두가 주거 걱정 없이 일할 수 있도록, 최대 1억 원의 주택자금 대출을 무이자로 받을 수 있습니다.
-                        </p>
-                    </li>
-                    <li>
-                        <img src="../images/slide2.jpg">
-                        <p>
-                        <strong>무제한 휴가</strong> 정해진 휴가 일수는 없습니다. 휴식 또는 개인 용무가 있다면 별도의 보고나 승인 없이 자유롭게 휴가를 사용할 수 있습니다.
-                        </p>
-                    </li>
-                    <li>
-                        <img src="../images/slide3.jpg">
-                        <p>
-                        <strong>사내 편의점</strong> 언제나 열려있는 무인 편의점에서 다양한 간식부터 각종 비상약품, 문구류까지 모두 무료로 이용 가능합니다.
-                        </p>
-                    </li>
-                    <li>
-                        <img src="../images/slide4.jpg">
-                        <p>
-                        <strong>사내 카페</strong> 토스 사내 카페 '커피 사일로(Coffee Silo)'는 모든 팀원들이 가장 즐겨찾는 공간입니다. 하루의 시작을 도와주는 활력소가 되어주는 것은 물론, 지칠 때 쉬어갈 수 있는 티타임을 준비해 주시기도 합니다.
-                        </p>
-                    </li>
-                    <li>
-                        <img src="../images/slide5.jpg">
-                        <p>
-                        <strong>자율 출퇴근제</strong> 당신의 업무 스타일에 따라 직접 근무 시간 및 장소(출근 또는 원격 등)를 자유롭게 조정할 수 있습니다.
-                        </p>
-                    </li>
-                    <li>
-                        <img src="../images/slide6.jpg">
-                        <p>
-                        <strong>업무 집중 공간</strong> 아무런 방해 없이 일에만 집중하고 싶을 때, 혼자 만의 공간을 활용할 수 있습니다. 사무실 곳곳에 오픈형이 아닌 벽으로 분리된 자리, 방음이 잘 되는 폰부스 등이 마련되어 있습니다.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="outro">
-            <div class="outrocontent">
-                <p class="outrotitle">
-                    지금도 새로운 역사를<br>만들고 있습니다
+    <!-- 제목 없는 2*2 사진 -->
+    <section class="notitle" style="margin-top: 100px;">
+        <div class="nocontent1">
+            <div class="image">
+                <img src="../images/layout1-3.jpg">
+                <p class="cardtitle">Earn trust</p>
+                <p class="cardmaintitle">성취가 신뢰로,<br> 신뢰가 존경으로 이어집니다</p>
+                <span class="plusicon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
+                <p class="cardbody">
+                    토스커뮤니티에서는 성취를 통해 동료들에게 어떤 신뢰를 주었는지가 가장 중요합니다. 개개인이 가진 신뢰의 크기에 따라 권한과 책임이 주어지는 합리적인 문화를 추구합니다.<br>
+                    더 나아가 신뢰는 존경으로 이어지고, 그렇게 리더가 탄생합니다. 토스 커뮤니티에서의 리더가 지시와 감독을 하지 않는 이유입니다. 리더가 된 후에도 끊임 없이 신뢰를 쌓기 위해 뛰어난 실무 능력을 갖춰야 함은 물론, 더 나은 방향을 제안할 수 있어야 합니다.
                 </p>
-                <p class="outrobody">
-                    토스커뮤니티가 만드는 수많은 혁신의 순간들,<br>당신과 함께 만들고 싶습니다.<br>지금, 토스커뮤니티에 합류하세요.
-                </p>
-                <button type="button">채용 중인 공고 보기</button>
             </div>
-        </section>
+        </div>
+        <div class="nocontent2">
+            <div class="image">
+                <img src="../images/layout2-3.jpg">
+                <p class="cardtitle" style="color: #333d4b;">Learn from failure</p>
+                <p class="cardmaintitle" style="color: #333d4b;">실패를 나누고<br>함께 성장합니다</p>
+                <span class="plusicon" style="color: #333d4b;"><svg xmlns="http://www.w3.org/2000/svg" style="color:black;" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
+                <p class="cardbody" style="color: #333d4b;">
+                    토스커뮤니티에서 가장 두려운 것은 실패가 아닙니다. ‘도전하지 않는 것’ 입니다. 도전 끝에 마주하는 실패는 소중한 경험입니다. 중요한 것은 그 과정에서 얻게 되는 배움입니다.<br>
+                    성공 경험은 물론 실패 경험 또한 자유롭게 공유됩니다. 실패 속에서 배운 것을 서로 공유하고 더 나은 방향을 함께 찾아갑니다. 실패를 두려워하지 않고 새로운 도전을 멈추지 않는 것, 토스커뮤니티가 일을 대하는 자세입니다.
+                </p>
+            </div>
+        </div>
+        <div class="nocontent3">
+            <div class="image">
+                <img src="../images/layout3-3.jpg">
+                <p class="cardtitle" style="color: #333d4b;">Break formality</p>
+                <p class="cardmaintitle" style="color: #333d4b;">형식을 고수하기보다,<br>일의 본질에 집중합니다</p>
+                <span class="plusicon" style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" style="color:black;" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
+                <p class="cardbody" style="color: #333d4b;">
+                    일을 위한 일, 토스커뮤니티에는 없습니다. 핵심만 전달하고 빠르게 실행합니다. 형식적인 보고를 위한 문서나 이메일은 필요하지 않습니다.<br>
+                    전달하고자 하는 메시지나 생각을 간결하게 정리하여 공유합니다. 일에 필요 없는 절차, 형식, 양식 등 모든 것을 파괴하고 실질적인 것에만 집중하면 됩니다.
+                </p>
+            </div>
+        </div>
+
+        <div class="nocontent4">
+            <div class="image">
+                <img src="../images/layout4-3.jpg">
+                <p class="cardtitle" style="color: #333d4b;">Be a guardian of culture</p>
+                <p class="cardmaintitle" style="color: #333d4b;">문화는 끊임 없이<br>진화하고 있습니다</p>
+                <span class="plusicon" style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" style="color:black;" viewBox="0 0 24 24" class="line-icon"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 23.2C5.8 23.2.8 18.2.8 12S5.8.8 12 .8s11.2 5 11.2 11.2-5 11.2-11.2 11.2zm0-21c-5.4 0-9.8 4.4-9.8 9.8s4.4 9.8 9.8 9.8 9.8-4.4 9.8-9.8-4.4-9.8-9.8-9.8z" fill="#6b7684"></path><g fill="#6b7684"><path d="M17 12.8H7c-.4 0-.8-.3-.8-.8s.3-.8.8-.8h10c.4 0 .8.3.8.8s-.4.8-.8.8z"></path><path d="M12 17.8c-.4 0-.8-.3-.8-.8V7c0-.4.3-.8.8-.8s.8.3.8.8v10c-.1.4-.4.8-.8.8z"></path></g></svg></span>
+                <p class="cardbody" style="color: #333d4b;">
+                    지금의 문화가 누군가에게 맞지 않을 수 있습니다. 문화가 제대로 작동하지 않거나 더 좋은 방향이 떠오른다면 자유롭게 표현할 수 있습니다. 토스커뮤니티라면 누구나 문화에 대해 의견을 나누고 개선책을 제안할 수 있습니다.<br>
+                    토스커뮤니티에 합류한 순간부터, 문화는 단순히 누리는 것이 아닌 함께 만들어 나가는 것입니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--섹션 9-->
+    <section class="interview interview_end">
+        <div class="interview1">
+            <div class="inter1">
+                <img src="../images/3-1.png" alt="류리나님">
+                <p class="interviewContent">
+                    토스커뮤니티에서는 연차가 아닌 팀원들에게 받는 '신뢰'로 리더가 결정됩니다. 신뢰는 모든 팀원들에게 중시되는 가치인데요. 재택 근무나 무제한 휴가 같은 제도가 이에서 시작된다고 생각해요. 동료 간의 신뢰는 물론, 회사가 팀원 한 명, 한 명에게 가지는 신뢰가 느껴지는 이 문화가 정말 좋아요.
+                </p>
+                <p class="interviewer">Finance Team Leader, 류리나 님</p>
+            </div>
+            <img src="../images/icn-left-arrow-circle.png" class="leftarrow">
+            <img src="../images/icn-right-arrow-circle.png" class="rightarrow">
+        </div>
+        <div class="interview2">
+            <div class="inter2">
+                <img src="../images/3-2.png" alt="이태호님">
+                <p class="interviewContent">
+                    예전에는 기술 직군인데도 격식 차리는 문서를 만드는 일이 많았어요.
+                    토스커뮤니티에서는 불필요한 일은 생략할 수 있어 꼭 필요한 일에 집중하고 성과를
+                    만들어낼 수 있어요.
+                    그리고 실패하더라도 괜찮은 문화, 실패를 통해 배운 점을 바탕으로 더 좋은 결과물을
+                    만들 수 있는 환경이 다른 곳과의 가장 큰 차이점입니다.
+                </p>
+                <p class="interviewer">Security Engineer, 이태호 님</p>
+            </div>
+            <img src="../images/icn-left-arrow-circle.png" class="leftarrow">
+            <img src="../images/icn-right-arrow-circle.png" class="rightarrow">
+        </div>
+    </section>
+
+    <!--섹션 10-->
+    <section class="insurance">
+        <div class="title">
+            <p class="insurtitle">몰입하는 당신을 위한,<br>아낌 없는 보상과 지원</p>
+        </div>
+        <div class="wrapper">
+            <div class="insurcontent">
+                <p class="insurheader">
+                    자율적인 근무 환경에서<br>효율적인 업무가 가능합니다
+                </p>
+                <p class="insurbody">
+                    탄력적인 출퇴근 시간
+                    원격 근무 가능
+                    별도 승인 없는 무제한 휴가
+                    근속 3년마다 리프레시 휴가 1개월
+                </p>
+            </div>
+            <div class="insurcontent">
+                <p class="insurheader">
+                    업무와 성장에<br>몰두할 수 있도록 지원합니다
+                </p>
+                <p class="insurbody">
+                    업계 최고 수준의 연봉
+                    반기별 성과급 지급
+                    개인 법인카드 지급 (식대, 야근교통비 등에 자율 사용)
+                    도서, 워크샵, 세미나 등 업무 교육비 100% 지원
+                    최고급 하드웨어 및 업무용 소프트웨어 제공
+                </p>
+            </div>
+            <div class="insurcontent">
+                <p class="insurheader">
+                    사소한 것까지<br>회사가 책임집니다
+                </p>
+                <p class="insurbody">
+                    1억 무이자 주택자금 대출(토스씨엑스 및 토스인슈어런스
+                    제외)
+                    전문 미용사가 상주하는 사내 헤어살롱
+                    다양한 간식과 물품이 상시 구비되어 있는 사내 편의점
+                    직장단체보험 (가족 포함)및 각종 경조사비 지원
+                    매월 체력단련비, 통신비 지원
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <p class="welfaredetail">
+            토스커뮤니티 복지 자세히 보기
+        </p>
+        <div class="detailcontent">
+            <ul class="bxslider">
+                <li>
+                    <img src="../images/slide1.jpg">
+                    <p>
+                    <strong>1억 무이자 주택자금 대출(토스씨엑스 및 토스인슈어런스 제외)</strong>
+                    토스커뮤니티 모두가 주거 걱정 없이 일할 수 있도록, 최대 1억 원의 주택자금 대출을 무이자로 받을 수 있습니다.
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/slide2.jpg">
+                    <p>
+                    <strong>무제한 휴가</strong> 정해진 휴가 일수는 없습니다. 휴식 또는 개인 용무가 있다면 별도의 보고나 승인 없이 자유롭게 휴가를 사용할 수 있습니다.
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/slide3.jpg">
+                    <p>
+                    <strong>사내 편의점</strong> 언제나 열려있는 무인 편의점에서 다양한 간식부터 각종 비상약품, 문구류까지 모두 무료로 이용 가능합니다.
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/slide4.jpg">
+                    <p>
+                    <strong>사내 카페</strong> 토스 사내 카페 '커피 사일로(Coffee Silo)'는 모든 팀원들이 가장 즐겨찾는 공간입니다. 하루의 시작을 도와주는 활력소가 되어주는 것은 물론, 지칠 때 쉬어갈 수 있는 티타임을 준비해 주시기도 합니다.
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/slide5.jpg">
+                    <p>
+                    <strong>자율 출퇴근제</strong> 당신의 업무 스타일에 따라 직접 근무 시간 및 장소(출근 또는 원격 등)를 자유롭게 조정할 수 있습니다.
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/slide6.jpg">
+                    <p>
+                    <strong>업무 집중 공간</strong> 아무런 방해 없이 일에만 집중하고 싶을 때, 혼자 만의 공간을 활용할 수 있습니다. 사무실 곳곳에 오픈형이 아닌 벽으로 분리된 자리, 방음이 잘 되는 폰부스 등이 마련되어 있습니다.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="outro">
+        <div class="outrocontent">
+            <p class="outrotitle">
+                지금도 새로운 역사를<br>만들고 있습니다
+            </p>
+            <p class="outrobody">
+                토스커뮤니티가 만드는 수많은 혁신의 순간들,<br>당신과 함께 만들고 싶습니다.<br>지금, 토스커뮤니티에 합류하세요.
+            </p>
+            <a href="career_job.html"><button type="button">채용 중인 공고 보기</button></a>
+        </div>
+    </section>
+
     <!-- footer -->
     <footer>
         <div class="footerbox">
-            <!-- footer_top -->
-            <div class="footer_top">
-                <ul class="list_service">
-                    <li class="title">서비스</li>
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">자주 묻는 질문</a></li>
-                    <li><a href="#">공동인증서 관리</a></li>
-                    <li><a href="#">계정 일시잠금</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    <li><a href="#">브랜드리소스센터</a></li>
-                </ul>
-                <ul class="list_company">
-                    <li class="title">회사</li>
-                    <li><a href="#">회사 소개</a></li>
-                    <li><a href="#">토스페이먼츠</a></li>
-                    <li><a href="#">토스인슈어런스</a></li>
-                    <li><a href="#">토스증권</a></li>
-                    <li><a href="#">토스씨엑스</a></li>
-                    <li><a href="#">토스뱅크</a></li>
-                    <li><a href="#">채용</a></li>
-                    <li><a href="#">블로그</a></li>
-                    <li><a href="#">공고</a></li>
-                </ul>
-                <ul class="list_inquire">
-                    <li class="title">문의</li>
-                    <li><a href="#">사업 제휴</a></li>
-                    <li><a href="#">광고 문의</a></li>
-                    <li><a href="#">인증 사업 문의</a></li>
-                    <li><a href="#">마케팅·PR</a></li>
-                    <li><a href="#">IR</a></li>
-                </ul>
-                <ul class="list_center">
-                    <li class="title">고객센터</li>
-                    <li><a href="#">전화: 1599-49-5 (24시간 연중무휴)</a></li>
-                    <li><a href="#">이메일(고객전용): support@toss.im</a></li>
-                    <li><a href="#">이메일(외부기관전용): support-af@toss.im</a></li>
-                    <li><a href="#">민원 접수</a></li>
+    
+        <!-- footer_top -->
+        <div class="footer_top">
+            <ul class="list_service">
+                <li class="title">서비스</li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="question.html">자주 묻는 질문</a></li>
+                <li><a href="cert.html">공동인증서 관리</a></li>
+                <li><a href="suspend.html">계정 일시잠금</a></li>
+                <li><a href="customer.html">고객센터</a></li>
+                <li><a href="#">브랜드리소스센터</a></li>
+            </ul>
+            <ul class="list_company">
+                <li class="title">회사</li>
+                <li><a href="intro.html">회사 소개</a></li>
+                <li><a href="#">토스페이먼츠</a></li>
+                <li><a href="#">토스인슈어런스</a></li>
+                <li><a href="#">토스증권</a></li>
+                <li><a href="#">토스씨엑스</a></li>
+                <li><a href="#">토스뱅크</a></li>
+                <li><a href="career.html">채용</a></li>
+                <li><a href="#">블로그</a></li>
+                <li><a href="#">공고</a></li>
+            </ul>
+            <ul class="list_inquire">
+                <li class="title">문의</li>
+                <li><a href="#">사업 제휴</a></li>
+                <li><a href="#">광고 문의</a></li>
+                <li><a href="#">인증 사업 문의</a></li>
+                <li><a href="#">마케팅·PR</a></li>
+                <li><a href="#">IR</a></li>
+            </ul>
+            <ul class="list_center">
+                <li class="title">고객센터</li>
+                <li><a href="#">전화: 1599-49-5 (24시간 연중무휴)</a></li>
+                <li><a href="#">이메일(고객전용): support@toss.im</a></li>
+                <li><a href="#">이메일(외부기관전용): support-af@toss.im</a></li>
+                <li><a href="#">민원 접수</a></li>
+            </ul>
+        </div>
+    
+        <!-- footer_bottom -->
+        <div class="footer_bottom">
+            <!-- footer_bottom_infobox -->  
+            <div class="infobox">
+                <p><strong>(주)비바리퍼블리카</strong></p>
+                <p>
+                    사업자 등록번호 : 120-88-01280 | 대표 : 이승건<br>
+                    호스팅 서비스 : 주식회사 비바리퍼블리카 | 통신판매업 신고번호 : 2014-서울강남-03377 <a href="#">사업자정보확인</a><br>
+                    06236 서울특별시 강남구 테헤란로 142, 12층 (역삼동, 아크플레이스)<br>
+                    고객센터 : 서울특별시 강남구 테헤란로 133, 8층 (역삼동, 한국타이어빌딩)
+                </p>
+            </div>
+    
+            <!-- footer_bottom_smaillListbox -->            
+            <div class="smallListbox">
+                <ul class="smallList">
+                    <li><a href="#">서비스 이용약관</a></li>
+                    <li><a href="#">통합 금융정보 서비스 약관</a></li>
+                    <li><a href="#">이용자의 권리 및 유의사항</a></li>
+                    <li><a href="#"><strong>개인정보 처리방침</strong></a></li>
+                    <li><a href="#"><strong>채용팀 개인정보 처리방침</strong></a></li>
+                    <li><a href="#">영상정보처리기기 운영 관리 방침</a></li>
+                    <li><a href="#">위치기반서비스 이용약관</a></li>
+                    <li><a href="#">가맹점 고지사항</a></li>
+                    <li><a href="#">토스 전자서명인증업무준칙</a></li>
+                    <li><a href="#">토스인증 서비스 약관</a></li>
+                    <li><a href="#">금융소비자보호</a></li>
                 </ul>
             </div>
-            <!-- footer_bottom -->
-            <div class="footer_bottom">
-                <!-- footer_bottom_infobox -->
-                <div class="infobox">
-                    <p><strong>(주)비바리퍼블리카</strong></p>
-                    <p>
-                        사업자 등록번호 : 120-88-01280 | 대표 : 이승건<br>
-                        호스팅 서비스 : 주식회사 비바리퍼블리카 | 통신판매업 신고번호 : 2014-서울강남-03377 <a href="#">사업자정보확인</a><br>
-                        06236 서울특별시 강남구 테헤란로 142, 12층 (역삼동, 아크플레이스)<br>
-                        고객센터 : 서울특별시 강남구 테헤란로 133, 8층 (역삼동, 한국타이어빌딩)
-                    </p>
-                </div>
-                <!-- footer_bottom_smaillListbox -->
-                <div class="smallListbox">
-                    <ul class="smallList">
-                        <li><a href="#">서비스 이용약관</a></li>
-                        <li><a href="#">통합 금융정보 서비스 약관</a></li>
-                        <li><a href="#">이용자의 권리 및 유의사항</a></li>
-                        <li><a href="#"><strong>개인정보 처리방침</strong></a></li>
-                        <li><a href="#"><strong>채용팀 개인정보 처리방침</strong></a></li>
-                        <li><a href="#">영상정보처리기기 운영 관리 방침</a></li>
-                        <li><a href="#">위치기반서비스 이용약관</a></li>
-                        <li><a href="#">가맹점 고지사항</a></li>
-                        <li><a href="#">토스 전자서명인증업무준칙</a></li>
-                        <li><a href="#">토스인증 서비스 약관</a></li>
-                        <li><a href="#">금융소비자보호</a></li>
-                    </ul>
-                </div>
-                <!-- footer_bottom_snsbox -->
-                <div class="snsbox">
-                    <ul class="sns">
-                        <li><a href="#"><img src="../images/icn-facebook.svg"></a></li>
-                        <li><a href="#"><img src="../images/icn-blog.svg"></a></li>
-                        <li><a href="#"><img src="../images/icn-naver.svg"></a></li>
-                        <li><a href="#"><img src="../images/icn-twitter.svg"></a></li>
-                        <li><a href="#"><img src="../images/icn-instagram.svg"></a></li>
-                    </ul>
-                </div>
-            </div>
+    
+            <!-- footer_bottom_snsbox -->               
+            <div class="snsbox">
+                <ul class="sns">
+                    <li><a href="#"><img src="../images/icn-facebook.svg"></a></li>
+                    <li><a href="#"><img src="../images/icn-blog.svg"></a></li>
+                    <li><a href="#"><img src="../images/icn-naver.svg"></a></li>
+                    <li><a href="#"><img src="../images/icn-twitter.svg"></a></li>
+                    <li><a href="#"><img src="../images/icn-instagram.svg"></a></li>
+                </ul>
+            </div>            
+        </div>
         </div>
     </footer>
     </div>
-    <script src="../js/jquery.bxslider.js"></script>
-        <script>
-            $(".trigger").on("click", function () {
 
-                if ($(".icon2").css("display") == "none") {
-                    $(".icon2").css("display", "block").css("backgroundSize", "100% 21px").css("transform", "translate(-50%, -50%) rotate(45deg)");
-                    $(".icon").css("backgroundSize", "100% 21px").css("transform", "translate(15%, 71%) rotate(-45deg)");
-                    $(".toss_nav ul").slideDown(300, "swing");
-                } else if ($(".icon2").css("display") == "block") {
-                    $(".icon2").css("display", "none");
-                    $(".icon").css("backgroundSize", "100% 8px").css("transform", "none");
-                    $(".toss_nav ul").slideUp(300, "swing");
-                }
-            });
+    <script src="../js/jquery.bxslider.js"></script>
+    <script>
+    /* nav */
+    $(".trigger").on("click", function () {
+
+        if ($(".icon2").css("display") == "none") {
+            $(".icon2").css("display", "block").css("backgroundSize", "100% 21px").css("transform", "translate(-50%, -50%) rotate(45deg)");
+            $(".icon").css("backgroundSize", "100% 21px").css("transform", "translate(15%, 71%) rotate(-45deg)");
+            $(".toss_nav ul").slideDown(300, "swing");
+
+        } else if ($(".icon2").css("display") == "block") {
+            $(".icon2").css("display", "none");
+            $(".icon").css("backgroundSize", "100% 8px").css("transform", "none");
+            $(".toss_nav ul").slideUp(300, "swing");
+        }
+    });
+
+    $(window).on("scroll", function () {
+        let windowScroll = $(window).scrollTop();
+
+        console.log(windowScroll);
+
+        /* header nav */
+        if(windowScroll >= 0 && windowScroll < 3000) {
+            $("header").css("background", "transparent").css("borderColor", "transparent");
+            $(".navicon a").css("filter", "brightness(0) invert(1)");
+            $(".icon").css("backgroundImage", "linear-gradient(#fff 2px, transparent 2px)");
+            $(".icon2").css("backgroundImage", "linear-gradient(#fff 2px, transparent 2px)");
+            $(".toss_nav ul li a").removeClass("white_nav");
+        } else if(windowScroll >= 3000) {
+            $("header").css("background", "#fff").css("backdropFilter", "none").css("borderBottom", "1px solid #E5E8EB");
+            $(".navicon a").css("filter", "none");
+            $(".icon").css("backgroundImage", "linear-gradient(#3b3b46 2px, transparent 2px)");
+            $(".icon2").css("backgroundImage", "linear-gradient(#3b3b46 2px, transparent 2px)");
+            $(".toss_nav ul li a").addClass("white_nav");
+        }
+    });
     </script>
+
     <script>
         $(".imagebox").hover(function() {
             $(".layout1-title").css("display", "block");
@@ -608,6 +625,8 @@
 
         });
     </script>
+
+    <!-- main -->
     <script>
         $(window).scroll(function() {
             var max = 1800;
@@ -615,82 +634,106 @@
             var height = $(this).scrollTop();
 
             if(height == 0) {
+                $(".main").css("opacity", "1");  
                 $(".maintitle").css("opacity", "1");
                 $(".subtitle1").css("opacity", "0");
                 $(".subtitle2").css("opacity", "0");
                 $(".subtitle3").css("opacity", "0");
-                $(".event2").css("transform", "scale(1)");
+                $(".event2").css("transform", "scale(1)").css("filter", " brightness(100%)").css("opacity", "1");
             } else if(height >= 20 && height < 300) {
+                $(".main").css("opacity", "1");  
                 $(".maintitle").css("opacity", "0.7");
                 $(".subtitle1").css("opacity", "0");
                 $(".subtitle2").css("opacity", "0");
                 $(".subtitle3").css("opacity", "0");
-                $(".event2").css("transform", "scale(1.04)");
+                $(".event2").css("transform", "scale(1.04)").css("filter", " brightness(100%)").css("opacity", "1");
             } else if (height >=300 && height <450) {
+                $(".main").css("opacity", "1");  
                 $(".maintitle").css("opacity", "0.3");
                 $(".subtitle1").css("opacity", "0");
                 $(".subtitle2").css("opacity", "0");
                 $(".subtitle3").css("opacity", "0");
-                $(".event2").css("transform", "scale(1.1)");
+                $(".event2").css("transform", "scale(1.1)").css("filter", " brightness(100%)").css("opacity", "1");
             } else if (height >=450 && height <600) {
+                $(".main").css("opacity", "1");  
                 $(".maintitle").css("opacity", "0");
                 $(".subtitle1").css("opacity", "0.3");
                 $(".subtitle2").css("opacity", "0");
                 $(".subtitle3").css("opacity", "0");
-                $(".event2").css("transform", "scale(1.24)");
+                $(".event2").css("transform", "scale(1.24)").css("filter", " brightness(100%)").css("opacity", "1");
             } else if (height >=600 && height <750) {
+                $(".main").css("opacity", "1");  
                 $(".maintitle").css("opacity", "0");
                 $(".subtitle1").css("opacity", "0.7");
                 $(".subtitle2").css("opacity", "0");
                 $(".subtitle3").css("opacity", "0");
-                $(".event2").css("transform", "scale(1.26)");
+                $(".event2").css("transform", "scale(1.26)").css("filter", " brightness(100%)").css("opacity", "1");
             } else if (height >=750 && height <900) {
+                $(".main").css("opacity", "1");  
                 $(".maintitle").css("opacity", "0");
                 $(".subtitle1").css("opacity", "1");
                 $(".subtitle2").css("opacity", "0");
                 $(".subtitle3").css("opacity", "0");
-                $(".event2").css("transform", "scale(1.28)").addClass("dark");
+                $(".event2").css("transform", "scale(1.28)").css("filter", " brightness(80%)").css("opacity", "1");
             } else if (height >=900 && height <1050) {
+                $(".main").css("opacity", "1");  
                 $(".maintitle").css("opacity", "0");
                 $(".subtitle1").css("opacity", "1");
                 $(".subtitle2").css("opacity", "0.3");
                 $(".subtitle3").css("opacity", "0");
-                $(".event2").css("transform", "scale(1.34)").addClass("moredark");
+                $(".event2").css("transform", "scale(1.34)").css("filter", " brightness(50%)").css("opacity", "1");
             } else if (height >=1050 && height <1200) {
+                $(".main").css("opacity", "1");  
                 $(".maintitle").css("opacity", "0");
                 $(".subtitle1").css("opacity", "1");
                 $(".subtitle2").css("opacity", "0.7");
                 $(".subtitle3").css("opacity", "0");
-                $(".event2").css("transform", "scale(1.38)");
+                $(".event2").css("transform", "scale(1.38)").css("filter", " brightness(37%)").css("opacity", "1");
             } else if (height >=1200 && height <1350) {
+                $(".main").css("opacity", "1");  
                 $(".maintitle").css("opacity", "0");
                 $(".subtitle1").css("opacity", "1");
                 $(".subtitle2").css("opacity", "1");
                 $(".subtitle3").css("opacity", "0.3");
-                $(".event2").css("transform", "scale(1.43)").addClass("mostdark");
+                $(".event2").css("transform", "scale(1.43)").css("filter", " brightness(25%)").css("opacity", "1");
             } else if (height >=1350 && height <1500) {
+                $(".main").css("opacity", "1");  
                 $(".maintitle").css("opacity", "0");
                 $(".subtitle1").css("opacity", "1");
                 $(".subtitle2").css("opacity", "1");
                 $(".subtitle3").css("opacity", "0.7");
-                $(".event2").css("transform", "scale(1.48)");
-            } else if (height >=1500 && height < 1700 ) {
+                $(".event2").css("transform", "scale(1.48)").css("opacity", "1");
+            } else if (height >=1500 && height < 1600) {
+                $(".main").css("opacity", "1");  
                 $(".maintitle").css("opacity", "0");
                 $(".subtitle1").css("opacity", "1");
                 $(".subtitle2").css("opacity", "1");
                 $(".subtitle3").css("opacity", "1");
-                $(".event2").css("opacity", "0.7");              
-            } else if (height >= 1700 && height <1800 ) {
+                $(".event2").css("opacity", "1").css("filter", " brightness(50%)");
+            } else if (height >=1600 && height < 1800) {
                 $(".maintitle").css("opacity", "0");
-                $(".subtitle1").css("opacity", "0");
-                $(".subtitle2").css("opacity", "0");
-                $(".subtitle3").css("opacity", "0");  
-                $(".event2").css("opacity", "0.5");
-            } else if(height >=1800 ) {
-                $(".main").css("opacity", "0");
-            };
+                $(".subtitle1").css("opacity", "0.7");
+                $(".subtitle2").css("opacity", "0.7");
+                $(".subtitle3").css("opacity", "0.7");
+                $(".event2").css("opacity", "1").css("filter", " brightness(75%)");
+                $(".main").css("opacity", "0.7");
+            } else if (height >= 1800 && height <2000) {
+                $(".maintitle").css("opacity", "0");
+                $(".subtitle1").css("opacity", "0.7");
+                $(".subtitle2").css("opacity", "0.7");
+                $(".subtitle3").css("opacity", "0.7");
+                $(".event2").css("opacity", "1").css("filter", " brightness(90%)");
+                $(".main").css("opacity", "0.5");
+            } else if(height >= 2000 && height <2100) {
+                $(".event2").css("opacity", "1").css("filter", " brightness(95%)");
+                $(".main").css("opacity", "0.3");  
+            } else if(height >= 2100) {
+                $(".main").css("opacity", "0");  
+            }
         });
     </script>
+
+    <!-- interview -->
     <script>
         $(".interview1 .rightarrow").on("click", function() {
             $(".interview1").css("display","none");
@@ -724,14 +767,37 @@
             $(".leftarrow").css("cursor", "pointer");
         });
 
-        $(".interview1 .leftarrow").on("click", function() {
+        $(".interview3 .leftarrow").on("click", function() {
             $(".interview1").css("display","block");
             $(".interview2").css("display","none");
             $(".interview3").css("display","none");
             $(".leftarrow").css("cursor", "pointer");
         });
 
+        /* 마지막 인터뷰 부분 */
+        $(".interview_end .interview1 .leftarrow").on("click", function() {
+            $(".interview_end .interview1").css("display","none");
+            $(".interview_end .interview2").css("display","block");
+            $(".leftarrow").css("cursor", "pointer");
+        });
+
+        $(".interview_end .interview2 .leftarrow").on("click", function() {
+            $(".interview_end .interview1").css("display","block");
+            $(".interview_end .interview2").css("display","none");
+            $(".leftarrow").css("cursor", "pointer");
+        });
+
+        $(".interview_end .interview1 .rightarrow").on("click", function() {
+            $(".interview_end .interview1").css("display","none");
+            $(".interview_end .interview2").css("display","block");
+        });
+
+        $(".interview_end .interview2 .rightarrow").on("click", function() {
+            $(".interview_end .interview1").css("display","block");
+            $(".interview_end .interview2").css("display","none");
+        });
     </script>
+
     <script>
         $(document).ready(function() {
         $(".bxslider").bxSlider( {

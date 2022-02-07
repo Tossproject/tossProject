@@ -17,7 +17,7 @@
         <nav class="toss_nav">
             <div class="navicon">
                 <div>
-                    <a href="#" class="logo">
+                    <a href="customer.html" class="logo">
                         <img src="../images/logo.svg" alt="toss">
                         <span class="logoText"> 고객센터</span>
                     </a>
@@ -37,10 +37,10 @@
                 </div>
             </div>
             <ul>
-                <li><a href="#">자주 묻는 질문</a></li>
-                <li><a href="#">피해 사건 신고</a></li>
-                <li><a href="#">토스의 보안</a></li>
-                <li class="magnifier_li"><a href="#">
+                <li><a href="question.html">자주 묻는 질문</a></li>
+                <li><a href="report.html">피해 사건 신고</a></li>
+                <li><a href="security.html">토스의 보안</a></li>
+                <li class="magnifier_li"><a href="question.html">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon"
                         style="width: 17.5px; height: 17.5px; margin: top -13px; margin: left -1px;">
                         <path
@@ -60,28 +60,33 @@
                     <h1>자주 묻는 질문</h1>
                     <form action="#">
                         <div class="searchbox">
-                            <span class="question_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon" style="width: 28px; height: 28px;"><path d="M22.3 21.2l-5.7-5.7c1.2-1.5 2-3.4 2-5.5 0-4.7-3.8-8.5-8.5-8.5S1.5 5.3 1.5 10s3.8 8.5 8.5 8.5c2.1 0 4-.8 5.5-2l5.7 5.7c.1.1.3.2.5.2s.4-.1.5-.2c.4-.2.4-.7.1-1zM3 10c0-3.9 3.2-7 7-7s7 3.2 7 7-3.2 7-7 7-7-3.1-7-7z" fill="#333d4b"></path></svg></span>
+                            <span class="faq_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon"><path d="M22.3 21.2l-5.7-5.7c1.2-1.5 2-3.4 2-5.5 0-4.7-3.8-8.5-8.5-8.5S1.5 5.3 1.5 10s3.8 8.5 8.5 8.5c2.1 0 4-.8 5.5-2l5.7 5.7c.1.1.3.2.5.2s.4-.1.5-.2c.4-.2.4-.7.1-1zM3 10c0-3.9 3.2-7 7-7s7 3.2 7 7-3.2 7-7 7-7-3.1-7-7z" fill="#333d4b"></path></svg></span>
                             <input type="text" placeholder="무엇이든 찾아보세요">
                         </div>
                     </form>
     
-        <!-- 본문 중 2칼럼 레이아웃 -->
+                    <!-- 본문 중 2칼럼 레이아웃 -->
                     <div class="columns">
+                        <button class="mobilebtn">
+                            <span class="btn_text">질문 TOP</span>
+                            <span class="btn_svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon"><path d="M6.6 9.8c0-.2.1-.5.3-.6.4-.4.9-.4 1.3 0L12 13l3.9-3.9c.4-.4.9-.4 1.3 0s.4.9 0 1.3l-4.5 4.5c-.4.4-.9.4-1.3 0l-4.5-4.5c-.2-.2-.3-.4-.3-.6" fill-rule="evenodd" clip-rule="evenodd" fill="#b0b8c1"></path></svg></span>
+                        </button>
                         <aside>
+                            <div class="bg"></div>
                             <div class="column1">
                                 <ul class="subnav">
-                                    <li><a href="#">질문 TOP</a></li>
-                                    <li><a href="#">송금</a></li>
-                                    <li><a href="#">계좌</a></li>
-                                    <li><a href="#">카드</a></li>
-                                    <li><a href="#">결제</a></li>
-                                    <li><a href="#">투자</a></li>
-                                    <li><a href="#">주식</a></li>
-                                    <li><a href="#">보험</a></li>
-                                    <li><a href="#">이용 문의</a></li>
-                                    <li><a href="#">고객 보호</a></li>
-                                    <li><a href="#">대출</a></li>
-                                    <li><a href="#">기타</a></li>
+                                    <li><a href="#" class="top bluetext">질문 TOP</a></li>
+                                    <li><a href="#" class="remit">송금</a></li>
+                                    <li><a href="#" class="account">계좌</a></li>
+                                    <li><a href="#" class="card">카드</a></li>
+                                    <li><a href="#" class="payment">결제</a></li>
+                                    <li><a href="#" class="investment">투자</a></li>
+                                    <li><a href="#" class="stock">주식</a></li>
+                                    <li><a href="#" class="insurance">보험</a></li>
+                                    <li><a href="#" class="use">이용 문의</a></li>
+                                    <li><a href="#" class="protection">고객 보호</a></li>
+                                    <li><a href="#" class="loan">대출</a></li>
+                                    <li><a href="#" class="etc">기타</a></li>
                                 </ul>
                             </div>
                         </aside>
@@ -147,94 +152,248 @@
     <!-- footer -->
     <footer>
         <div class="footerbox">
-            <!-- footer_top -->
-            <div class="footer_top">
-                <ul class="list_service">
-                    <li class="title">서비스</li>
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">자주 묻는 질문</a></li>
-                    <li><a href="#">공동인증서 관리</a></li>
-                    <li><a href="#">계정 일시잠금</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    <li><a href="#">브랜드리소스센터</a></li>
-                </ul>
-                <ul class="list_company">
-                    <li class="title">회사</li>
-                    <li><a href="#">회사 소개</a></li>
-                    <li><a href="#">토스페이먼츠</a></li>
-                    <li><a href="#">토스인슈어런스</a></li>
-                    <li><a href="#">토스증권</a></li>
-                    <li><a href="#">토스씨엑스</a></li>
-                    <li><a href="#">토스뱅크</a></li>
-                    <li><a href="#">채용</a></li>
-                    <li><a href="#">블로그</a></li>
-                    <li><a href="#">공고</a></li>
-                </ul>
-                <ul class="list_inquire">
-                    <li class="title">문의</li>
-                    <li><a href="#">사업 제휴</a></li>
-                    <li><a href="#">광고 문의</a></li>
-                    <li><a href="#">인증 사업 문의</a></li>
-                    <li><a href="#">마케팅·PR</a></li>
-                    <li><a href="#">IR</a></li>
-                </ul>
-                <ul class="list_center">
-                    <li class="title">고객센터</li>
-                    <li><a href="#">전화: 1599-49-5 (24시간 연중무휴)</a></li>
-                    <li><a href="#">이메일(고객전용): support@toss.im</a></li>
-                    <li><a href="#">이메일(외부기관전용): support-af@toss.im</a></li>
-                    <li><a href="#">민원 접수</a></li>
+    
+        <!-- footer_top -->
+        <div class="footer_top">
+            <ul class="list_service">
+                <li class="title">서비스</li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="question.html">자주 묻는 질문</a></li>
+                <li><a href="cert.html">공동인증서 관리</a></li>
+                <li><a href="suspend.html">계정 일시잠금</a></li>
+                <li><a href="customer.html">고객센터</a></li>
+                <li><a href="#">브랜드리소스센터</a></li>
+            </ul>
+            <ul class="list_company">
+                <li class="title">회사</li>
+                <li><a href="intro.html">회사 소개</a></li>
+                <li><a href="#">토스페이먼츠</a></li>
+                <li><a href="#">토스인슈어런스</a></li>
+                <li><a href="#">토스증권</a></li>
+                <li><a href="#">토스씨엑스</a></li>
+                <li><a href="#">토스뱅크</a></li>
+                <li><a href="career.html">채용</a></li>
+                <li><a href="#">블로그</a></li>
+                <li><a href="#">공고</a></li>
+            </ul>
+            <ul class="list_inquire">
+                <li class="title">문의</li>
+                <li><a href="#">사업 제휴</a></li>
+                <li><a href="#">광고 문의</a></li>
+                <li><a href="#">인증 사업 문의</a></li>
+                <li><a href="#">마케팅·PR</a></li>
+                <li><a href="#">IR</a></li>
+            </ul>
+            <ul class="list_center">
+                <li class="title">고객센터</li>
+                <li><a href="#">전화: 1599-49-5 (24시간 연중무휴)</a></li>
+                <li><a href="#">이메일(고객전용): support@toss.im</a></li>
+                <li><a href="#">이메일(외부기관전용): support-af@toss.im</a></li>
+                <li><a href="#">민원 접수</a></li>
+            </ul>
+        </div>
+    
+        <!-- footer_bottom -->
+        <div class="footer_bottom">
+            <!-- footer_bottom_infobox -->  
+            <div class="infobox">
+                <p><strong>(주)비바리퍼블리카</strong></p>
+                <p>
+                    사업자 등록번호 : 120-88-01280 | 대표 : 이승건<br>
+                    호스팅 서비스 : 주식회사 비바리퍼블리카 | 통신판매업 신고번호 : 2014-서울강남-03377 <a href="#">사업자정보확인</a><br>
+                    06236 서울특별시 강남구 테헤란로 142, 12층 (역삼동, 아크플레이스)<br>
+                    고객센터 : 서울특별시 강남구 테헤란로 133, 8층 (역삼동, 한국타이어빌딩)
+                </p>
+            </div>
+    
+            <!-- footer_bottom_smaillListbox -->            
+            <div class="smallListbox">
+                <ul class="smallList">
+                    <li><a href="#">서비스 이용약관</a></li>
+                    <li><a href="#">통합 금융정보 서비스 약관</a></li>
+                    <li><a href="#">이용자의 권리 및 유의사항</a></li>
+                    <li><a href="#"><strong>개인정보 처리방침</strong></a></li>
+                    <li><a href="#"><strong>채용팀 개인정보 처리방침</strong></a></li>
+                    <li><a href="#">영상정보처리기기 운영 관리 방침</a></li>
+                    <li><a href="#">위치기반서비스 이용약관</a></li>
+                    <li><a href="#">가맹점 고지사항</a></li>
+                    <li><a href="#">토스 전자서명인증업무준칙</a></li>
+                    <li><a href="#">토스인증 서비스 약관</a></li>
+                    <li><a href="#">금융소비자보호</a></li>
                 </ul>
             </div>
-
-            <!-- footer_bottom -->
-            <div class="footer_bottom">
-                <!-- footer_bottom_infobox -->
-                <div class="infobox">
-                    <p><strong>(주)비바리퍼블리카</strong></p>
-                    <p>
-                        사업자 등록번호 : 120-88-01280 | 대표 : 이승건<br>
-                        호스팅 서비스 : 주식회사 비바리퍼블리카 | 통신판매업 신고번호 : 2014-서울강남-03377 <a href="#">사업자정보확인</a><br>
-                        06236 서울특별시 강남구 테헤란로 142, 12층 (역삼동, 아크플레이스)<br>
-                        고객센터 : 서울특별시 강남구 테헤란로 133, 8층 (역삼동, 한국타이어빌딩)
-                    </p>
-                </div>
-
-                <!-- footer_bottom_smaillListbox -->
-                <div class="smallListbox">
-                    <ul class="smallList">
-                        <li><a href="#">서비스 이용약관</a></li>
-                        <li><a href="#">통합 금융정보 서비스 약관</a></li>
-                        <li><a href="#">이용자의 권리 및 유의사항</a></li>
-                        <li><a href="#"><strong>개인정보 처리방침</strong></a></li>
-                        <li><a href="#"><strong>채용팀 개인정보 처리방침</strong></a></li>
-                        <li><a href="#">영상정보처리기기 운영 관리 방침</a></li>
-                        <li><a href="#">위치기반서비스 이용약관</a></li>
-                        <li><a href="#">가맹점 고지사항</a></li>
-                        <li><a href="#">토스 전자서명인증업무준칙</a></li>
-                        <li><a href="#">토스인증 서비스 약관</a></li>
-                        <li><a href="#">금융소비자보호</a></li>
-                    </ul>
-                </div>
-
-                <!-- footer_bottom_snsbox -->
-                <div class="snsbox">
-                    <ul class="sns">
-                        <li><a href="#"><img src="../images/icn-facebook.svg"></a></li>
-                        <li><a href="#"><img src="../images/icn-blog.svg"></a></li>
-                        <li><a href="#"><img src="../images/icn-naver.svg"></a></li>
-                        <li><a href="#"><img src="../images/icn-twitter.svg"></a></li>
-                        <li><a href="#"><img src="../images/icn-instagram.svg"></a></li>
-                    </ul>
-                </div>
-            </div>
+    
+            <!-- footer_bottom_snsbox -->               
+            <div class="snsbox">
+                <ul class="sns">
+                    <li><a href="#"><img src="../images/icn-facebook.svg"></a></li>
+                    <li><a href="#"><img src="../images/icn-blog.svg"></a></li>
+                    <li><a href="#"><img src="../images/icn-naver.svg"></a></li>
+                    <li><a href="#"><img src="../images/icn-twitter.svg"></a></li>
+                    <li><a href="#"><img src="../images/icn-instagram.svg"></a></li>
+                </ul>
+            </div>            
+        </div>
         </div>
     </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <script>
+        $(window).resize(function() {
+            let width = $(window).width();
+
+            if(width > 639) {
+                $(".clickwrapper").removeClass("clickwrapper");
+                $(".clickitem").removeClass("clickitem");
+                $(".column1").css("display", "block");
+                $(".toss_nav ul").removeAttr("style");
+            } else {
+                $(".column1").css("display", "none");                
+            }
+        });
+
+        $(".mobilebtn").on("click", function() {
+            if(matchMedia("screen and (max-width: 639px)").matches) {
+                $(".column1").css("display", "block");
+                $(".column1").addClass("clickwrapper");
+                $(".bg").css("display", "block");
+                $("aside").addClass("clickitem");
+            }
+        });
+
+        $(".bg").on("click", function() {
+            $(".column1").css("display", "none");
+            $(".column1").removeClass("clickwrapper");
+            $(".bg").css("display", "none");
+            $("aside").removeClass("clickitem");
+        });
+
+        /* 질문 nav를 클릭했을 때 */
+        $(".top").on("click", function() {
+            $(".btn_text").text("질문 TOP");
+
+            $(".clickwrapper").css("display", "none");
+            $(".bg").css("display", "none");
+        });
+
+        $(".remit").on("click", function() {
+            $(".btn_text").text("송금");
+
+            $(".clickwrapper").css("display", "none");
+            $(".bg").css("display", "none");
+        });
+
+        $(".account").on("click", function() {
+            $(".btn_text").text("계좌");
+
+            $(".clickwrapper").css("display", "none");
+            $(".bg").css("display", "none");
+        });
+
+        $(".card").on("click", function() {
+            $(".btn_text").text("카드");
+
+            $(".clickwrapper").css("display", "none");
+            $(".bg").css("display", "none");
+        });
+
+        $(".payment").on("click", function() {
+            $(".btn_text").text("결제");
+
+            $(".clickwrapper").css("display", "none");
+            $(".bg").css("display", "none");
+        });
+        
+        $(".investment").on("click", function() {
+            $(".btn_text").text("투자");
+
+            $(".clickwrapper").css("display", "none");
+            $(".bg").css("display", "none");
+        });
+
+        $(".stock").on("click", function() {
+            $(".btn_text").text("주식");
+
+            $(".clickwrapper").css("display", "none");
+            $(".bg").css("display", "none");
+        });
+
+        $(".insurance").on("click", function() {
+            $(".btn_text").text("보험");
+
+            $(".clickwrapper").css("display", "none");
+            $(".bg").css("display", "none");
+        });
+
+        $(".use").on("click", function() {
+            $(".btn_text").text("이용 문의");
+
+            $(".clickwrapper").css("display", "none");
+            $(".bg").css("display", "none");
+        });
+        $(".protection").on("click", function() {
+            $(".btn_text").text("고객 보호");
+
+            $(".clickwrapper").css("display", "none");
+            $(".bg").css("display", "none");
+        });
+        $(".loan").on("click", function() {
+            $(".btn_text").text("대출");
+
+            $(".clickwrapper").css("display", "none");
+            $(".bg").css("display", "none");
+        });
+
+        $(".etc").on("click", function() {
+            $(".btn_text").text("기타");
+
+            $(".clickwrapper").css("display", "none");
+            $(".bg").css("display", "none");
+        });
+
+        $(".subnav li a").on("click", function() {
+            $(".bluetext").removeClass("bluetext");
+            $(this).addClass("bluetext");
+        });
+    </script>
+
+    <script>
+        $(".pagination-list a").on("click",function(){
+            $(".active").removeClass("active");
+        });
+    </script>
+
+    <script>
+        $(".pagination-list a").on("click",function(){
+            $(".pagination-list li.active").removeClass("active");
+
+            let $li = $(this).parent();
+            $li.addClass("active");
+
+            let currentID = $li.attr("id");
+            if(currentID == "external"){
+                $(".column").css("display","none");
+                $("#showcolum1").css("display","block");
+                $("#allcolumn").css("display","none");
+                $("#showcolum2").css("display","none");
+            } else if(currentID == "charactor"){
+                $("#showcolum1").css("display","none");
+                $("#allcolumn").css("display","block");
+                $(".column").css("display","none");
+                $("#showcolum2").css("display","none");
+            } else if(currentID == "design"){
+                $("#showcolum1").css("display","none");
+                $("#allcolumn").css("display","none");
+                $(".column").css("display","none");
+                $("#showcolum2").css("display","block");
+            }
+        });
+    </script>
+
+    <script>  
     /* nav */
     $(".trigger").on("click", function () {
         if ($(".icon2").css("display") == "none") {
