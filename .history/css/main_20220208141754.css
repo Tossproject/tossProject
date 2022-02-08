@@ -1,0 +1,37 @@
+.select_lang_wrapper {
+  padding-left: 50px;
+  display: flex;
+  position: relative;
+}
+
+.lang_eng a {
+  opacity: 0.3;
+}
+
+.lang_bar {
+  display: inline-block;
+  position: absolute;
+  top: 11px;
+  left: 106px;
+  content: "";
+  width: 1px;
+  margin: 3px 0 0 1px;
+  height: 14px;
+  background-color: #3b3b46;
+  opacity: 0.3;
+}
+
+@media only screen and (max-width: 768px) {
+  .lang_bar {
+    top: 15px;
+    left: 135px;
+  }
+}
+
+.bg img,
+.bg video {
+  width: 100%;
+}
+.bg img {
+  display: none;
+}

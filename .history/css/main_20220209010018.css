@@ -368,28 +368,6 @@ section.fourth {
 }
 .seventh-wrapper p {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 500px;
   text-align: center;
-}
-.eighth-wrapper {
-  background-image: url(../images/main_section2_4_big.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 800px;
-  text-align: center;
-}
-.eighth-wrapper h1 {
-  font-size: 80px;
-  color: white;
-  padding: 300px 0;
-}
-
-.ninth-wrapper {
-  padding: 200px 0;
-}
-.ninth-wrapper h2 {
-  font-size: 54px;
-  margin-bottom: 150px;
 }

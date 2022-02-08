@@ -381,15 +381,7 @@ section.fourth {
   text-align: center;
 }
 .eighth-wrapper h1 {
-  font-size: 80px;
+  font-size: 64px;
   color: white;
-  padding: 300px 0;
-}
-
-.ninth-wrapper {
-  padding: 200px 0;
-}
-.ninth-wrapper h2 {
-  font-size: 54px;
-  margin-bottom: 150px;
+  padding: 200px;
 }

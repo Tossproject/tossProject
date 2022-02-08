@@ -331,7 +331,6 @@ section.fourth {
 .seventh-wrapper .img {
   position: relative;
   overflow: hidden;
-  text-align: center;
 }
 .seventh-wrapper .inner-contents {
   position: absolute;
@@ -362,34 +361,4 @@ section.fourth {
 }
 .seventh-wrapper .left-txt {
   left: 20px;
-}
-.seventh-wrapper .right-txt {
-  right: 20px;
-}
-.seventh-wrapper p {
-  font-size: 22px;
-  font-weight: bold;
-  text-align: center;
-}
-.eighth-wrapper {
-  background-image: url(../images/main_section2_4_big.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 800px;
-  text-align: center;
-}
-.eighth-wrapper h1 {
-  font-size: 80px;
-  color: white;
-  padding: 300px 0;
-}
-
-.ninth-wrapper {
-  padding: 200px 0;
-}
-.ninth-wrapper h2 {
-  font-size: 54px;
-  margin-bottom: 150px;
 }
