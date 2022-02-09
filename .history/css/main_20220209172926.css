@@ -523,39 +523,3 @@ section.tenth {
 .tenth-wrapper ul li {
   margin-bottom: 80px;
 }
-.tenth-wrapper ul h4 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  color: #333d4b;
-}
-.tenth-wrapper ul p {
-  color: #8b95a1;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-section.eleven {
-  background-color: black;
-}
-.eleventh-wrapper {
-  width: 92%;
-  margin: 0 auto;
-  padding: 100px 0;
-  color: white;
-}
-.eleventh-wrapper img {
-  width: 100%;
-}
-.eleventh-wrapper .title {
-  padding: 0;
-  text-align: center;
-  margin-bottom: 150px;
-}
-.eleventh-wrapper .title h1 {
-  font-size: 54px;
-  margin-bottom: 30px;
-}
-.eleventh-wrapper h3 {
-  color: #b0b8c1;
-  font-size: 28px;
-}

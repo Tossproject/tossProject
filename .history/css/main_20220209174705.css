@@ -540,7 +540,7 @@ section.eleven {
 .eleventh-wrapper {
   width: 92%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding-top: 100px;
   color: white;
 }
 .eleventh-wrapper img {
@@ -549,13 +549,7 @@ section.eleven {
 .eleventh-wrapper .title {
   padding: 0;
   text-align: center;
-  margin-bottom: 150px;
 }
 .eleventh-wrapper .title h1 {
-  font-size: 54px;
-  margin-bottom: 30px;
-}
-.eleventh-wrapper h3 {
-  color: #b0b8c1;
-  font-size: 28px;
+  font-size: 60px;
 }
