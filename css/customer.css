@@ -1,23 +1,6 @@
 
-<<<<<<< HEAD
-/* 헤더 */
-header{
-<<<<<<< HEAD
-    background-color: #EBF2EF;
-    height: 60px;
-  
-   
-}
-
-
-.toss-center{
-    width: 1080px;
-    margin: 0 auto;
-=======
-=======
 /* header */
 header {
->>>>>>> master
     background-color: #eef6f3;
     border: none;
     letter-spacing: 0;
@@ -29,11 +12,6 @@ section{
 
 .magnifier_li a:hover, .magnifier_li a:active {
     background-color: transparent !important;
-<<<<<<< HEAD
-  }
-  .trigger {
->>>>>>> origin/modify
-=======
 }
 
 .line-icon {
@@ -42,7 +20,6 @@ section{
 }
 
 .trigger {
->>>>>>> master
     display: flex;
     align-items: center;
 }
@@ -364,21 +341,12 @@ section{
 .help-center{
     max-width: 690px;
     margin: 0 auto;
-<<<<<<< HEAD
-    margin-bottom: 100px;
-=======
     padding: 80px 0;
->>>>>>> origin/modify
 }
 .help-box{
     max-block-size: 650px;
     margin: 0 auto;
-<<<<<<< HEAD
-    margin-bottom: 70px;
-
-=======
     margin-bottom: 50px;
->>>>>>> origin/modify
 }
 
 .help-box h1{
@@ -453,48 +421,6 @@ form img {
     font-size: 20px;
 }
 
-<<<<<<< HEAD
-}
-.all{
-    margin-left: 220px;
-    text-decoration: none;
-    color: rgb(109, 109, 202);
-    font-weight: 600;
-    font-size: 16px;
-    padding: 5px;    
-    font-size: 15px;
-  
-}
-
-.all:hover{
-    background-color: rgb(183, 183, 243);
-    border-radius: 5px;
-    padding: 5px;
-}
-
-/* section4 */
-
-
-
-.background{
-    background-color: #EBF2EF;
-}
-.back-center{
-    width: 960px;
-    margin: 0 auto;
-}
-.number{
-    float: left;
-    margin-left: 160px;
-    margin-top: 50px;
-    margin-right: 100px;
-
-}
-.number h1{
-    color: #161c25;
-    line-height: 40px;
-}
-=======
 .all {
     text-decoration: none;
     color: #3182f6;
@@ -541,7 +467,6 @@ form img {
     font-size: 28px;
 }
 
->>>>>>> origin/modify
 .number p{
     margin-top: 10px;
     font-size: 18px;
@@ -549,9 +474,6 @@ form img {
 
 }
 
-<<<<<<< HEAD
-
-=======
 @media only screen and (min-width: 768px) {
     .trigger {
         display: none !important;
@@ -680,4 +602,3 @@ form img {
         padding-left: 51px;
     }
 }
->>>>>>> origin/modify
