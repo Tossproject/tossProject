@@ -61,7 +61,8 @@
                         <div>
                             <label for="userMail" class="required">이메일</label>
                             <div class="email">
-                                <input type="text" name="email" id="userMail" class="userMail">
+                                <input type="email" name="email" id="userMail" class="userMail" maxlength="30">
+                                <div class="errormail" class="result-email result-check" style="color: #e42939;"></div>
                             </div>
                         </div>
                         <div class="space"></div>
@@ -69,7 +70,9 @@
                             <span class="resumeName">이력서 및 경력기술서</span>
                             <div class="resume">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon" style="width: 24px; height:24px; margin:10px;"><path d="M20 4.7h-7.6l-1.7-2.3c-.5-.7-1.3-1.1-2.2-1.1H4c-1.2 0-2.2 1-2.2 2.2v15.9c0 1.2 1 2.2 2.2 2.2h16c1.2 0 2.2-1 2.2-2.2V6.9c0-1.2-1-2.2-2.2-2.2zM3.2 3.6c0-.4.3-.8.8-.8h4.5c.4 0 .8.2 1 .5l1 1.4H3.2V3.6zm17.6 15.9c0 .4-.3.7-.8.7H4c-.4 0-.8-.3-.8-.7V6.2H20c.4 0 .8.3.8.7v12.6z" fill="#6b7684"></path></svg>
-                                <label for="resumeFile" class="resumeFile">이력서 및 경력기술서 첨부 (PDF 권장)</label>
+                                <div class="resumestyle">
+                                    <label for="resumeFile" class="resumeFile">이력서 및 경력기술서 첨부 (PDF 권장)</label>
+                                </div>
                                 <input type="file" name="resumeFile" id="resumeFile" style="display: none;">
                             </div>
                         </div>
@@ -88,7 +91,9 @@
                             <span class="portfolioName">포트폴리오(선택사항)</span>
                             <div class="portfolio">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon" style="width: 24px; height:24px; margin:10px;"><path d="M20 4.7h-7.6l-1.7-2.3c-.5-.7-1.3-1.1-2.2-1.1H4c-1.2 0-2.2 1-2.2 2.2v15.9c0 1.2 1 2.2 2.2 2.2h16c1.2 0 2.2-1 2.2-2.2V6.9c0-1.2-1-2.2-2.2-2.2zM3.2 3.6c0-.4.3-.8.8-.8h4.5c.4 0 .8.2 1 .5l1 1.4H3.2V3.6zm17.6 15.9c0 .4-.3.7-.8.7H4c-.4 0-.8-.3-.8-.7V6.2H20c.4 0 .8.3.8.7v12.6z" fill="#6b7684"></path></svg>
-                                <label for="portfolioFile" class="portfolioFile">포트폴리오 첨부 (PDF 권장)</label>
+                                <div class="portstyle">
+                                    <label for="portfolioFile" class="portfolioFile">포트폴리오 첨부 (PDF 권장)</label>
+                                </div>
                                 <input type="file" name="portfolio" id="portfolioFile" style="display: none;">
                             </div>
                         </div>
@@ -232,10 +237,34 @@
             
             if(this.checked) {
                 $("button").css("background-color", "#3182f6");
-            }else {
+            } else {
                 $("button").css("background-color", "#90ceff");
-            }
+                return false;
+            };
         });
+    </script>
+    <script>
+        //이름의 유효성 검사
+
+    </script>
+    <script>       
+        //이메일 유효성 검사
+        function email_check( email ) {    
+        var regex=/([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+        return (email != '' && email != 'undefined' && regex.test(email)); 
+        };
+
+        $("input[type=email]").blur(function(){
+            var email = $(this).val();
+        if( email == '' || email == 'undefined') return;
+        if(! email_check(email) ) {
+  	    $(".result-email").text("이메일 형식이 올바르지 않습니다");
+        $(this).focus();
+        return false;
+        }else {
+	    $(".result-email").text('');
+    }
+    });
     </script>
 </body>
 
