@@ -419,7 +419,6 @@ section.sixth {
   padding: 300px 0;
 }
 
-/* 토스로 나에게 딱 맞게 */
 .ninth-wrapper {
   padding: 200px 0;
 }
@@ -519,14 +518,11 @@ h3.gray-txt {
   flex: 0 1 50%;
 }
 
-/* 알면 좋은 금융 */
 section.tenth {
   background-color: #f9fafb;
-  padding: 200px 0;
 }
 .tenth-wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
+  padding: 200px 0 200px 2%;
 }
 .tenth-wrapper .title {
   padding-left: 0;
@@ -587,12 +583,11 @@ section.tenth {
   font-weight: 500;
 }
 
-/* 사업도 토스와 함께 */
 section.eleven {
   background-color: black;
 }
 .eleventh-wrapper {
-  max-width: 1000px;
+  width: 92%;
   margin: 0 auto;
   padding: 100px 0;
   color: white;

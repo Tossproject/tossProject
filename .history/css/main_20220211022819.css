@@ -587,12 +587,11 @@ section.tenth {
   font-weight: 500;
 }
 
-/* 사업도 토스와 함께 */
 section.eleven {
   background-color: black;
 }
 .eleventh-wrapper {
-  max-width: 1000px;
+  width: 92%;
   margin: 0 auto;
   padding: 100px 0;
   color: white;
