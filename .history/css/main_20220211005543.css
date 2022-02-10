@@ -29,20 +29,18 @@
 }
 
 .wrapper {
-  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
 }
 
-/* 첫화면 */
 .first-wrapper {
   position: relative;
-  width: 100%;
 }
 .bg {
   position: relative;
   overflow: hidden;
-  width: auto;
+  width: 100vw;
   height: 100vh;
 }
 .bg img,
@@ -85,9 +83,6 @@
   font-weight: bold;
   font-size: 16px;
 }
-.txt-btn a:hover {
-  opacity: 0.8;
-}
 .txt-btn a img {
   vertical-align: -8px;
 }
@@ -103,17 +98,16 @@
   cursor: pointer;
 }
 
-/* 조회 */
 .second-wrapper {
   background-color: #f9fafb;
   padding: 200px 0;
   text-align: center;
-  width: 100%;
 }
 .second-wrapper p {
   font-size: 28px;
   font-weight: bold;
 }
+
 .title {
   padding-left: 30px;
   position: relative;
@@ -127,31 +121,25 @@
   margin-top: 30px;
 }
 
-/* 홈소비 */
-section.third {
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 100px;
-  background-color: white;
-}
 .third-wrapper {
   position: relative;
   overflow: hidden;
+  width: 100%;
   height: 1400px;
-  max-width: 1000px;
-  margin: 0 auto;
+  margin: 100px auto;
 }
+
 .third-wrapper .img1 {
   position: absolute;
   top: 50px;
   right: -120px;
-  z-index: 1;
+  z-index: -1;
 }
 .third-wrapper .img2 {
   position: absolute;
   top: 400px;
   left: -120px;
-  z-index: 1;
+  z-index: -1;
 }
 .third-wrapper .txt {
   position: absolute;
@@ -163,21 +151,19 @@ section.third {
   font-weight: bold;
 }
 
-/* 송금 */
 section.fourth {
   background-color: #f9fafb;
   padding: 250px 0;
 }
 .fourth-wrapper {
-  max-width: 1000px;
   margin: 0 auto;
+  width: 100%;
 }
 .video-wrapper {
   overflow: hidden;
   width: 90%;
-  margin: 100px 5% 30px 5%;
+  margin: 0 5% 30px 5%;
   display: flex;
-  justify-content: space-around;
   background-color: white;
   border-radius: 30px;
   align-items: center;
@@ -186,15 +172,14 @@ section.fourth {
   position: relative;
 }
 .video-wrapper .video video {
-  width: 500px;
+  width: 300px;
+}
+.video-wrapper .video-txt {
 }
 .video-wrapper .video-txt p {
   font-size: 24px;
 }
-.video-wrapper .video-txt p span,
-.video-wrapper .video-txt p i {
-  color: #3182f6;
-}
+
 .check {
   display: flex;
   margin: 0 5%;
@@ -204,25 +189,20 @@ section.fourth {
   background-color: #191f28;
   border-radius: 30px;
   margin-right: 20px;
-  height: 540px;
+  height: 500px;
   padding: 40px;
   flex-basis: 30%;
   overflow: hidden;
-}
-.check .inquire img {
-  display: block;
-  margin: 50px auto;
 }
 .check .reserve {
   background-color: white;
   border-radius: 30px;
   flex-basis: 65%;
-  padding-bottom: 20px;
 }
 .check .inquire h4 {
   color: rgb(176, 184, 193);
   font-size: 32px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 .check .inquire h4 span {
   color: white;
@@ -241,15 +221,12 @@ section.fourth {
   width: 100%;
 }
 
-/* 대출 */
 .fifth-wrapper {
   background-color: white;
+  margin-top: 200px;
   position: relative;
   overflow: hidden;
   height: 1000px;
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-top: 200px;
 }
 .fifth-wrapper .title,
 .fifth-wrapper .txt {
@@ -283,14 +260,9 @@ section.fourth {
   font-weight: bold;
 }
 
-/* 신용 */
-section.sixth {
-  background-color: #f9fafb;
-}
 .sixth-wrapper {
+  background-color: #f9fafb;
   padding: 200px 0;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 .sixth-wrapper .title {
   margin-bottom: 60px;
@@ -349,11 +321,8 @@ section.sixth {
   flex: 1 1 45%;
 }
 
-/* 투자 */
 .seventh-wrapper {
   padding: 200px 0;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 .seventh-wrapper .contents {
   position: relative;
@@ -402,8 +371,6 @@ section.sixth {
   font-weight: bold;
   text-align: center;
 }
-
-/* 꼭 필요했던 금융 */
 .eighth-wrapper {
   background-image: url(../images/main_section2_4_big.jpg);
   background-position: center;
@@ -419,14 +386,12 @@ section.sixth {
   padding: 300px 0;
 }
 
-/* 토스로 나에게 딱 맞게 */
 .ninth-wrapper {
   padding: 200px 0;
 }
 .ninth-wrapper h2 {
   font-size: 54px;
   margin-bottom: 150px;
-  margin-left: 30px;
 }
 .cont-container {
   width: 95%;
@@ -447,24 +412,13 @@ section.sixth {
 h3.gray-txt {
   color: #b0b8c1;
 }
-.first-cont img {
-  display: block;
-  margin: 0 auto;
-  max-width: 740px;
-}
 .first-cont p {
   font-size: 18px;
   font-weight: 600;
   color: #333d4b;
 }
-.ninth-wrapper h2 {
-  margin: 0 auto;
-  max-width: 1000px;
-}
 .cont {
-  max-width: 1000px;
-  display: block;
-  margin: 0 auto;
+  margin-top: 100px;
   padding-top: 100px;
 }
 .second-cont {
@@ -519,13 +473,12 @@ h3.gray-txt {
   flex: 0 1 50%;
 }
 
-/* 알면 좋은 금융 */
 section.tenth {
   background-color: #f9fafb;
-  padding: 200px 0;
 }
 .tenth-wrapper {
-  max-width: 1000px;
+  padding-top: 200px;
+  width: 92%;
   margin: 0 auto;
 }
 .tenth-wrapper .title {
@@ -535,10 +488,6 @@ section.tenth {
 .tenth-wrapper h2 {
   font-size: 44px;
   margin-top: 15px;
-}
-.tenth-wrapper ul {
-  display: flex;
-  flex-wrap: wrap;
 }
 .tenth-wrapper ul .img-container {
   background-color: #191f28;
@@ -572,9 +521,7 @@ section.tenth {
   background-color: #e8f3ff;
 }
 .tenth-wrapper ul li {
-  width: 400px;
   margin-bottom: 80px;
-  margin-right: 100px;
 }
 .tenth-wrapper ul h4 {
   font-size: 18px;
@@ -587,12 +534,11 @@ section.tenth {
   font-weight: 500;
 }
 
-/* 사업도 토스와 함께 */
 section.eleven {
   background-color: black;
 }
 .eleventh-wrapper {
-  max-width: 1000px;
+  width: 92%;
   margin: 0 auto;
   padding: 100px 0;
   color: white;
