@@ -453,22 +453,14 @@ section.sixth {
 }
 .seventh-wrapper .left-txt {
   left: 20px;
-  margin-top: 50px;
-  display: none;
 }
 .seventh-wrapper .right-txt {
   right: 20px;
-  margin-top: 50px;
-  display: none;
 }
 .seventh-wrapper p {
   font-size: 22px;
   font-weight: bold;
   text-align: center;
-}
-.seventh-wrapper p#third-visible {
-  margin-top: 50px;
-  display: none;
 }
 
 /* 꼭 필요했던 금융 */
