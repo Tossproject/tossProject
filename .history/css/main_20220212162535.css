@@ -186,7 +186,6 @@ section.fourth {
 .fourth-wrapper #transfer {
   display: none;
   margin-top: 50px;
-  margin-bottom: 100px;
 }
 .video-wrapper {
   overflow: hidden;
@@ -223,8 +222,6 @@ section.fourth {
   display: flex;
   margin: 0 5%;
   justify-content: space-between;
-  margin-top: 50px;
-  visibility: hidden;
 }
 .check .inquire {
   background-color: #191f28;
@@ -281,25 +278,11 @@ section.fourth {
 .fifth-wrapper .txt {
   z-index: 3;
 }
-.fifth-wrapper #lend .head {
-  display: none;
-  margin-top: 50px;
-}
-.fifth-wrapper #lend #limit {
-  display: none;
-  margin-top: 50px;
-}
-.fifth-wrapper #lend #limit h4 {
-  display: none;
-  margin-top: 50px;
-}
 .img-wrapper {
   position: absolute;
   top: 10px;
   right: -120px;
   z-index: 1;
-  display: none;
-  margin-top: 50px;
 }
 .fifth-wrapper .title {
   display: flex;
@@ -335,9 +318,8 @@ section.sixth {
   max-width: 1000px;
   margin: 0 auto;
 }
-.sixth-wrapper #credit-title {
-  margin: 60px 0;
-  display: none;
+.sixth-wrapper .title {
+  margin-bottom: 60px;
 }
 .sixth-wrapper .credit {
   background-color: #191f28;
@@ -346,8 +328,6 @@ section.sixth {
   border-radius: 20px;
   padding: 30px 50px 0 40px;
   position: relative;
-  margin-top: 50px;
-  display: none;
 }
 .credit .txt {
   position: absolute;
@@ -366,14 +346,14 @@ section.sixth {
 .sixth-wrapper .credit-score {
   margin: 0 auto;
   width: 90%;
+}
+.credit-score {
   padding-top: 30px;
   display: flex;
   font-size: 20px;
   color: rgb(51, 61, 75);
   font-weight: bold;
   justify-content: space-between;
-  margin-top: 50px;
-  visibility: hidden;
 }
 .credit-score p {
   margin-bottom: 30px;
@@ -400,17 +380,13 @@ section.sixth {
   padding: 200px 0;
   max-width: 1000px;
   margin: 0 auto;
-  height: 1500px;
 }
 .seventh-wrapper .contents {
   position: relative;
 }
-.seventh-wrapper #invest {
-  margin-top: 50px;
-  display: none;
-}
 .seventh-wrapper .img {
   position: relative;
+
   text-align: center;
   width: 600px;
   margin: 0 auto;
@@ -453,22 +429,14 @@ section.sixth {
 }
 .seventh-wrapper .left-txt {
   left: 20px;
-  margin-top: 50px;
-  display: none;
 }
 .seventh-wrapper .right-txt {
   right: 20px;
-  margin-top: 50px;
-  display: none;
 }
 .seventh-wrapper p {
   font-size: 22px;
   font-weight: bold;
   text-align: center;
-}
-.seventh-wrapper p#third-visible {
-  margin-top: 50px;
-  display: none;
 }
 
 /* 꼭 필요했던 금융 */
