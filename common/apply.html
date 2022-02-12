@@ -49,6 +49,7 @@
                             <div class="name">
                                 <input type="text" name="name" id="userName" class="userName">
                             </div>
+                            <div class="vital">필수 입력 항목입니다.</div>
                         </div>
                         <div class="space"></div>
                         <div>
@@ -56,14 +57,15 @@
                             <div class="phone">
                                 <input type="tel" name="phone" id="userPhone" class="userPhone">
                             </div>
+                            <div class="vital">필수 입력 항목입니다.</div>
                         </div>
                         <div class="space"></div>
                         <div>
                             <label for="userMail" class="required">이메일</label>
                             <div class="email">
                                 <input type="email" name="email" id="userMail" class="userMail" maxlength="30">
-                                <div class="errormail" class="result-email result-check" style="color: #e42939;"></div>
                             </div>
+                            <div class="vital">필수 입력 항목입니다.</div>
                         </div>
                         <div class="space"></div>
                         <div>
@@ -232,40 +234,53 @@
     /* nav */
     </script>
     <script>
-        $(".userAgree").on("click", function() {
-            this.checked = true;
-            
-            if(this.checked) {
+        $(document).ready(function(){
+            $(".userAgree").change(function(){
+            if($(".userAgree").is(":checked")){
                 $("button").css("background-color", "#3182f6");
-            } else {
-                $("button").css("background-color", "#90ceff");
-                return false;
+        }else{
+            $("button").css("background-color", "#90ceff");
+        }
+    });
+    });
+    </script>
+
+    <script>
+        //이름의 유효성 검사
+        let $username = $(".userName");
+        let $urname = $username.val();
+
+
+        $("button").on("click", function() {
+            if($urname == "") {
+                $(".vital").css("display", "block");
+                $username.css("border", "3px solid #f44336");
+            };
+        });
+
+        // 전화번호 입력란
+        let $userphone = $(".userPhone");
+        let $urphone = $userphone.val();
+
+        $("button").on("click", function() {
+            if($urphone == "") {
+                $(".vital").css("display", "block");
+                $userphone.css("border", "3px solid #f44336");
+            };
+        });
+
+        // 이메일 입력란
+        let $usermail = $(".userMail");
+        let $urmail = $usermail.val();
+
+        $("button").on("click", function() {
+            if($urmail == "") {
+                $(".vital").css("display", "block");
+                $usermail.css("border", "3px solid #f44336");
             };
         });
     </script>
-    <script>
-        //이름의 유효성 검사
 
-    </script>
-    <script>       
-        //이메일 유효성 검사
-        function email_check( email ) {    
-        var regex=/([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-        return (email != '' && email != 'undefined' && regex.test(email)); 
-        };
-
-        $("input[type=email]").blur(function(){
-            var email = $(this).val();
-        if( email == '' || email == 'undefined') return;
-        if(! email_check(email) ) {
-  	    $(".result-email").text("이메일 형식이 올바르지 않습니다");
-        $(this).focus();
-        return false;
-        }else {
-	    $(".result-email").text('');
-    }
-    });
-    </script>
 </body>
 
 </html>

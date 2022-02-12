@@ -191,11 +191,20 @@ form .required::after {
     width: 100%;
     height: 30px;
 }
+
 p {
     margin-top: 4px;
     font-size: 15px;
     line-height: 24px;
     color: rgb(107, 118, 132);
+}
+
+.vital {
+    margin-top: 4px;
+    color: #f44336;
+    font-size: 15px;
+    font-weight: 400;
+    display: none;
 }
 
 .select {
