@@ -94,7 +94,7 @@ $(window).scroll(function () {
       $(".tenth-wrapper ul").css("visibility", "visible");
       $(".tenth-wrapper ul").animate({ marginTop: "0" }, 500);
     }, 1500);
-  } else if (scrollValue >= 15000 && scrollValue <= 20000) {
+  } else if (scrollValue >= 14000 && scrollValue <= 20000) {
     setTimeout(function () {
       $("#devices").fadeIn(1000);
       $("#devices").animate({ marginTop: "0" }, 500);
@@ -170,3 +170,5 @@ $(".button button").on("click", function () {
   console.log($("#devices"));
   $("html").animate({ scrollTop: offset.top }, 500);
 });
+
+// rgba(0,27,55,.1)

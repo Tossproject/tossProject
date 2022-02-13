@@ -38,7 +38,6 @@
 .first-wrapper {
   position: relative;
   width: 100%;
-  height: 1100px;
 }
 .bg {
   position: relative;
@@ -179,7 +178,6 @@ section.third {
 section.fourth {
   background-color: #f9fafb;
   padding: 250px 0;
-  height: 1460px;
 }
 .fourth-wrapper {
   max-width: 1000px;

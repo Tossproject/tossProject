@@ -94,7 +94,7 @@ $(window).scroll(function () {
       $(".tenth-wrapper ul").css("visibility", "visible");
       $(".tenth-wrapper ul").animate({ marginTop: "0" }, 500);
     }, 1500);
-  } else if (scrollValue >= 15000 && scrollValue <= 20000) {
+  } else if (scrollValue >= 14000 && scrollValue <= 20000) {
     setTimeout(function () {
       $("#devices").fadeIn(1000);
       $("#devices").animate({ marginTop: "0" }, 500);
@@ -102,64 +102,9 @@ $(window).scroll(function () {
       $("#business").animate({ marginTop: "0" }, 500);
     }, 500);
     setTimeout(function () {
-      $("#buttons").fadeIn(1000);
-      $("#buttons").animate({ marginTop: "0" }, 500);
-    }, 2000);
-  } else if (scrollValue >= 8760 && scrollValue <= 8860) {
-    $(".first-cont img").css("opacity", "0.2");
-  } else if (scrollValue >= 8960 && scrollValue <= 9060) {
-    $(".first-cont img").css("opacity", "0.5");
-  } else if (scrollValue >= 9060 && scrollValue <= 9160) {
-    $(".first-cont img").css("opacity", "0.7");
-  } else if (scrollValue >= 9160 && scrollValue <= 9260) {
-    $(".first-cont img").css("opacity", "0.8");
-  } else if (scrollValue >= 9260 && scrollValue <= 9560) {
-    $(".first-cont img").css("opacity", "1");
-  } else if (scrollValue >= 9700 && scrollValue <= 9800) {
-    $(".first-txt").css("opacity", "0.2");
-    $(".first-cont p").css("opacity", "0.2");
-  } else if (scrollValue >= 9800 && scrollValue <= 9900) {
-    $(".first-txt").css("opacity", "0.5");
-    $(".first-cont p").css("opacity", "0.5");
-  } else if (scrollValue >= 9900 && scrollValue <= 10000) {
-    $(".first-txt").css("opacity", "0.8");
-    $(".first-cont p").css("opacity", "0.8");
-    $(".second-big img").css("opacity", "0.2");
-  } else if (scrollValue >= 10000 && scrollValue <= 10100) {
-    $(".first-txt").css("opacity", "1");
-    $(".first-cont p").css("opacity", "1");
-    $(".second-big img").css("opacity", "0.5");
-    $(".second-small img").css("opacity", "0.2");
-  } else if (scrollValue >= 10100 && scrollValue <= 10300) {
-    $(".second-big img").css("opacity", "0.8");
-    $(".second-small img").css("opacity", "0.5");
-  } else if (scrollValue >= 10300 && scrollValue <= 10400) {
-    $(".second-big img").css("opacity", "1");
-    $(".second-small img").css("opacity", "0.8");
-    $(".second-small p").css("opacity", "0.8");
-  } else if (scrollValue >= 10400 && scrollValue <= 10600) {
-    $(".second-small img").css("opacity", "1");
-    $(".second-small p").css("opacity", "1");
-  } else if (scrollValue >= 10600 && scrollValue <= 10700) {
-    $(".second-big h3").css("opacity", "0.4");
-  } else if (scrollValue >= 10700 && scrollValue <= 10800) {
-    $(".second-big h3").css("opacity", "0.7");
-  } else if (scrollValue >= 10800 && scrollValue <= 10900) {
-    $(".second-big h3").css("opacity", "1");
-  } else if (scrollValue >= 10900 && scrollValue <= 11100) {
-    $(".third-cont img").css("opacity", "0.2");
-  } else if (scrollValue >= 11100 && scrollValue <= 11200) {
-    $(".third-cont img").css("opacity", "0.5");
-  } else if (scrollValue >= 11200 && scrollValue <= 11300) {
-    $(".third-cont img").css("opacity", "0.8");
-  } else if (scrollValue >= 11300 && scrollValue <= 11400) {
-    $(".third-cont img").css("opacity", "1");
-  } else if (scrollValue >= 11600 && scrollValue <= 11700) {
-    $(".third-cont .txt-title").css("opacity", "0.2");
-  } else if (scrollValue >= 11700 && scrollValue <= 11800) {
-    $(".third-cont .txt-title").css("opacity", "0.5");
-  } else if (scrollValue >= 11800 && scrollValue <= 11900) {
-    $(".third-cont .txt-title").css("opacity", "1");
+      $(".tenth-wrapper ul").css("visibility", "visible");
+      $(".tenth-wrapper ul").animate({ marginTop: "0" }, 500);
+    }, 1500);
   }
 });
 
@@ -170,3 +115,5 @@ $(".button button").on("click", function () {
   console.log($("#devices"));
   $("html").animate({ scrollTop: offset.top }, 500);
 });
+
+// rgba(0,27,55,.1)
