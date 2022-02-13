@@ -70,6 +70,10 @@ header nav .navicon a {
   background-image: linear-gradient(#fff 2px, transparent 2px);
 }
 
+.toss_nav .logo svg {
+  height: 20px;
+}
+
 .toss_nav .logo {
   filter: brightness(0) invert(1);
 }
@@ -100,11 +104,6 @@ header nav .navicon a {
 @media only screen and (min-width: 768px) {
   .toss_nav ul li a {
       padding: 9px 11px;
-  }
-
-  .toss_nav .logo svg {
-      width: 78px;
-      height: 20px;
   }
 }
 
@@ -366,11 +365,11 @@ footer .footer_top li.title {
     overflow: hidden;
   }
   .txt-wrapper h1 {
-    font-size: 64px;
-    line-height: 79px;
+    font-size: 64px !important;
+    line-height: 79px !important;
   }
   .txt-wrapper p {
-    font-size: 24px;
+    font-size: 24px !important;
   }
   .img-wrapper img.lock {
     width: 917px !important;
