@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 /* 헤더 */
 header{
     background-color: #EFF4F8;
@@ -31,6 +35,9 @@ header{
     left: 84px;
     font-weight: 500;
     font-size: 18px;
+}
+.toss_nav .logo svg {
+    height: 20px;
 }
 .toss_nav ul li a {
     border-radius: 8px;
@@ -117,7 +124,7 @@ header{
 .ad_img_wrapper{
     margin-right: 20px;
 }
-.ad_img_wrapper img{
+.ad_img_wrapper img {
     width: 300px;
     padding: 0;
     border: none;
@@ -125,6 +132,18 @@ header{
     display: block;
     margin-left: 40px;
 }
+
+@media only screen and (max-width: 320px) {
+    .ad_wrapper {
+        overflow-x: hidden;
+    }
+
+    .ad_img_wrapper img {
+        width: 250px;
+        margin-left: 3px;
+    }
+}
+
 .h2_box{
     position: relative;
     width: 100%;
@@ -141,6 +160,12 @@ header{
 
 .ad_text_wrapper{
     padding: 0 20px;
+}
+
+@media only screen and (max-width: 320px) {
+    .ad_text_wrapper {
+        padding: 0 !important;
+    }
 }
 
 .span_box{
