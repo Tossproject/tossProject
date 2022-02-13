@@ -161,7 +161,7 @@ $(window).scroll(function () {
     $(".third-cont .txt-title").css("opacity", "0.5");
   } else if (scrollValue >= 12850 && scrollValue <= 12950) {
     $(".third-cont .txt-title").css("opacity", "1");
-  } /* 7섹션 스크롤 */ else if (scrollValue >= 8083 && scrollValue <= 8123) {
+  } else if (scrollValue >= 8083 && scrollValue <= 8123) {
     $("img.first-appear").css("opacity", "0.3");
   } else if (scrollValue >= 8123 && scrollValue <= 8163) {
     $("img.first-appear").css("opacity", "0.7");
@@ -177,20 +177,6 @@ $(window).scroll(function () {
     $("img.third-appear").css("opacity", "0.7");
   } else if (scrollValue >= 8243 && scrollValue <= 8283) {
     $("img.third-appear").css("opacity", "1");
-  } /* 8섹션 스크롤 */ else if (scrollValue >= 8740 && scrollValue <= 8840) {
-    $(".eighth-wrapper").width("1060");
-  } else if (scrollValue >= 8840 && scrollValue <= 8940) {
-    $(".eighth-wrapper").width("1120");
-  } else if (scrollValue >= 8940 && scrollValue <= 9040) {
-    $(".eighth-wrapper").width("1180");
-  } else if (scrollValue >= 9140 && scrollValue <= 9240) {
-    $(".eighth-wrapper").width("1240");
-  } else if (scrollValue >= 9240 && scrollValue <= 9340) {
-    $(".eighth-wrapper").width("1300");
-  } else if (scrollValue >= 9340 && scrollValue <= 9440) {
-    $(".eighth-wrapper").width("1360");
-  } else if (scrollValue >= 9440 && scrollValue <= 9540) {
-    $(".eighth-wrapper").width("100%");
   }
 });
 
