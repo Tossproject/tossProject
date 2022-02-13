@@ -417,9 +417,11 @@ section.seventh {
 .invest-img img {
   width: 10%;
   margin-right: 20px;
-  opacity: 0;
 }
 .seventh-wrapper {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
   padding: 200px 0;
   max-width: 1000px;
   margin: 0 auto;
@@ -485,7 +487,7 @@ section.seventh {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1000px;
+  width: 100vw;
   height: 800px;
   text-align: center;
 }

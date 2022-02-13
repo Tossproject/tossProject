@@ -489,6 +489,8 @@ section.seventh {
   height: 800px;
   text-align: center;
 }
+@media screen and (min-width) {
+}
 .eighth-wrapper h1 {
   font-size: 80px;
   color: white;

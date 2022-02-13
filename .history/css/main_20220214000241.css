@@ -485,7 +485,7 @@ section.seventh {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1000px;
+  width: 100vw;
   height: 800px;
   text-align: center;
 }

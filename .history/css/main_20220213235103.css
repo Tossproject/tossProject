@@ -28,9 +28,6 @@
   }
 }
 
-section {
-  overflow: hidden;
-}
 .wrapper {
   width: 90%;
   margin: 0 auto;
@@ -404,22 +401,21 @@ section.sixth {
 section.seventh {
   position: relative;
   height: 1500px;
-  overflow: hidden;
 }
-.invest-img {
+.invest {
   position: absolute;
   display: flex;
-  bottom: 400px;
-  left: 10%;
+  bottom: 300px;
   z-index: 100;
   width: 1400px;
 }
-.invest-img img {
-  width: 10%;
-  margin-right: 20px;
-  opacity: 0;
+.invest img {
+  width: 14%;
 }
 .seventh-wrapper {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
   padding: 200px 0;
   max-width: 1000px;
   margin: 0 auto;
@@ -485,7 +481,7 @@ section.seventh {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1000px;
+  width: 100vw;
   height: 800px;
   text-align: center;
 }
