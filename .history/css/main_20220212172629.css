@@ -38,7 +38,6 @@
 .first-wrapper {
   position: relative;
   width: 100%;
-  height: 1100px;
 }
 .bg {
   position: relative;
@@ -179,7 +178,6 @@ section.third {
 section.fourth {
   background-color: #f9fafb;
   padding: 250px 0;
-  height: 1460px;
 }
 .fourth-wrapper {
   max-width: 1000px;
@@ -336,7 +334,6 @@ section.sixth {
   padding: 200px 0;
   max-width: 1000px;
   margin: 0 auto;
-  height: 1830px;
 }
 .sixth-wrapper #credit-title {
   margin: 60px 0;
@@ -493,7 +490,6 @@ section.sixth {
 /* 토스로 나에게 딱 맞게 */
 .ninth-wrapper {
   padding: 200px 0;
-  height: 4000px;
 }
 .ninth-wrapper h2 {
   font-size: 54px;
@@ -667,24 +663,18 @@ section.tenth {
 /* 사업도 토스와 함께 */
 section.eleven {
   background-color: black;
+  height: 1600px;
 }
 .eleventh-wrapper {
   max-width: 1000px;
-  height: 1600px;
   margin: 0 auto;
   padding: 100px 0;
   color: white;
 }
-#devices {
-  margin-top: 50px;
-  display: none;
-}
-.eleventh-wrapper #business {
-  margin-top: 50px;
-  display: none;
-}
+.eleventh-wrapper #devices,
+.eleventh-wrapper #business,
 .eleventh-wrapper #buttons {
-  margin-top: 100px;
+  margin-top: 50px;
   display: none;
 }
 .eleventh-wrapper img {

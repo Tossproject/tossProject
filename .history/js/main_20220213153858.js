@@ -94,7 +94,7 @@ $(window).scroll(function () {
       $(".tenth-wrapper ul").css("visibility", "visible");
       $(".tenth-wrapper ul").animate({ marginTop: "0" }, 500);
     }, 1500);
-  } else if (scrollValue >= 15000 && scrollValue <= 20000) {
+  } else if (scrollValue >= 14000 && scrollValue <= 20000) {
     setTimeout(function () {
       $("#devices").fadeIn(1000);
       $("#devices").animate({ marginTop: "0" }, 500);
@@ -154,12 +154,6 @@ $(window).scroll(function () {
     $(".third-cont img").css("opacity", "0.8");
   } else if (scrollValue >= 11300 && scrollValue <= 11400) {
     $(".third-cont img").css("opacity", "1");
-  } else if (scrollValue >= 11600 && scrollValue <= 11700) {
-    $(".third-cont .txt-title").css("opacity", "0.2");
-  } else if (scrollValue >= 11700 && scrollValue <= 11800) {
-    $(".third-cont .txt-title").css("opacity", "0.5");
-  } else if (scrollValue >= 11800 && scrollValue <= 11900) {
-    $(".third-cont .txt-title").css("opacity", "1");
   }
 });
 
@@ -170,3 +164,5 @@ $(".button button").on("click", function () {
   console.log($("#devices"));
   $("html").animate({ scrollTop: offset.top }, 500);
 });
+
+// rgba(0,27,55,.1)

@@ -94,7 +94,7 @@ $(window).scroll(function () {
       $(".tenth-wrapper ul").css("visibility", "visible");
       $(".tenth-wrapper ul").animate({ marginTop: "0" }, 500);
     }, 1500);
-  } else if (scrollValue >= 15000 && scrollValue <= 20000) {
+  } else if (scrollValue >= 13000 && scrollValue <= 20000) {
     setTimeout(function () {
       $("#devices").fadeIn(1000);
       $("#devices").animate({ marginTop: "0" }, 500);
